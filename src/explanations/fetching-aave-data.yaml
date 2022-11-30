@@ -214,21 +214,21 @@
   shortTitle: React App
   key: react-app
   details: |
-    * **Initial Setup**
+    * **Initial Setup**<br/>
       First, let's create a React project, you can refer [this](https://create-react-app.dev/docs/getting-started/) documentation.
       ```
       npx create-react-app aave-analytics-sample-app
       ```
       Run npm start to check if the project runs fine.
 
-    * **Integrate ApolloClient**
+    * **Integrate ApolloClient**<br/>
       Let's integrate the Apollo client library. We can install and setup the client using [this](https://www.apollographql.com/docs/react/get-started/) documentation.
       ```
       npm install @apollo/client graphql
       ```
       We can use the sample code to fetch the data and test our setup.
 
-    * **Initialize the ApolloClient**
+    * **Initialize the ApolloClient**<br/>
       With our dependencies already set up, we can now create an ApolloClient instance.
       Let's start by importing the symbols we require from @apollo/client into index.js:
       ```
@@ -242,7 +242,7 @@
       });
       ```
 
-    * **Connect the client to React**
+    * **Connect the client to React**<br/>
       We can connect Apollo Client to React with the ApolloProvider component. Similar to React's Context.Provider, ApolloProvider wraps our React app and places Apollo Client on the context, enabling us to access it from anywhere in our component tree.
 
       In index.js, let's wrap our React app with an ApolloProvider
@@ -266,7 +266,7 @@
       );
       ```
 
-    * **Fetching data with useQuery**
+    * **Fetching data with useQuery**<br/>
       After the ApolloProvider is hooked up, we can start requesting data with useQuery. The useQuery hook is a React hook that shares GraphQL data with your UI.
       Switching over to our App.js file, we'll start by replacing our existing file contents with the code snippet below:
       ```
@@ -315,7 +315,7 @@
       }
       ```
 
-    * **Implementing the Pie Chart**
+    * **Implementing the Pie Chart**<br/>
       Now, our aim is to create a pie chart using the data we receive. So now we'll use [react-chartjs-2](https://react-chartjs-2.js.org/).
       ```
       npm install --save chart.js react-chartjs-2
@@ -385,6 +385,8 @@
       ```
 
       This will give us a Pie chart in our React app.
+
+      
 
       You can get the complete code [here](https://github.com/DoDAO-io/aava-analytics-sample-app).
 
