@@ -1,23 +1,3 @@
-- uuid: eca9d545-0c8a-42f8-8d45-5dfd675a4187
-  type: MultipleChoice
-  content: Which of the following points about AAVE is/are correct?
-  hint: NoHint
-  explanation: AAVE is a DeFi protocol that facilitates the lending and borrowing of cryptocurrency tokens using diverse algorithms and smart contracts without centralized intermediaries. It is a non-custodial liquidity protocol that allows users to participate as lenders or borrowers. 
-  answerKeys:
-    - A
-    - C
-  subTopics:
-    - aave-data-intro
-  difficultyLevel: Low
-  choices:
-    - content: AAVE is a decentralized finance protocol
-      key: A
-    - content: AAVE is a centralized finance protocol
-      key: B
-    - content: AAVE is a non-custodial liquidity protocol
-      key: C
-    - content: AAVE is a custodial liquidity protocol
-      key: D
 - uuid: 7e090787-7925-4eda-8acd-fb90dce8582e
   type: MultipleChoice
   content: Select the correct statement(s).

@@ -75,36 +75,6 @@ Production Network: [Polygon](https://thegraph.com/hosted-service/subgraph/aave/
 {"query": "{ reserves (where: {usageAsCollateralEnabled: true})  { id name price {id} liquidityRate variableBorrowRate stableBorrowRate}}" }
 ```
  
- **Querying Aave's GraphQL database using React and implementing a Pie chart**        
-* **Initial Setup**
-  First, we create a React project, you can refer [this](https://create-react-app.dev/docs/getting-started/) documentation.
-  Run npm start to check if the project runs fine.
-
-* **Integrate ApolloClient**
-  Then we integrate the Apollo client library. We can install and setup the client using [this](https://www.apollographql.com/docs/react/get-started/) documentation.
-  We can use the sample code to fetch the data and test our setup.
-
-* **Initialize the ApolloClient**
-  With our dependencies already set up, we can now create an ApolloClient instance.
-  We start by importing the symbols we require from @apollo/client into index.js.
-  Next, we initialize ApolloClient by handing it a configuration object including the uri and cache fields.
-
-* **Connect the client to React**
-  We can connect Apollo Client to React with the ApolloProvider component. Similar to React's Context.Provider, ApolloProvider wraps our React app and places Apollo Client on the context, enabling us to access it from anywhere in our component tree.
-  In index.js, we wrap our React app with an ApolloProvider.
-
-* **Fetching data with useQuery**
-  After the ApolloProvider is hooked up, we can start requesting data with useQuery. The useQuery hook is a React hook that shares GraphQL data with your UI.
-  We can define the query we want to execute by wrapping it in the gql template literal.
-  Next, we define a component named DisplayGraphs that executes our GET_QUERY query with the useQuery hook:
-
-* **Implementing the Pie Chart**
-  Now, our aim is to create a pie chart using the data we receive. So now we use [react-chartjs-2](https://react-chartjs-2.js.org/). We will import it in our App.js.
-  Then we initialize our code to get a Pie chart. Finally we will add the code to get our Pie chart.
-
-* This will give us a Pie chart in our React app.
-* You can get the complete code [here](https://github.com/DoDAO-io/aava-analytics-sample-app).
- 
  **Historical Rest Data**        
 * Now we will use the [Aave Protocol API](https://aave-api-v2.aave.com/) to create a time series graph.
 * We will use the same react application to create the time series graph too, so if you still haven't create a react app by following the previous steps.

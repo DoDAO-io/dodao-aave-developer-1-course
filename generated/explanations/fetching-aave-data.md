@@ -420,6 +420,9 @@ This query returns us an array of objects which contains the pools with the rese
 
 Also, in the GET request we need to provide the start date (from) and time interval (resolutionInHours) to fetch the data. You can use [this](https://www.epochconverter.com/) UNIX timestamp convertor to change the date.
 So now you can visit the aave protocol api and playaround with different reserveID, from and resolutionInHours.
+ 
+ **Time Series Graph from Historical Rest Data**        
+
 
 Now, let's visit our App.js and add some changes to code to get our desired graph.
 

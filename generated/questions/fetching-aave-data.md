@@ -8,22 +8,6 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
  
 ---
 
-##### Which of the following points about AAVE is/are correct?  
-
-- [x]  AAVE is a decentralized finance protocol
-- [ ]  AAVE is a centralized finance protocol
-- [x]  AAVE is a non-custodial liquidity protocol
-- [ ]  AAVE is a custodial liquidity protocol
-  
-Hint: NoHint
-         
-Explanation: AAVE is a DeFi protocol that facilitates the lending and borrowing of cryptocurrency tokens using diverse algorithms and smart contracts without centralized intermediaries. It is a non-custodial liquidity protocol that allows users to participate as lenders or borrowers.
-
-Sub Topics: aave-data-intro
- 
-
----
-
 ##### Select the correct statement(s).  
 
 - [x]  RESTFUL APIs require developers to define unique endpoints for users that return specified data.
