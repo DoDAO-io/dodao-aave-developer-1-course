@@ -215,18 +215,152 @@ For instance, consider the following query for analysing the five most recent Fl
   } 
 } 
 ``` 
+ **Historical Rest Data**        
+Now we will use the [Aave Protocol API](https://aave-api-v2.aave.com/) to create a time series graph.
+We will use the same react application to create the time series graph too, so if you still haven't create a react app by following the previous steps.
+
+Since the the [Aave Protocol API](https://aave-api-v2.aave.com/) is for v2 mainnet so now we need to query the Aave v2 mainnet subgraph.
+
+We need to make the fetch requests from https://aave-api-v2.aave.com/#/data/get_data_rates_history to get the time series data for any Aave reserve. 
+If you visit the above link, you can see that we require a reserveID to fetch the data (there is a sample reserveID already provided in case you want to try it out). So to get this reserveID, we will query the Aave v2 mainnet subgraph (https://thegraph.com/hosted-service/subgraph/aave/protocol-v2 ). We have already queried the reserveIDs for ChainLink Token (`0x514910771af9ca656af840dff83e8264ecf986ca0xb53c1a33016b2dc2ff3653530bff1848a515c8c5`) and TrueUSD (`0x0000000000085d4780b73119b644ae5ecd22b3760xb53c1a33016b2dc2ff3653530bff1848a515c8c5`) which we will be using to plot the graph. 
+
+If you want to query the reserveID yourself, you can try this:
+```graphql
+
+  {
+    pools {
+      reserves {
+        id
+        name
+        symbol
+      }
+    }
+  }
+
+```
+
+This query returns us an array of objects which contains the pools with the reserves id, name and symbol.
+
+Also, in the GET request we need to provide the start date (from) and time interval (resolutionInHours) to fetch the data. You can use [this](https://www.epochconverter.com/) UNIX timestamp convertor to change the date.
+So now you can visit the aave protocol api and playaround with different reserveID, from and resolutionInHours.
+
+Now, let's visit our App.js and add some changes to code to get our desired graph.
+
+* Let's add some import statements as we need to use Line Chart this time to represent the time series data. So you can update your import statements to the following:
+  ```javascript
+    import React, {useEffect, useState} from 'react';
+    import { useQuery, gql } from '@apollo/client';
+    import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, PointElement, LineElement, Title, } from 'chart.js';
+
+    import { Pie, Line } from 'react-chartjs-2';
+    import './App.css';
+
+    ChartJS.register(ArcElement, 
+        CategoryScale,
+        LinearScale,
+        PointElement,
+        LineElement,
+        Title,
+        Tooltip,
+        Legend
+    );
+  ```
+
+* Now, we need to fetch the get requests so for that we will use the useEffect hook from React and store the data using useState hook. So add the following code to your DisplayGraphs functions:
+  ```javascript
+    const [linedata1, setLinedata1] = useState([]);
+        const [linedata2, setLinedata2] = useState([]);
+
+        useEffect(() => {
+            Promise.all([
+                fetch('https://aave-api-v2.aave.com/data/rates-history?reserveId=0x514910771af9ca656af840dff83e8264ecf986ca0xb53c1a33016b2dc2ff3653530bff1848a515c8c5&from=1667952000&resolutionInHours=6'),
+                fetch('https://aave-api-v2.aave.com/data/rates-history?reserveId=0x0000000000085d4780b73119b644ae5ecd22b3760xb53c1a33016b2dc2ff3653530bff1848a515c8c5&from=1667952000&resolutionInHours=6'),
+            ])
+            .then(([resData1, resData2]) => 
+                Promise.all([resData1.json(), resData2.json()])
+            )
+            .then(([data1, data2]) => {
+                console.log(data1, data2);
+                setLinedata1(data1);
+                setLinedata2(data2);
+            })
+            .catch(([err1, err2]) => {
+                console.log(err1.message, err2.message);
+            });
+        }, []);
+  ```
+
+  The Get request also returns some unwanted data and the timestamp is in a format which we don't like much, so let's update it:
+  ```javascript
+    let timestamps = linedata1.map(a => (a.x.year + '/' + a.x.month + '/' + a.x.date + ' ' + a.x.hours + ' hours'));
+        let utilization1 = linedata1.map(a => a.utilizationRate_avg);
+        let utilization2 = linedata2.map(a => a.utilizationRate_avg);
+
+        timestamps.forEach((element, index) => {
+            timestamps[index] = element.toString();
+        });
+  ```
+* Now, let's create the Line chart using the following code:
+```javascript
+    const optionsLineChart = {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'top',
+              },
+              title: {
+                display: true,
+                text: 'Avg Utilization Rate',
+              },
+            },
+        };
+  
+    const linedata = {
+        labels: timestamps,
+        datasets: [
+          {
+            label: 'ChainLink Token',
+            data: utilization1,
+            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+          },
+          {
+            label: 'TrueUSD',
+            data: utilization2,
+            borderColor: 'rgb(53, 162, 235)',
+            backgroundColor: 'rgba(53, 162, 235, 0.5)',
+          },
+        ],
+    };
+
+    return (
+        <div className="Chart-container">
+            <div className="Pie-container">
+                <Pie options={optionsPieChart} data={piedata} />
+            </div>
+            <div className="Line-container">
+                <Line options={optionsLineChart} data={linedata} />
+            </div> 
+        </div>
+    );
+  ```
+
+This will provide us with the following time series graph:
+
+You can get the complete code [here](https://github.com/DoDAO-io/aava-analytics-sample-app).
+ 
  **Querying Aave's GraphQL database using React and implementing a Pie chart**        
 * **Initial Setup**<br/>
   First, let's create a React project, you can refer [this](https://create-react-app.dev/docs/getting-started/) documentation.
-  ```
-  npx create-react-app aave-analytics-sample-app
+  ```shell
+    npx create-react-app aave-analytics-sample-app
   ```
   Run npm start to check if the project runs fine.
 
 * **Integrate ApolloClient**<br/>
   Let's integrate the Apollo client library. We can install and setup the client using [this](https://www.apollographql.com/docs/react/get-started/) documentation.
   ```shell
-  npm install @apollo/client graphql
+    npm install @apollo/client graphql
   ```
   We can use the sample code to fetch the data and test our setup.
 
@@ -234,14 +368,14 @@ For instance, consider the following query for analysing the five most recent Fl
   With our dependencies already set up, we can now create an ApolloClient instance.
   Let's start by importing the symbols we require from @apollo/client into index.js:
   ```javascript
-  import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+    import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
   ```
   Next, we'll initialize ApolloClient by handing it a configuration object including the uri and cache fields:
   ```javascript
-  const client = new ApolloClient({
-    uri: 'https://api.thegraph.com/subgraphs/name/aave/protocol-v3-goerli',
-    cache: new InMemoryCache(),
-  });
+    const client = new ApolloClient({
+      uri: 'https://api.thegraph.com/subgraphs/name/aave/protocol-v3-goerli',
+      cache: new InMemoryCache(),
+    });
   ```
 
 * **Connect the client to React**<br/>
@@ -249,72 +383,72 @@ For instance, consider the following query for analysing the five most recent Fl
 
   In index.js, let's wrap our React app with an ApolloProvider
   ```javascript
-  import React from 'react';
-  import * as ReactDOM from 'react-dom/client';
-  import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-  import App from './App';
+    import React from 'react';
+    import * as ReactDOM from 'react-dom/client';
+    import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+    import App from './App';
 
-  const client = new ApolloClient({
-    uri: 'https://api.thegraph.com/subgraphs/name/aave/protocol-v3-goerli',
-    cache: new InMemoryCache(),
-  });
+    const client = new ApolloClient({
+      uri: 'https://api.thegraph.com/subgraphs/name/aave/protocol-v3-goerli',
+      cache: new InMemoryCache(),
+    });
 
-  const root = ReactDOM.createRoot(document.getElementById('root'));
+    const root = ReactDOM.createRoot(document.getElementById('root'));
 
-  root.render(
-    <ApolloProvider client={client}>
-      <App />
-    </ApolloProvider>,
-  );
+    root.render(
+      <ApolloProvider client={client}>
+        <App />
+      </ApolloProvider>,
+    );
   ```
 
 * **Fetching data with useQuery**<br/>
   After the ApolloProvider is hooked up, we can start requesting data with useQuery. The useQuery hook is a React hook that shares GraphQL data with your UI.
   Switching over to our App.js file, we'll start by replacing our existing file contents with the code snippet below:
   ```javascript
-  import { useQuery, gql } from '@apollo/client';
+    import { useQuery, gql } from '@apollo/client';
 
-  export default function App() {
-  return (
-      <div className="App">
-          <h2 className="App-header">AAVE Analytics</h2>
-          <br/>
-          <DisplayGraphs />
-      </div>
-  );
-  }
+    export default function App() {
+    return (
+        <div className="App">
+            <h2 className="App-header">AAVE Analytics</h2>
+            <br/>
+            <DisplayGraphs />
+        </div>
+    );
+    }
   ```
   We can define the query we want to execute by wrapping it in the gql template literal:
   ```graphql
-  const GET_QUERY = gql`
-  {
-      reserves {
-          id
-          symbol
-          name
-    
-          totalLiquidity
-      }
-  }
-  `;
+    const GET_QUERY = gql`
+    {
+        reserves {
+            id
+            symbol
+            name
+      
+            totalLiquidity
+        }
+    }
+    `;
   ```
   Next, let's define a component named DisplayGraphs that executes our GET_QUERY query with the useQuery hook:
   ```javascript
-  function DisplayLocations() {
-    const { loading, error, data } = useQuery(GET_QUERY);
+    function DisplayLocations() {
+      const { loading, error, data } = useQuery(GET_QUERY);
 
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error :(</p>;
+      if (loading) return <p>Loading...</p>;
+      if (error) return <p>Error :(</p>;
 
-    let names = data.reserves.map(a => a.name);
-      let total = data.reserves.map(a => a.totalLiquidity);
-      let utilization = data.reserves.map(a => a.utilizationRate);
+      let names = data.reserves.map(a => a.name);
+        let total = data.reserves.map(a => a.totalLiquidity);
+        let utilization = data.reserves.map(a => a.utilizationRate);
 
-      total.forEach((element, index) => {
-          total[index] = element % 10^18;
-      });
-  ….
-  }
+        total.forEach((element, index) => {
+            total[index] = element % 10^18;
+        });
+    ….
+    }
   ```
 
 * **Implementing the Pie Chart**<br/>
@@ -333,57 +467,57 @@ For instance, consider the following query for analysing the five most recent Fl
 
 * Finally we will add the code to get our Pie chart:
   ```javascript
-  const piedata = {
-          labels: names,
-          datasets: [
-            {
-              label: 'percentage',
-              data: total,
-              backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(255, 140, 64, 0.2)',
-                'rgba(205, 159, 64, 0.2)',
-              ],
-              borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-                'rgba(205, 159, 64, 1)',
-                'rgba(255, 149, 64, 1)',
-              ],
-              borderWidth: 1,
-            },
-          ],
-      };
+    const piedata = {
+            labels: names,
+            datasets: [
+              {
+                label: 'percentage',
+                data: total,
+                backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)',
+                  'rgba(255, 140, 64, 0.2)',
+                  'rgba(205, 159, 64, 0.2)',
+                ],
+                borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)',
+                  'rgba(205, 159, 64, 1)',
+                  'rgba(255, 149, 64, 1)',
+                ],
+                borderWidth: 1,
+              },
+            ],
+        };
 
-  const optionsPieChart = {
-          responsive: true,
-          plugins: {
-            legend: {
-              position: 'top',
+    const optionsPieChart = {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'top',
+              },
+              title: {
+                display: true,
+                text: 'Total Liquidity',
+              },
             },
-            title: {
-              display: true,
-              text: 'Total Liquidity',
-            },
-          },
-      };
+        };
 
-    return (
-          <div className="Chart-container">
-              <div className="Pie-container">
-                  <Pie options={optionsPieChart} data={piedata} />
-              </div>
-          </div>
-      );
+      return (
+            <div className="Chart-container">
+                <div className="Pie-container">
+                    <Pie options={optionsPieChart} data={piedata} />
+                </div>
+            </div>
+        );
   ```
 
   This will give us a Pie chart in our React app.
@@ -391,137 +525,5 @@ For instance, consider the following query for analysing the five most recent Fl
   [](https://github.com/DoDAO-io/dodao-aave-developer-1-course/blob/a1affd3820d0d938ffb3b11f419680a10ad1ef6e/images/piechart.png)
 
   You can get the complete code [here](https://github.com/DoDAO-io/aava-analytics-sample-app).
- 
- **Historical Rest Data**        
-Now we will use the [Aave Protocol API](https://aave-api-v2.aave.com/) to create a time series graph.
-We will use the same react application to create the time series graph too, so if you still haven't create a react app by following the previous steps.
-
-Since the the [Aave Protocol API](https://aave-api-v2.aave.com/) is for v2 mainnet so now we need to query the Aave v2 mainnet subgraph.
-
-We need to make the fetch requests from https://aave-api-v2.aave.com/#/data/get_data_rates_history to get the time series data for any Aave reserve. 
-If you visit the above link, you can see that we require a reserveID to fetch the data (there is a sample reserveID already provided in case you want to try it out). So to get this reserveID, we will query the Aave v2 mainnet subgraph (https://thegraph.com/hosted-service/subgraph/aave/protocol-v2 ). We have already queried the reserveIDs for ChainLink Token (0x514910771af9ca656af840dff83e8264ecf986ca0xb53c1a33016b2dc2ff3653530bff1848a515c8c5) and TrueUSD (0x0000000000085d4780b73119b644ae5ecd22b3760xb53c1a33016b2dc2ff3653530bff1848a515c8c5) which we will be using to plot the graph. 
-
-If you want to query the reserveID yourself, you can try this:
-```
-{
-  pools {
-    reserves {
-      id
-      name
-      symbol
-    }
-  }
-}
-```
-
-This query returns us an array of objects which contains the pools with the reserves id, name and symbol.
-
-Also, in the GET request we need to provide the start date (from) and time interval (resolutionInHours) to fetch the data. You can use [this](https://www.epochconverter.com/) UNIX timestamp convertor to change the date.
-So now you can visit the aave protocol api and playaround with different reserveID, from and resolutionInHours.
-
-Now, let's visit our App.js and add some changes to code to get our desired graph.
-
-* Let's add some import statements as we need to use Line Chart this time to represent the time series data. So you can update your import statements to the following:
-  ```
-  import React, {useEffect, useState} from 'react';
-  import { useQuery, gql } from '@apollo/client';
-  import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, PointElement, LineElement, Title, } from 'chart.js';
-
-  import { Pie, Line } from 'react-chartjs-2';
-  import './App.css';
-
-  ChartJS.register(ArcElement, 
-      CategoryScale,
-      LinearScale,
-      PointElement,
-      LineElement,
-      Title,
-      Tooltip,
-      Legend
-  );
-  ```
-
-* Now, we need to fetch the get requests so for that we will use the useEffect hook from React and store the data using useState hook. So add the following code to your DisplayGraphs functions:
-  ```
-  const [linedata1, setLinedata1] = useState([]);
-      const [linedata2, setLinedata2] = useState([]);
-
-      useEffect(() => {
-          Promise.all([
-              fetch('https://aave-api-v2.aave.com/data/rates-history?reserveId=0x514910771af9ca656af840dff83e8264ecf986ca0xb53c1a33016b2dc2ff3653530bff1848a515c8c5&from=1667952000&resolutionInHours=6'),
-              fetch('https://aave-api-v2.aave.com/data/rates-history?reserveId=0x0000000000085d4780b73119b644ae5ecd22b3760xb53c1a33016b2dc2ff3653530bff1848a515c8c5&from=1667952000&resolutionInHours=6'),
-          ])
-          .then(([resData1, resData2]) => 
-              Promise.all([resData1.json(), resData2.json()])
-          )
-          .then(([data1, data2]) => {
-              console.log(data1, data2);
-              setLinedata1(data1);
-              setLinedata2(data2);
-          })
-          .catch(([err1, err2]) => {
-              console.log(err1.message, err2.message);
-          });
-      }, []);
-  ```
-
-  The Get request also returns some unwanted data and the timestamp is in a format which we don't like much, so let's update it:
-  ```
-  let timestamps = linedata1.map(a => (a.x.year + '/' + a.x.month + '/' + a.x.date + ' ' + a.x.hours + ' hours'));
-      let utilization1 = linedata1.map(a => a.utilizationRate_avg);
-      let utilization2 = linedata2.map(a => a.utilizationRate_avg);
-
-      timestamps.forEach((element, index) => {
-          timestamps[index] = element.toString();
-      });
-  ```
-* Now, let's create the Line chart using the following code:
-  ```
-  const optionsLineChart = {
-          responsive: true,
-          plugins: {
-            legend: {
-              position: 'top',
-            },
-            title: {
-              display: true,
-              text: 'Avg Utilization Rate',
-            },
-          },
-      };
-        
-  const linedata = {
-      labels: timestamps,
-      datasets: [
-        {
-          label: 'ChainLink Token',
-          data: utilization1,
-          borderColor: 'rgb(255, 99, 132)',
-          backgroundColor: 'rgba(255, 99, 132, 0.5)',
-        },
-        {
-          label: 'TrueUSD',
-          data: utilization2,
-          borderColor: 'rgb(53, 162, 235)',
-          backgroundColor: 'rgba(53, 162, 235, 0.5)',
-        },
-      ],
-  };
-
-  return (
-      <div className="Chart-container">
-          <div className="Pie-container">
-              <Pie options={optionsPieChart} data={piedata} />
-          </div>
-          <div className="Line-container">
-              <Line options={optionsLineChart} data={linedata} />
-          </div> 
-      </div>
-  );
-  ```
-
-This will provide us with the following time series graph:
-
-You can get the complete code [here](https://github.com/DoDAO-io/aava-analytics-sample-app). 
  
  
