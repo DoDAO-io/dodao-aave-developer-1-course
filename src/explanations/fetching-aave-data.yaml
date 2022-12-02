@@ -377,9 +377,9 @@
     } 
 
     ```
-- title: Historical Rest Data
+- key: historical-rest-data
+  title: Historical Rest Data
   shortTitle: Historical Rest Data
-  key: historical-rest-data
   details: >
     Now we will use the [Aave Protocol API](https://aave-api-v2.aave.com/) to
     create a time series graph.
@@ -501,7 +501,8 @@
           });
       ```
     * Now, let's create the Line chart using the following code:
-      ```
+      
+    ```javascript
       const optionsLineChart = {
               responsive: true,
               plugins: {
