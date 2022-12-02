@@ -379,7 +379,7 @@
     ```
 - key: react-app
   title: Querying Aave's GraphQL database using React and implementing a Pie chart
-  shortTitle: React App
+  shortTitle: 'Display Liquidity '
   details: |
     * **Initial Setup**<br/>
       First, let's create a React project, you can refer [this](https://create-react-app.dev/docs/getting-started/) documentation.
