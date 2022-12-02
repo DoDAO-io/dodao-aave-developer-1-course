@@ -346,6 +346,7 @@ Now, let's visit our App.js and add some changes to code to get our desired grap
   ```
 
 This will provide us with the following time series graph:
+![Utilization Rate](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/historical.png)
 
 You can get the complete code [here](https://github.com/DoDAO-io/aava-analytics-sample-app).
  
@@ -522,7 +523,7 @@ You can get the complete code [here](https://github.com/DoDAO-io/aava-analytics-
 
   This will give us a Pie chart in our React app.
 
-  [](https://github.com/DoDAO-io/dodao-aave-developer-1-course/blob/a1affd3820d0d938ffb3b11f419680a10ad1ef6e/images/piechart.png)
+  ![Pie Chart](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/piechart.png)
 
   You can get the complete code [here](https://github.com/DoDAO-io/aava-analytics-sample-app).
  
