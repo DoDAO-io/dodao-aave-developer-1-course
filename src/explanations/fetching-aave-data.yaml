@@ -411,7 +411,7 @@
     If you want to query the reserveID yourself, you can try this:
 
     ```graphql
-  
+
       {
         pools {
           reserves {
@@ -449,10 +449,10 @@
         import React, {useEffect, useState} from 'react';
         import { useQuery, gql } from '@apollo/client';
         import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, PointElement, LineElement, Title, } from 'chart.js';
-  
+
         import { Pie, Line } from 'react-chartjs-2';
         import './App.css';
-  
+
         ChartJS.register(ArcElement, 
             CategoryScale,
             LinearScale,
@@ -470,7 +470,7 @@
       ```javascript
         const [linedata1, setLinedata1] = useState([]);
             const [linedata2, setLinedata2] = useState([]);
-  
+
             useEffect(() => {
                 Promise.all([
                     fetch('https://aave-api-v2.aave.com/data/rates-history?reserveId=0x514910771af9ca656af840dff83e8264ecf986ca0xb53c1a33016b2dc2ff3653530bff1848a515c8c5&from=1667952000&resolutionInHours=6'),
@@ -495,13 +495,13 @@
         let timestamps = linedata1.map(a => (a.x.year + '/' + a.x.month + '/' + a.x.date + ' ' + a.x.hours + ' hours'));
             let utilization1 = linedata1.map(a => a.utilizationRate_avg);
             let utilization2 = linedata2.map(a => a.utilizationRate_avg);
-  
+
             timestamps.forEach((element, index) => {
                 timestamps[index] = element.toString();
             });
       ```
     * Now, let's create the Line chart using the following code:
-    
+
     ```javascript
         const optionsLineChart = {
                 responsive: true,
@@ -533,7 +533,7 @@
               },
             ],
         };
-  
+
         return (
             <div className="Chart-container">
                 <div className="Pie-container">
@@ -592,14 +592,14 @@
         import * as ReactDOM from 'react-dom/client';
         import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
         import App from './App';
-  
+
         const client = new ApolloClient({
           uri: 'https://api.thegraph.com/subgraphs/name/aave/protocol-v3-goerli',
           cache: new InMemoryCache(),
         });
-  
+
         const root = ReactDOM.createRoot(document.getElementById('root'));
-  
+
         root.render(
           <ApolloProvider client={client}>
             <App />
@@ -612,7 +612,7 @@
       Switching over to our App.js file, we'll start by replacing our existing file contents with the code snippet below:
       ```javascript
         import { useQuery, gql } from '@apollo/client';
-  
+
         export default function App() {
         return (
             <div className="App">
@@ -641,14 +641,14 @@
       ```javascript
         function DisplayLocations() {
           const { loading, error, data } = useQuery(GET_QUERY);
-  
+
           if (loading) return <p>Loading...</p>;
           if (error) return <p>Error :(</p>;
-  
+
           let names = data.reserves.map(a => a.name);
             let total = data.reserves.map(a => a.totalLiquidity);
             let utilization = data.reserves.map(a => a.utilizationRate);
-  
+
             total.forEach((element, index) => {
                 total[index] = element % 10^18;
             });
@@ -702,7 +702,7 @@
                   },
                 ],
             };
-  
+
         const optionsPieChart = {
                 responsive: true,
                 plugins: {
@@ -715,7 +715,7 @@
                   },
                 },
             };
-  
+
           return (
                 <div className="Chart-container">
                     <div className="Pie-container">
@@ -727,6 +727,6 @@
 
       This will give us a Pie chart in our React app.
 
-      [](https://github.com/DoDAO-io/dodao-aave-developer-1-course/blob/a1affd3820d0d938ffb3b11f419680a10ad1ef6e/images/piechart.png)
+      ![Pie Chart](https://github.com/DoDAO-io/dodao-aave-developer-1-course/blob/a1affd3820d0d938ffb3b11f419680a10ad1ef6e/images/piechart.png)
 
       You can get the complete code [here](https://github.com/DoDAO-io/aava-analytics-sample-app).
