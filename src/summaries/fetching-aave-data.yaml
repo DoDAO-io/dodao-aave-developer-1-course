@@ -199,9 +199,9 @@
 
     * You can get the complete code
     [here](https://github.com/DoDAO-io/aava-analytics-sample-app).
-- title: Historical Rest Data
+- key: historical-rest-data
+  title: Historical Rest Data
   shortTitle: Historical Rest Data
-  key: historical-rest-data
   details: >
     * Now we will use the [Aave Protocol API](https://aave-api-v2.aave.com/) to
     create a time series graph.
@@ -223,9 +223,9 @@
     mainnet subgraph
     (https://thegraph.com/hosted-service/subgraph/aave/protocol-v2 ). We have
     already queried the reserveIDs for ChainLink Token
-    (0x514910771af9ca656af840dff83e8264ecf986ca0xb53c1a33016b2dc2ff3653530bff1848a515c8c5)
+    (`0x514910771af9ca656af840dff83e8264ecf986ca0xb53c1a33016b2dc2ff3653530bff1848a515c8c5`)
     and TrueUSD
-    (0x0000000000085d4780b73119b644ae5ecd22b3760xb53c1a33016b2dc2ff3653530bff1848a515c8c5)
+    (`0x0000000000085d4780b73119b644ae5ecd22b3760xb53c1a33016b2dc2ff3653530bff1848a515c8c5`)
     which we will be using to plot the graph. 
 
     * We query an array of objects which contains the pools with the reserves
