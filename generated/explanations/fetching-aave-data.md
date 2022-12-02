@@ -349,6 +349,7 @@ This will provide us with the following time series graph:
 ![Utilization Rate](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/historical.png)
 
 You can get the complete code [here](https://github.com/DoDAO-io/aava-analytics-sample-app).
+----
  
  **Querying Aave's GraphQL database using React and implementing a Pie chart**        
 * **Initial Setup**<br/>
