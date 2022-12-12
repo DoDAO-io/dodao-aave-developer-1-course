@@ -51,37 +51,9 @@ topics:
     questions: fetching-aave-data.yaml
     status: In Progress
     completionWeek: In Progress
-  - key: simple-dapp-template
-    title: Simple DApp Template
+  - key: starter-dapp-template
+    title: Starter DApp Template
     details: >-
       This chapter discusses the simple dapp
       [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in
       detail.
-  - key: simple-dapp-template
-    title: Simple DApp Template
-    details: >-
-      This chapter discusses the simple dapp
-      [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in
-      detail.
-  - key: simple-dapp-template
-    title: Simple DApp Template
-    details: >-
-      This chapter discusses the simple dapp
-      [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in
-      detail.
-  - key: simple-dapp-template
-    title: Simple DApp Template
-    details: >-
-      This chapter discusses the simple dapp
-      [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in
-      detail.
-  - key: simple-dapp-template
-    title: Simple DApp Template
-    details: |-
-      Simple DApp Template
-      Simple DApp Template
-  - key: simple-dapp-template
-    title: Simple DApp Template
-    details: |-
-      Simple DApp Template
-      Simple DApp Template
