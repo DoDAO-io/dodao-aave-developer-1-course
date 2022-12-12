@@ -51,9 +51,3 @@ topics:
     questions: fetching-aave-data.yaml
     status: In Progress
     completionWeek: In Progress
-  - key: starter-dapp-template
-    title: Starter DApp Template
-    details: >-
-      This chapter discusses the simple dapp
-      [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in
-      detail.
