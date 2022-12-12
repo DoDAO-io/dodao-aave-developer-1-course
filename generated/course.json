@@ -1219,6 +1219,15 @@
       "readings": [],
       "summaries": [],
       "questions": []
+    },
+    {
+      "key": "simple-dapp-template",
+      "title": "Simple DApp Template",
+      "details": "Simple DApp Template\nSimple DApp Template",
+      "explanations": [],
+      "readings": [],
+      "summaries": [],
+      "questions": []
     }
   ]
 }
