@@ -125,6 +125,7 @@
     * Publish the DApp to a hosting platform like GitHub Pages or Netlify, and
     use MetaMask to access it on the web.
 
+
     Once the DApp is published, users will be able to interact with the contract
     on the Goerli test network using their MetaMask-enabled browser,  and they
     will be able to use the DApp's user interface to send and receive tokens,
