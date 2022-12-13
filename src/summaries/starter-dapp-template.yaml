@@ -225,47 +225,62 @@
   title: Smart Contract Explanation & Deployment
   shortTitle: Smart Contract
   details: >
-    #### Smart Contract
+    ### Smart Contract
+
 
     * The smart contract is written in Solidity and defines a token contract
     called Token. The contract extends the ERC20 contract from the OpenZeppelin
-    library, which provides a standard interface for ERC20 token contracts. *
-    The contract's constructor function is called when the contract is deployed,
-    and it initializes the contract with the name "My Hardhat Token" and the
-    symbol "MHT".  * It also uses the _mint function from the ERC20 contract to
-    mint 1,000,000 tokens and transfer them to the contract's deployer. * The
-    contract also defines a decimals function, which returns the number of
-    decimal places used by the token. In this case, the function returns 2,
-    indicating that the token uses 2 decimal places. * The contract also defines
-    a transfer function, which allows users to transfer tokens from one account
-    to another. The function logs the transfer information using the console.log
-    function from the hardhat/console.sol library, and then calls the transfer
-    function from the ERC20 contract using the super keyword to actually perform
-    the transfer. This function is marked with the external modifier, which
-    makes it only callable from outside the contract.
+    library, which provides a standard interface for ERC20 token contracts. 
 
-    #### Deploying the smart contract
+    * The contract's constructor function is called when the contract is
+    deployed, and it initializes the contract with the name "My Hardhat Token"
+    and the symbol "MHT".  
+
+    * It also uses the _mint function from the ERC20 contract to mint 1,000,000
+    tokens and transfer them to the contract's deployer. 
+
+    * The contract also defines a decimals function, which returns the number of
+    decimal places used by the token. In this case, the function returns 2,
+    indicating that the token uses 2 decimal places. 
+
+    * The contract also defines a transfer function, which allows users to
+    transfer tokens from one account to another. The function logs the transfer
+    information using the console.log function from the hardhat/console.sol
+    library, and then calls the transfer function from the ERC20 contract using
+    the super keyword to actually perform the transfer. This function is marked
+    with the external modifier, which makes it only callable from outside the
+    contract.
+
+
+    ### Deploying the smart contract
+
 
     * The above deploy script is written in TypeScript and is used to deploy the
-    Token smart contract defined in Token.sol to an Ethereum network.  * The
-    script uses the Ethers.js library to interact with the Ethereum network and
-    deploy the contract. * The script first imports the required dependencies,
-    including the Token contract from the compiled Token.sol contract file and
-    the ethers object from the Hardhat library. * Next, the script defines a
-    main function, which is the entry point for the script. This function first
-    uses the ethers.getContractFactory function to create a contract factory for
-    the Token contract, 
-      and then uses the deploy method on the contract factory to deploy the contract to the network. The deployed method is called on the contract instance to wait for the deployment to be confirmed on the network.
+    Token smart contract defined in Token.sol to an Ethereum network.  
+
+    * The script uses the Ethers.js library to interact with the Ethereum
+    network and deploy the contract. 
+
+    * The script first imports the required dependencies, including the Token
+    contract from the compiled Token.sol contract file and the ethers object
+    from the Hardhat library. 
+
+    * Next, the script defines a main function, which is the entry point for the
+    script. This function first uses the ethers.getContractFactory function to
+    create a contract factory for the Token contract, 
+     and then uses the deploy method on the contract factory to deploy the contract to the network. The deployed method is called on the contract instance to wait for the deployment to be confirmed on the network.
     * The script then logs the contract's address to the console using the
     console.log function, and then saves the contract's address and ABI to the
-    frontend directory using the saveFrontendFiles function.  * This function
-    writes the contract's address and ABI to a contract-address.json file and
-    saves the contract's artifacts to a Token.json file in the frontend
-    directory. * Overall, this deploy script provides a simple and
-    straightforward way to deploy the Token contract to an Ethereum network
-    using Ethers.js. It also saves the deployed contract's address and ABI to
-    the frontend directory,  making it easy to access these values in the
-    front-end code.
+    frontend directory using the saveFrontendFiles function.  
+
+    * This function writes the contract's address and ABI to a
+    contract-address.json file and saves the contract's artifacts to a
+    Token.json file in the frontend directory. 
+
+    * Overall, this deploy script provides a simple and straightforward way to
+    deploy the Token contract to an Ethereum network using Ethers.js. It also
+    saves the deployed contract's address and ABI to the frontend directory, 
+    making it easy to access these values in the front-end code.
 - key: frontend
   title: Frontend Explanation
   shortTitle: Frontend
