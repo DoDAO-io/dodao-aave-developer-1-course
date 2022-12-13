@@ -103,9 +103,9 @@
       npx hardhat compile
       ```
 
-    * Deploy the smart contract to the Ethereum network by running the deploy script:
+    * Deploy the smart contract to the Goerli network by running the deploy script:
       ```
-      npx hardhat run scripts/deploy.ts
+      npx hardhat run scripts/deploy.ts --network goerli
       ```
 
     * Once the contract has been deployed, you can interact with it using the frontend directory. This directory contains a simple web application built with React that allows you to send and receive tokens using the deployed contract. To run the frontend, navigate to the frontend directory and run the following commands:
