@@ -131,6 +131,7 @@
     will be able to use the DApp's user interface to send and receive tokens,
     check their balances, and view the contract's transaction history.
 
+
     Now, Let's take a deep dive into the template. But before looking at the
     code, let's setup our metamask wallet and alchemy account.
 
