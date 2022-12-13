@@ -1,0 +1,32 @@
+- uuid: f55641b5-9c37-4421-a082-01de070976cc
+  shortTitle: Solidity
+  details: |
+    This video enables learners to know about Solidity
+  title: Solidity Tutorial
+  type: YoutubeVideo
+  url: https://www.youtube.com/watch?v=ipwxYa-F1uY
+  subTopics: []
+- uuid: 58729a9c-3253-4e7c-ba0b-3bfc3d4c51cb
+  shortTitle: Hardhat
+  details: |
+    This video enables learners to know about Hardat
+  title: Hardhat Tutorial
+  type: YoutubeVideo
+  url: https://www.youtube.com/watch?v=9Qpi80dQsGU
+  subTopics: []
+- uuid: 855fd460-a945-4154-a6c1-74ee1f654781
+  shortTitle: Ethers.js
+  details: |
+    This video enables learners to know about Ethers.js
+  title: Ethers.js Tutorial
+  type: YoutubeVideo
+  url: https://www.youtube.com/watch?v=yk7nVp5HTCk&t=1927s
+  subTopics: []
+- uuid: 5e99324c-c132-4baa-84db-10a92019e92e
+  shortTitle: React
+  details: |
+    This video enables learners to know about React
+  title: React Crash Course
+  type: YoutubeVideo
+  url: https://www.youtube.com/watch?v=w7ejDZ8SWv8
+  subTopics: []

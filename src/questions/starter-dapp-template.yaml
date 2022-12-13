@@ -1,0 +1,286 @@
+- uuid: bb83adb7-229c-4193-bb48-dfbd4518b94a
+  type: SingleChoice
+  content: What programming language is used to write the smart contract in this template?
+  hint: NoHint
+  explanation: Solidity is a programming language for writing smart contracts that run on the Ethereum platform.
+  answerKeys:
+    - A
+  subTopics:
+    - stack-overview
+  difficultyLevel: Low
+  choices:
+    - content: Solidity
+      key: A
+    - content: Javascript
+      key: B
+    - content: C++
+      key: C
+    - content: Python
+      key: D
+- uuid: 8d68c818-725c-4f4b-8451-3dff8b7c9dd2
+  type: SingleChoice
+  content: What browser extension is used in this guide to interact with the Ethereum blockchain?
+  hint: Others are not extensions
+  explanation: MetaMask is a browser extension that allows users to interact with the Ethereum blockchain. 
+  answerKeys:
+    - B
+  subTopics:
+    - stack-overview
+  difficultyLevel: Low
+  choices:
+    - content: Solidity
+      key: A
+    - content: MetaMask
+      key: B
+    - content: Ethers.js
+      key: C
+    - content: React
+      key: D
+- uuid: bbbd7f46-dcd0-48a4-8d03-5238ab832898
+  type: SingleChoice
+  content: What is Goerli?
+  hint: test network
+  explanation: Goerli is a public, proof-of-authority Ethereum test network that is designed to be a stable and reliable environment for testing and deploying decentralized applications (dApps).
+  answerKeys:
+    - B
+  subTopics:
+    - stack-overview
+  difficultyLevel: Low
+  choices:
+    - content: A browser extension for interacting with Ethereum
+      key: A
+    - content: A public, proof-of-authority Ethereum test network
+      key: B
+    - content: A JavaScript library for working with Ethereum
+      key: C
+    - content: A set of tools for running a local Ethereum development blockchain
+      key: D
+- uuid: deabbd6b-4684-4c46-911b-ac31f42a43e5
+  type: SingleChoice
+  content: What is Ethers.js?
+  hint: library
+  explanation: Ethers.js is a JavaScript library for working with the Ethereum blockchain.
+  answerKeys:
+    - D
+  subTopics:
+    - stack-overview
+  difficultyLevel: Low
+  choices:
+    - content: A blockchain infrastructure and development platform
+      key: A
+    - content: A set of tools for running a local Ethereum development blockchain
+      key: B
+    - content: A local Ethereum test network
+      key: C
+    - content: A JavaScript library for working with Ethereum
+      key: D
+- uuid: b873213e-cfb5-4dbd-8eac-9c2b819212c6
+  type: SingleChoice
+  content: What does the pragma solidity ^0.8.9; statement do in the smart contract code?
+  hint: NoHint
+  explanation: It sets the Solidity compiler version to 0.8.9. Solidity files have to start with this pragma. It will be used by the Solidity compiler to validate its version.
+  answerKeys:
+    - B
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: It imports the hardhat/console.sol library
+      key: A
+    - content: It sets the Solidity compiler version to 0.8.9
+      key: B
+    - content: It extends the ERC20 contract from the OpenZeppelin library
+      key: C
+    - content: It defines a token contract called Token
+      key: D
+- uuid: d7236343-5200-4dfe-9eaf-db5f0974c13e
+  type: SingleChoice
+  content: What does the `external` modifier do in the transfer function?
+  hint: external is synonymous to?
+  explanation: The `external` modifier makes a function only callable from outside the contract.
+  answerKeys:
+    - A
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: It makes the function callable only from outside the contract
+      key: A
+    - content: It makes the function callable only from within the contract
+      key: B
+    - content: It logs the transfer information using the console.log function
+      key: C
+    - content: It calls the transfer function from the ERC20 contract
+      key: D
+- uuid: 2263fb58-0ebf-45b3-bff4-a893d94241d2
+  type: SingleChoice
+  content: How do you compile the smart contract code in this template?
+  hint: NoHint
+  explanation: npx hardhat compile is used to compile the smart contract code.
+  answerKeys:
+    - C
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: npm compile
+      key: A
+    - content: npm install
+      key: B
+    - content: npx hardhat compile
+      key: C
+    - content: npx hardhat
+      key: D
+- uuid: 0990547f-8e92-4172-8a06-531dfcf9e7ea
+  type: SingleChoice
+  content: What is the use of Makefile?
+  hint: NoHint
+  explanation: A Makefile provides a number of useful commands for working with the project. For example, you can use the make compile command to compile the contract code. You can see the full list of commands by running make or make help.
+  answerKeys:
+    - A
+  subTopics:
+    - setup
+  difficultyLevel: Low
+  choices:
+    - content: It provides a list of commands for working with the project
+      key: A
+    - content: It compiles the smart contract code
+      key: B
+    - content: It deploys the smart contract to the Ethereum network
+      key: C
+    - content: It installs the project dependencies
+      key: D
+- uuid: b891c509-19c1-4bb2-b68a-32e977d41743
+  type: MultipleChoice
+  content: What is the `await` keyword used for in the deploy script?
+  hint: NoHint
+  explanation: It is used to wait for a promise to be resolved and to handle asynchronous operations.It is used to pause the execution of the function until the asynchronous operation is completed
+  answerKeys:
+    - A
+    - B
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: It is used to wait for a promise to be resolved
+      key: A
+    - content: It is used to pause the execution of the function until the asynchronous operation is completed
+      key: B
+    - content: It is used to skip a promise before it gets resolved
+      key: C
+    - content: It is used to connect to the Ethereum network
+      key: D
+- uuid: 58f2d52e-8bc0-4314-bb91-dbebbbc68ea5
+  type: SingleChoice
+  content: How does the deploy script save the contract's address and ABI to the frontend directory?
+  hint: saveFrontendFiles function
+  explanation: The script saves the contract's address and ABI to the frontend directory using the saveFrontendFiles function. This function writes the contract's address and ABI to a contract-address.json file and saves the contract's artifacts to a Token.json file in the frontend directory.
+  answerKeys:
+    - D
+  subTopics:
+    - frontend
+  difficultyLevel: Low
+  choices:
+    - content: It writes the values to a contract-address.json file
+      key: A
+    - content: It saves the contract's artifacts to a Token.json file
+      key: B
+    - content: It creates a typechain-types directory
+      key: C
+    - content: All of the above
+      key: D
+- uuid: 3a8028cd-c463-4f95-bb99-bdddff70ddd3
+  type: SingleChoice
+  content: What library is used to interact with the Ethereum network and deploy the contract in the deploy script?
+  hint: Others are not libraries.
+  explanation: Ethers.js is used to interact with the Ethereum network and deploy the contract in the deploy script
+  answerKeys:
+    - B
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: TypeScript
+      key: A
+    - content: Ethers.js
+      key: B
+    - content: Hardhat
+      key: C
+    - content: None of the above
+      key: D
+- uuid: f4cba509-9e5c-49b3-ae41-82fbcf3d63fc
+  type: SingleChoice
+  content: How do you access the contract address in the front-end of the DApp using Ethers.js?
+  hint: contract-address.json
+  explanation: We can access it by importing the contract-addresses.json file and use the ethers.getContractAt method
+  answerKeys:
+    - A
+  subTopics:
+    - frontend
+  difficultyLevel: Low
+  choices:
+    - content: Import the contract-addresses.json file and use the ethers.getContractAt method
+      key: A
+    - content: Import the Token.json file and use the ethers.getContractAt method
+      key: B
+    - content: Import the contract-addresses.json file and use the ethers.getContractFactory method
+      key: C
+    - content: Import the Token.json file and use the ethers.getContractFactory method
+      key: D
+- uuid: f701470b-e4ae-4956-8b0b-6de89a950d78
+  type: SingleChoice
+  content: What does the deployed method do in the deploy script?
+  hint: NoHint
+  explanation: It waits for the contract deployment to be confirmed on the network
+  answerKeys:
+    - C
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: It deploys the contract to the network
+      key: A
+    - content: It saves the contract's artifacts to a file
+      key: B
+    - content: It waits for the contract deployment to be confirmed on the network
+      key: C
+    - content: It logs the contract's address to the console
+      key: D
+- uuid: de7c9983-8f8a-4b64-acde-a61db13791b8
+  type: SingleChoice
+  content: What does the saveFrontendFiles function do in the deploy script?
+  hint: NoHint
+  explanation: This function writes the contract's address and ABI to a contract-address.json file and saves the contract's artifacts to a Token.json file in the frontend directory.
+  answerKeys:
+    - A
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: It saves the contract's address and ABI to the frontend directory
+      key: A
+    - content: It deploys the contract to the network
+      key: B
+    - content: It waits for the contract deployment to be confirmed on the network
+      key: C
+    - content: It logs the contract's address to the console
+      key: D
+- uuid: e5a2d13f-2213-4ebb-8254-b0dd596d006b
+  type: SingleChoice
+  content: What is the fs.existsSync method used for in the deploy script?
+  hint: Does it exist?
+  explanation: It is used to check if a directory exists
+  answerKeys:
+    - C
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: It is used to create a directory
+      key: A
+    - content: It is used to copy a directory
+      key: B
+    - content: It is used to check if a directory exists
+      key: C
+    - content: It is used to delete a directory
+      key: D
