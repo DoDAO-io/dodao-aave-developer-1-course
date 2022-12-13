@@ -107,15 +107,23 @@
 
     * Set up a development environment for building Ethereum DApps, including
     installing Node.js, yarn or npm, and the required dependencies for Solidity,
-    Hardhat, React, and Ethers.js. * Write a smart contract for the DApp using
-    Solidity. This will involve defining the contract's state variables and
-    functions, and testing them using Hardhat. * Compile the contract using
-    Hardhat and solc, and deploy it to the Goerli test network using the Alchemy
-    node. * Create the front-end for the DApp using React, and use Ethers.js to
-    interact with the deployed contract. * Test the DApp using a testing
-    framework like Mocha or Chai, to ensure that it is working as expected. *
-    Publish the DApp to a hosting platform like GitHub Pages or Netlify, and use
-    MetaMask to access it on the web.
+    Hardhat, React, and Ethers.js. 
+
+    * Write a smart contract for the DApp using Solidity. This will involve
+    defining the contract's state variables and functions, and testing them
+    using Hardhat. 
+
+    * Compile the contract using Hardhat and solc, and deploy it to the Goerli
+    test network using the Alchemy node. 
+
+    * Create the front-end for the DApp using React, and use Ethers.js to
+    interact with the deployed contract. 
+
+    * Test the DApp using a testing framework like Mocha or Chai, to ensure that
+    it is working as expected. 
+
+    * Publish the DApp to a hosting platform like GitHub Pages or Netlify, and
+    use MetaMask to access it on the web.
 
     Once the DApp is published, users will be able to interact with the contract
     on the Goerli test network using their MetaMask-enabled browser,  and they
@@ -127,46 +135,49 @@
 
     #### MetaMask Installation & Configuration
 
-    To install MetaMask, first visit the MetaMask website (https://metamask.io/)
-    and click the "Get MetaMask" button.  This will take you to the page for the
-    MetaMask extension on the Chrome web store
+    * To install MetaMask, first visit the MetaMask website
+    (https://metamask.io/) and click the "Get MetaMask" button.  This will take
+    you to the page for the MetaMask extension on the Chrome web store
     (https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn
-    ), where you can click "Add to Chrome" to install the extension.  Once the
-    extension is installed, you will see the MetaMask icon appear in your
-    browser's toolbar. Clicking on the icon will open the MetaMask pop-up
+    ), where you can click "Add to Chrome" to install the extension.  
+
+    * Once the extension is installed, you will see the MetaMask icon appear in
+    your browser's toolbar. Clicking on the icon will open the MetaMask pop-up
     window, where you can create a new account or import an existing one.
 
-    After creating an account, you will need to configure MetaMask to connect to
-    the Ethereum network. To do this, click on the network dropdown in the
+    * After creating an account, you will need to configure MetaMask to connect
+    to the Ethereum network. To do this, click on the network dropdown in the
     top-left corner of the MetaMask window and select the network you want to
     connect to (e.g. "Main Ethereum Network" for the mainnet, or "Goerli Test
     Network" for the Goerli test network).  You can also add custom networks by
     clicking the "Custom RPC" option and entering the network's URL.
 
-    Once you have configured MetaMask to connect to the desired network, you can
-    use it to manage your Ethereum accounts, sign transactions, and interact
+    * Once you have configured MetaMask to connect to the desired network, you
+    can use it to manage your Ethereum accounts, sign transactions, and interact
     with decentralized applications.  You can also use MetaMask to switch
     between networks and test contracts without the need to run a full Ethereum
     node.
 
     #### Getting access to Goerli Test network using Alchemy
 
-    To get access to an Alchemy node on the Goerli test network, you will first
-    need to create an account on the Alchemy website (https://alchemy.com/).
-    Once your account is created, you will be able to log in to the Alchemy
+    * To get access to an Alchemy node on the Goerli test network, you will
+    first need to create an account on the Alchemy website
+    (https://alchemy.com/). 
+
+    * Once your account is created, you will be able to log in to the Alchemy
     dashboard and access the network settings for the Goerli test network.  From
     there, you can generate an API key that you can use to connect to the
     Alchemy node.
 
-    To connect to the Alchemy node using the generated API key, you will need to
-    use a library or tool that supports the Alchemy API. For example, if you are
-    using the Web3.js library, you can connect to the Alchemy node by using the
-    Web3.eth.alchemy method, passing in the API key as a parameter.
+    * To connect to the Alchemy node using the generated API key, you will need
+    to use a library or tool that supports the Alchemy API. For example, if you
+    are using the Web3.js library, you can connect to the Alchemy node by using
+    the Web3.eth.alchemy method, passing in the API key as a parameter.
 
-    Once you are connected to the Alchemy node, you can use it to interact with
-    the Goerli test network, including sending transactions and deploying and
-    calling smart contracts. You can also use the Alchemy dashboard to monitor
-    your node's performance and track your usage of the Alchemy API.
+    * Once you are connected to the Alchemy node, you can use it to interact
+    with the Goerli test network, including sending transactions and deploying
+    and calling smart contracts. You can also use the Alchemy dashboard to
+    monitor your node's performance and track your usage of the Alchemy API.
 
     #### Template Code Setup
 
