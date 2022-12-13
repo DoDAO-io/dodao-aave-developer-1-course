@@ -1183,9 +1183,9 @@
       "explanations": [
         {
           "key": "starter-dapp-template-intro",
-          "title": "Introduction",
           "shortTitle": "Introduction",
-          "details": "This guide is a detailed walkthrough of how to setup, build, and run a minimal React Dapp using [this template](https://github.com/DoDAO-io/dodao-simple-contract-template) that deploys  and interacts with a simple Solidity smart contract using Hardhat and MetaMask as part of one's development workflow.\n#### What you will be building/running\nThe template finally looks like this:\nTODO: Add image\nThis dapp template is very simple and uses a trivial 'Token' smart contract that allows you to create your own token and also mint it to deployer's address. The deployer can then transfer the tokens to whichever address he likes.\n"
+          "details": "This guide is a detailed walkthrough of how to setup, build, and run a minimal React Dapp using [this template](https://github.com/DoDAO-io/dodao-simple-contract-template) that deploys  and interacts with a simple Solidity smart contract using Hardhat and MetaMask as part of one's development workflow.\n#### What you will be building/running\nThe template finally looks like this:\n![starter-template-image](https://github.com/DoDAO-io/dodao-aave-developer-1-course/blob/a315738723a5a23239744c3df1ad05156150d097/images/starter-template.png).\nThis dapp template is very simple and uses a trivial 'Token' smart contract that allows you to create your own token and also mint it to deployer's address. The deployer can then transfer the tokens to whichever address he likes.\n",
+          "title": "Introduction"
         },
         {
           "title": "Stack Overview",
