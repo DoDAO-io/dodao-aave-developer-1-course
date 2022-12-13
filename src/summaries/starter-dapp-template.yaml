@@ -315,9 +315,7 @@
 
       - **Better code completion and documentation**: Generated typings can provide detailed type information for your code, allowing your code editor or IDE to provide accurate code completion suggestions and inline documentation. This can help you write code more quickly and understand the APIs you are using more easily.
 
-      - **Improved code maintainability**: Generated typings can help you refactor your code with confidence, by providing type information for the objects and functions in your code. 
-    This can make it easier to update your code without breaking existing
-    functionality.
+      - **Improved code maintainability**: Generated typings can help you refactor your code with confidence, by providing type information for the objects and functions in your code. This can make it easier to update your code without breaking existing functionality.
 
       - **Easier integration with external libraries**: Many popular JavaScript libraries, such as React and lodash, provide generated typings that can be used with TypeScript. This allows you to use these libraries in your TypeScript code with full type information, making it easier to integrate them into your project.
 
@@ -331,26 +329,32 @@
     `contract-addresses.json`, which is generated during the contract deployment
     process.  
 
+
     * This file is typically located in the root directory of the DApp's
     project, and it contains the contract's address, as well as any other
     relevant deployment information, such as the contract's ABI and the network
     it was deployed to. 
+
 
     * To access the contract address in the DApp's front-end using Ethers.js,
     you will first need to import the contract-addresses.json file and use it to
     create a new instance of the Contract class from Ethers.js, passing in the
     contract's ABI and the contract address as parameters.
 
+
     * Once you have created a contract instance, you can use it to call the
     contract's functions and access its state variables.  
 
+
     * For example, you can use the contract instance to call the contract's
     balanceOf function to check the balance of a given account, or to call its
-    transfer function to send tokens to another account.  * By storing the
-    contract address in contract-addresses.json and importing it in the
-    front-end using Ethers.js, you can ensure that the DApp is always using the
-    correct contract address, regardless of which network it is deployed to or
-    which version of the contract is currently active. This makes it easy to
-    manage multiple contract deployments and to switch between different
-    networks without having to manually update the contract address in the
-    front-end code.
+    transfer function to send tokens to another account.  
+
+
+    * By storing the contract address in contract-addresses.json and importing
+    it in the front-end using Ethers.js, you can ensure that the DApp is always
+    using the correct contract address, regardless of which network it is
+    deployed to or which version of the contract is currently active. This makes
+    it easy to manage multiple contract deployments and to switch between
+    different networks without having to manually update the contract address in
+    the front-end code.
