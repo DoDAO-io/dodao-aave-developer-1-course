@@ -1183,33 +1183,33 @@
       "explanations": [
         {
           "key": "starter-dapp-template-intro",
+          "title": "Introduction",
           "shortTitle": "Introduction",
-          "details": "This guide is a detailed walkthrough of how to setup, build, and run a minimal React Dapp using [this template](https://github.com/DoDAO-io/dodao-simple-contract-template) that deploys  and interacts with a simple Solidity smart contract using Hardhat and MetaMask as part of one's development workflow.\n#### What you will be building/running\nThe template finally looks like this:\n![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)\nThis dapp template is very simple and uses a trivial 'Token' smart contract that allows you to create your own token and also mint it to deployer's address. The deployer can then transfer the tokens to whichever address he likes.\n",
-          "title": "Introduction"
+          "details": "This guide is a detailed walkthrough of how to setup, build, and run a minimal React Dapp using [this template](https://github.com/DoDAO-io/dodao-simple-contract-template) that deploys  and interacts with a simple Solidity smart contract using Hardhat and MetaMask as part of one's development workflow.\n#### What you will be building/running\nThe template finally looks like this:\n![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)\nThis dapp template is very simple and uses a trivial 'Token' smart contract that allows you to create your own token and also mint it to deployer's address. The deployer can then transfer the tokens to whichever address he likes.\n"
         },
         {
           "key": "stack-overview",
+          "title": "Stack Overview",
           "shortTitle": "Stack Overview",
-          "details": "#### The stack/tools used in the template\n* Solidity (To write the smart contract) \n* Hardat (Build, test and deployment framework) \n* React (Build the frontend) \n* Ethers (To interact with the blockchain and the smart contract) \n* MetaMask (Wallet browser extension) \n* Alchemy (Node provider)\n#### Overview of the stack\n* [Solidity](https://docs.soliditylang.org/en/v0.8.17/) is a programming language for writing smart contracts that run on the Ethereum platform. It is a high-level language that is easy to read and write, and it is compiled, meaning that the code is converted into a format that is executable by the Ethereum Virtual Machine.  Solidity is a powerful and versatile language for creating smart contracts.\n* [Hardhat](https://hardhat.org/) is a set of tools that facilitates developers in running a local Ethereum development blockchain, writing Solidity smart contract code, running smart contract tests, and debugging Solidity code, all without dealing with live Ethereum blockchain networks. You'll use Hardhat to run your own local Ethereum test network.\n* [React](https://reactjs.org/) is a JavaScript library for building user interfaces. It is designed to make it easy for developers to create complex and dynamic user interfaces,  by breaking them down into small, reusable components. React allows developers to efficiently update the user interface in response to user input or changes in data.  It is widely used by web and mobile developers to create interactive and user-friendly applications.\n* [Ethers.js](https://docs.ethers.org/v5/) is a JavaScript library for working with the Ethereum blockchain.  It provides a simple and intuitive interface for developers to build applications that interact with Ethereum, including support for working with smart contracts, accounts, and transactions.  Ethers.js is widely used by developers building Ethereum applications.\n* [MetaMask](https://docs.metamask.io/guide/) is a browser extension that allows users to interact with the Ethereum blockchain.  It provides a secure and user-friendly way to manage Ethereum accounts, sign transactions, and interact with decentralized applications (DApps) in the browser.  MetaMask also allows users to access the Ethereum mainnet and test networks, such as Goerli, making it easy to switch between networks and test contracts without the need to run a full Ethereum node.\n* [Alchemy](https://www.alchemy.com/) is a blockchain infrastructure and development platform that provides developers with tools and services for building and deploying decentralized applications (dApps) on Ethereum and other networks.  Alchemy offers a suite of nodes, which are nodes on the Ethereum network that are managed and maintained by the Alchemy team.  These nodes provide developers with a reliable and secure connection to the Ethereum network, allowing them to easily interact with dApps and other contracts on the network.\n* [Goerli](https://goerli.net/) is a public, proof-of-authority Ethereum test network that is designed to be a stable and reliable environment for testing and deploying decentralized applications (dApps).  By using Goerli, developers can test their dApps and contracts in a real-world environment without risking any real Ether or other assets.  This allows developers to ensure that their dApps are functioning properly before deploying them to the main Ethereum network.\n* To complete the tutorial, you will need to use the [Git](https://git-scm.com/) command line interface (CLI) tool to download the example code from GitHub. You will also need to install and use Node.js and/or Yarn to build, compile, and run the smart contract and frontend Dapp. You will use a terminal window to run the CLI tools and manage the project.\n",
-          "title": "Stack Overview"
+          "details": "#### The stack/tools used in the template\n* Solidity (To write the smart contract) \n* Hardat (Build, test and deployment framework) \n* React (Build the frontend) \n* Ethers (To interact with the blockchain and the smart contract) \n* MetaMask (Wallet browser extension) \n* Alchemy (Node provider)\n#### Overview of the stack\n* [Solidity](https://docs.soliditylang.org/en/v0.8.17/) is a programming language for writing smart contracts that run on the Ethereum platform. It is a high-level language that is easy to read and write, and it is compiled, meaning that the code is converted into a format that is executable by the Ethereum Virtual Machine.  Solidity is a powerful and versatile language for creating smart contracts.\n* [Hardhat](https://hardhat.org/) is a set of tools that facilitates developers in running a local Ethereum development blockchain, writing Solidity smart contract code, running smart contract tests, and debugging Solidity code, all without dealing with live Ethereum blockchain networks. You'll use Hardhat to run your own local Ethereum test network.\n* [React](https://reactjs.org/) is a JavaScript library for building user interfaces. It is designed to make it easy for developers to create complex and dynamic user interfaces,  by breaking them down into small, reusable components. React allows developers to efficiently update the user interface in response to user input or changes in data.  It is widely used by web and mobile developers to create interactive and user-friendly applications.\n* [Ethers.js](https://docs.ethers.org/v5/) is a JavaScript library for working with the Ethereum blockchain.  It provides a simple and intuitive interface for developers to build applications that interact with Ethereum, including support for working with smart contracts, accounts, and transactions.  Ethers.js is widely used by developers building Ethereum applications.\n* [MetaMask](https://docs.metamask.io/guide/) is a browser extension that allows users to interact with the Ethereum blockchain.  It provides a secure and user-friendly way to manage Ethereum accounts, sign transactions, and interact with decentralized applications (DApps) in the browser.  MetaMask also allows users to access the Ethereum mainnet and test networks, such as Goerli, making it easy to switch between networks and test contracts without the need to run a full Ethereum node.\n* [Alchemy](https://www.alchemy.com/) is a blockchain infrastructure and development platform that provides developers with tools and services for building and deploying decentralized applications (dApps) on Ethereum and other networks.  Alchemy offers a suite of nodes, which are nodes on the Ethereum network that are managed and maintained by the Alchemy team.  These nodes provide developers with a reliable and secure connection to the Ethereum network, allowing them to easily interact with dApps and other contracts on the network.\n* [Goerli](https://goerli.net/) is a public, proof-of-authority Ethereum test network that is designed to be a stable and reliable environment for testing and deploying decentralized applications (dApps).  By using Goerli, developers can test their dApps and contracts in a real-world environment without risking any real Ether or other assets.  This allows developers to ensure that their dApps are functioning properly before deploying them to the main Ethereum network.\n* To complete the tutorial, you will need to use the [Git](https://git-scm.com/) command line interface (CLI) tool to download the example code from GitHub. You will also need to install and use Node.js and/or Yarn to build, compile, and run the smart contract and frontend Dapp. You will use a terminal window to run the CLI tools and manage the project.\n"
         },
         {
           "key": "setup",
+          "title": "Template Setup",
           "shortTitle": "Setup",
-          "details": "### Setup General steps to build a web3 Dapp\nTo create a web3 DApp using Solidity, Hardhat, React, Ethers.js, MetaMask, and the Alchemy node on the Goerli test network, you will need to use the following steps:\n* Set up a development environment for building Ethereum DApps, including installing Node.js, yarn or npm, and the required dependencies for Solidity, Hardhat, React, and Ethers.js. \n* Write a smart contract for the DApp using Solidity. This will involve defining the contract's state variables and functions, and testing them using Hardhat. \n* Compile the contract using Hardhat and solc, and deploy it to the Goerli test network using the Alchemy node. \n* Create the front-end for the DApp using React, and use Ethers.js to interact with the deployed contract. \n* Test the DApp using a testing framework like Mocha or Chai, to ensure that it is working as expected. \n* Publish the DApp to a hosting platform like GitHub Pages or Netlify, and use MetaMask to access it on the web.\n\nOnce the DApp is published, users will be able to interact with the contract on the Goerli test network using their MetaMask-enabled browser,  and they will be able to use the DApp's user interface to send and receive tokens, check their balances, and view the contract's transaction history.\n\nNow, Let's take a deep dive into the template. But before looking at the code, let's setup our metamask wallet and alchemy account.\n\n### MetaMask Installation & Configuration\n\n* To install MetaMask, first visit the MetaMask website (https://metamask.io/) and click the \"Get MetaMask\" button.  This will take you to the page for the MetaMask extension on the Chrome web store (https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn ), where you can click \"Add to Chrome\" to install the extension.  \n* Once the extension is installed, you will see the MetaMask icon appear in your browser's toolbar. Clicking on the icon will open the MetaMask pop-up window, where you can create a new account or import an existing one.\n* After creating an account, you will need to configure MetaMask to connect to the Ethereum network. To do this, click on the network dropdown in the top-left corner of the MetaMask window and select the network you want to connect to (e.g. \"Main Ethereum Network\" for the mainnet, or \"Goerli Test Network\" for the Goerli test network).  You can also add custom networks by clicking the \"Custom RPC\" option and entering the network's URL.\n* Once you have configured MetaMask to connect to the desired network, you can use it to manage your Ethereum accounts, sign transactions, and interact with decentralized applications.  You can also use MetaMask to switch between networks and test contracts without the need to run a full Ethereum node.\n\n### Getting access to Goerli Test network using Alchemy\n\n* To get access to an Alchemy node on the Goerli test network, you will first need to create an account on the Alchemy website (https://alchemy.com/). \n* Once your account is created, you will be able to log in to the Alchemy dashboard and access the network settings for the Goerli test network.  From there, you can generate an API key that you can use to connect to the Alchemy node.\n* To connect to the Alchemy node using the generated API key, you will need to use a library or tool that supports the Alchemy API. For example, if you are using the Web3.js library, you can connect to the Alchemy node by using the Web3.eth.alchemy method, passing in the API key as a parameter.\n* Once you are connected to the Alchemy node, you can use it to interact with the Goerli test network, including sending transactions and deploying and calling smart contracts. You can also use the Alchemy dashboard to monitor your node's performance and track your usage of the Alchemy API.\n\n### Template Code Setup\n\nNow, let's use the template code. To use the code in the DoDAO-io/dodao-simple-contract-template GitHub repository, you will need to have Node.js and npm installed on your computer. Once you have these tools installed, you can follow these steps to use the template code:\n* Download or clone the repository to your local computer using git:\n  ```\n  git clone https://github.com/DoDAO-io/dodao-simple-contract-template.git\n  ```\n* Navigate to the root directory of the repository and install the project dependencies using npm:\n  ```\n  npm install\n  ```\n\n* Compile the smart contract code by running the following command:\n  ```\n  npx hardhat compile\n  ```\n\n* Deploy the smart contract to the Goerli network by running the deploy script:\n  ```\n  npx hardhat run scripts/deploy.ts --network goerli\n  ```\n\n* Once the contract has been deployed, you can interact with it using the frontend directory. This directory contains a simple web application built with React that allows you to send and receive tokens using the deployed contract. To run the frontend, navigate to the frontend directory and run the following commands:\n  ```\n  cd frontend\n  npm install\n  npm start\n  ```\n\n* The frontend should now be running on your local computer. You can access it by visiting http://localhost:3000 in your web browser.\n* In addition to the steps above, the template also includes a Makefile that provides a number of useful commands for working with the project. For example, you can use the make compile command to compile the contract code. You can see the full list of commands by running make or make help.\n",
-          "title": "Template Setup"
+          "details": "### Setup General steps to build a web3 Dapp\nTo create a web3 DApp using Solidity, Hardhat, React, Ethers.js, MetaMask, and the Alchemy node on the Goerli test network, you will need to use the following steps:\n* Set up a development environment for building Ethereum DApps, including installing Node.js, yarn or npm, and the required dependencies for Solidity, Hardhat, React, and Ethers.js. \n* Write a smart contract for the DApp using Solidity. This will involve defining the contract's state variables and functions, and testing them using Hardhat. \n* Compile the contract using Hardhat and solc, and deploy it to the Goerli test network using the Alchemy node. \n* Create the front-end for the DApp using React, and use Ethers.js to interact with the deployed contract. \n* Test the DApp using a testing framework like Mocha or Chai, to ensure that it is working as expected. \n* Publish the DApp to a hosting platform like GitHub Pages or Netlify, and use MetaMask to access it on the web.\n\nOnce the DApp is published, users will be able to interact with the contract on the Goerli test network using their MetaMask-enabled browser,  and they will be able to use the DApp's user interface to send and receive tokens, check their balances, and view the contract's transaction history.\n\nNow, Let's take a deep dive into the template. But before looking at the code, let's setup our metamask wallet and alchemy account.\n\n### MetaMask Installation & Configuration\n\n* To install MetaMask, first visit the MetaMask website (https://metamask.io/) and click the \"Get MetaMask\" button.  This will take you to the page for the MetaMask extension on the Chrome web store (https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn ), where you can click \"Add to Chrome\" to install the extension.  \n* Once the extension is installed, you will see the MetaMask icon appear in your browser's toolbar. Clicking on the icon will open the MetaMask pop-up window, where you can create a new account or import an existing one.\n* After creating an account, you will need to configure MetaMask to connect to the Ethereum network. To do this, click on the network dropdown in the top-left corner of the MetaMask window and select the network you want to connect to (e.g. \"Main Ethereum Network\" for the mainnet, or \"Goerli Test Network\" for the Goerli test network).  You can also add custom networks by clicking the \"Custom RPC\" option and entering the network's URL.\n* Once you have configured MetaMask to connect to the desired network, you can use it to manage your Ethereum accounts, sign transactions, and interact with decentralized applications.  You can also use MetaMask to switch between networks and test contracts without the need to run a full Ethereum node.\n\n### Getting access to Goerli Test network using Alchemy\n\n* To get access to an Alchemy node on the Goerli test network, you will first need to create an account on the Alchemy website (https://alchemy.com/). \n* Once your account is created, you will be able to log in to the Alchemy dashboard and access the network settings for the Goerli test network.  From there, you can generate an API key that you can use to connect to the Alchemy node.\n* To connect to the Alchemy node using the generated API key, you will need to use a library or tool that supports the Alchemy API. For example, if you are using the Web3.js library, you can connect to the Alchemy node by using the Web3.eth.alchemy method, passing in the API key as a parameter.\n* Once you are connected to the Alchemy node, you can use it to interact with the Goerli test network, including sending transactions and deploying and calling smart contracts. You can also use the Alchemy dashboard to monitor your node's performance and track your usage of the Alchemy API.\n\n### Template Code Setup\n\nNow, let's use the template code. To use the code in the DoDAO-io/dodao-simple-contract-template GitHub repository, you will need to have Node.js and npm installed on your computer. Once you have these tools installed, you can follow these steps to use the template code:\n* Download or clone the repository to your local computer using git:\n  ```\n  git clone https://github.com/DoDAO-io/dodao-simple-contract-template.git\n  ```\n* Navigate to the root directory of the repository and install the project dependencies using npm:\n  ```\n  npm install\n  ```\n\n* Compile the smart contract code by running the following command:\n  ```\n  npx hardhat compile\n  ```\n\n* Deploy the smart contract to the Goerli network by running the deploy script:\n  ```\n  npx hardhat run scripts/deploy.ts --network goerli\n  ```\n\n* Once the contract has been deployed, you can interact with it using the frontend directory. This directory contains a simple web application built with React that allows you to send and receive tokens using the deployed contract. To run the frontend, navigate to the frontend directory and run the following commands:\n  ```\n  cd frontend\n  npm install\n  npm start\n  ```\n\n* The frontend should now be running on your local computer. You can access it by visiting http://localhost:3000 in your web browser.\n* In addition to the steps above, the template also includes a Makefile that provides a number of useful commands for working with the project. For example, you can use the make compile command to compile the contract code. You can see the full list of commands by running make or make help.\n"
         },
         {
           "key": "smart-contract",
+          "title": "Smart Contract Explanation & Deployment",
           "shortTitle": "Smart Contract",
-          "details": "### Smart Contract\nIts time to have a look on the smart contract.\n\n```solidity\n//SPDX-License-Identifier: UNLICENSED\n// Solidity files have to start with this pragma. // It will be used by the Solidity compiler to validate its version. pragma solidity ^0.8.9;\n// We import this library to be able to use console.log import \"hardhat/console.sol\"; import \"@openzeppelin/contracts/token/ERC20/ERC20.sol\";\n// This is the main building block for smart contracts. contract Token is ERC20 {\n    /**\n    * Contract initialization.\n    */\n    constructor() ERC20(\"My Hardhat Token\", \"MHT\") {\n        _mint(msg.sender, 1000000);\n    }\n\n    function decimals() public view virtual override returns (uint8) {\n        return 2;\n    }\n\n    /**\n    * A function to transfer tokens.\n    *\n    * The `external` modifier makes a function *only* callable from outside\n    * the contract.\n    */\n    function transfer(\n        address to,\n        uint256 amount\n    ) public virtual override returns (bool) {\n        console.log(\n            \"Transferring from %s to %s %s tokens\",\n            msg.sender,\n            to,\n            amount\n        );\n\n        return super.transfer(to, amount);\n    }\n} \n```\n\nThe above smart contract is written in Solidity and defines a token contract called Token. The contract extends the ERC20 contract from the OpenZeppelin library, which provides a standard interface for ERC20 token contracts.\n\nThe contract's constructor function is called when the contract is deployed, and it initializes the contract with the name \"My Hardhat Token\" and the symbol \"MHT\".  It also uses the _mint function from the ERC20 contract to mint 1,000,000 tokens and transfer them to the contract's deployer.\n\nThe contract also defines a decimals function, which returns the number of decimal places used by the token. In this case, the function returns 2, indicating that the token uses 2 decimal places.\nThe contract also defines a transfer function, which allows users to transfer tokens from one account to another. The function logs the transfer information using the console.log function from the hardhat/console.sol library, and then calls the transfer function from the ERC20 contract using the super keyword to actually perform the transfer. This function is marked with the external modifier, which makes it only callable from outside the contract.\n\n### Deploying the smart contract \n\nTo deploy our smart contract, we used the following deploy script.\n\n```typescript\n\nimport { artifacts, ethers } from \"hardhat\"; import { Token } from \"./../typechain-types/contracts/Token\";\n\nasync function main() {\n  const Token = await ethers.getContractFactory(\"Token\");\n  const token = await Token.deploy();\n  await token.deployed();\n\n  console.log(\"Token address:\", token.address);\n\n  // We also save the contract's artifacts and address in the frontend directory\n  saveFrontendFiles(token);\n}\n// We recommend this pattern to be able to use async/await everywhere // and properly handle errors. main().catch((error) => {\n  console.error(error);\n  process.exitCode = 1;\n});\n// This is a script for deploying your contracts. You can adapt it to deploy // yours, or create new ones.\nconst path = require(\"path\");\nfunction saveFrontendFiles(token: Token) {\n  const fs = require(\"fs\");\n  const contractsDir = path.join(\n    __dirname,\n    \"..\",\n    \"frontend\",\n    \"src\",\n    \"contracts\"\n  );\n\n  if (!fs.existsSync(contractsDir)) {\n    fs.mkdirSync(contractsDir);\n  }\n\n  fs.writeFileSync(\n    path.join(contractsDir, \"contract-address.json\"),\n    JSON.stringify({ Token: token.address }, undefined, 2)\n  );\n\n  const TokenArtifact = artifacts.readArtifactSync(\"Token\");\n\n  fs.writeFileSync(\n    path.join(contractsDir, \"Token.json\"),\n    JSON.stringify(TokenArtifact, null, 2)\n  );\n\n  fs.cpSync(\n    path.join(__dirname, \"..\", \"typechain-types\"),\n    path.join(\n      __dirname,\n      \"..\",\n      \"frontend\",\n      \"src\",\n      \"contracts\",\n      \"typechain-types\"\n    ),\n    { recursive: true }\n  );\n}\nmain()\n  .then(() => process.exit(0))\n  .catch((error) => {\n    console.error(error);\n    process.exit(1);\n  });\n\n```\n\nThe above deploy script is written in TypeScript and is used to deploy the Token smart contract defined in Token.sol to an Ethereum network.  The script uses the Ethers.js library to interact with the Ethereum network and deploy the contract.\n\nThe script first imports the required dependencies, including the Token contract from the compiled Token.sol contract file and the ethers object from the Hardhat library.\n\nNext, the script defines a main function, which is the entry point for the script. This function first uses the ethers.getContractFactory function to create a contract factory for the Token contract,  and then uses the deploy method on the contract factory to deploy the contract to the network. The deployed method is called on the contract instance to wait for the deployment to be confirmed on the network.\n\nThe script then logs the contract's address to the console using the console.log function, and then saves the contract's address and ABI to the frontend directory using the saveFrontendFiles function.  This function writes the contract's address and ABI to a contract-address.json file and saves the contract's artifacts to a Token.json file in the frontend directory.\n\nOverall, this deploy script provides a simple and straightforward way to deploy the Token contract to an Ethereum network using Ethers.js. It also saves the deployed contract's address and ABI to the frontend directory,  making it easy to access these values in the front-end code.\n",
-          "title": "Smart Contract Explanation & Deployment"
+          "details": "### Smart Contract\nIts time to have a look on the smart contract.\n\n```solidity\n//SPDX-License-Identifier: UNLICENSED\n// Solidity files have to start with this pragma. // It will be used by the Solidity compiler to validate its version. pragma solidity ^0.8.9;\n// We import this library to be able to use console.log import \"hardhat/console.sol\"; import \"@openzeppelin/contracts/token/ERC20/ERC20.sol\";\n// This is the main building block for smart contracts. contract Token is ERC20 {\n    /**\n    * Contract initialization.\n    */\n    constructor() ERC20(\"My Hardhat Token\", \"MHT\") {\n        _mint(msg.sender, 1000000);\n    }\n\n    function decimals() public view virtual override returns (uint8) {\n        return 2;\n    }\n\n    /**\n    * A function to transfer tokens.\n    *\n    * The `external` modifier makes a function *only* callable from outside\n    * the contract.\n    */\n    function transfer(\n        address to,\n        uint256 amount\n    ) public virtual override returns (bool) {\n        console.log(\n            \"Transferring from %s to %s %s tokens\",\n            msg.sender,\n            to,\n            amount\n        );\n\n        return super.transfer(to, amount);\n    }\n} \n```\n\nThe above smart contract is written in Solidity and defines a token contract called Token. The contract extends the ERC20 contract from the OpenZeppelin library, which provides a standard interface for ERC20 token contracts.\n\nThe contract's constructor function is called when the contract is deployed, and it initializes the contract with the name \"My Hardhat Token\" and the symbol \"MHT\".  It also uses the _mint function from the ERC20 contract to mint 1,000,000 tokens and transfer them to the contract's deployer.\n\nThe contract also defines a decimals function, which returns the number of decimal places used by the token. In this case, the function returns 2, indicating that the token uses 2 decimal places.\nThe contract also defines a transfer function, which allows users to transfer tokens from one account to another. The function logs the transfer information using the console.log function from the hardhat/console.sol library, and then calls the transfer function from the ERC20 contract using the super keyword to actually perform the transfer. This function is marked with the external modifier, which makes it only callable from outside the contract.\n\n### Deploying the smart contract \n\nTo deploy our smart contract, we used the following deploy script.\n\n```typescript\n\nimport { artifacts, ethers } from \"hardhat\"; import { Token } from \"./../typechain-types/contracts/Token\";\n\nasync function main() {\n  const Token = await ethers.getContractFactory(\"Token\");\n  const token = await Token.deploy();\n  await token.deployed();\n\n  console.log(\"Token address:\", token.address);\n\n  // We also save the contract's artifacts and address in the frontend directory\n  saveFrontendFiles(token);\n}\n// We recommend this pattern to be able to use async/await everywhere // and properly handle errors. main().catch((error) => {\n  console.error(error);\n  process.exitCode = 1;\n});\n// This is a script for deploying your contracts. You can adapt it to deploy // yours, or create new ones.\nconst path = require(\"path\");\nfunction saveFrontendFiles(token: Token) {\n  const fs = require(\"fs\");\n  const contractsDir = path.join(\n    __dirname,\n    \"..\",\n    \"frontend\",\n    \"src\",\n    \"contracts\"\n  );\n\n  if (!fs.existsSync(contractsDir)) {\n    fs.mkdirSync(contractsDir);\n  }\n\n  fs.writeFileSync(\n    path.join(contractsDir, \"contract-address.json\"),\n    JSON.stringify({ Token: token.address }, undefined, 2)\n  );\n\n  const TokenArtifact = artifacts.readArtifactSync(\"Token\");\n\n  fs.writeFileSync(\n    path.join(contractsDir, \"Token.json\"),\n    JSON.stringify(TokenArtifact, null, 2)\n  );\n\n  fs.cpSync(\n    path.join(__dirname, \"..\", \"typechain-types\"),\n    path.join(\n      __dirname,\n      \"..\",\n      \"frontend\",\n      \"src\",\n      \"contracts\",\n      \"typechain-types\"\n    ),\n    { recursive: true }\n  );\n}\nmain()\n  .then(() => process.exit(0))\n  .catch((error) => {\n    console.error(error);\n    process.exit(1);\n  });\n\n```\n\nThe above deploy script is written in TypeScript and is used to deploy the Token smart contract defined in Token.sol to an Ethereum network.  The script uses the Ethers.js library to interact with the Ethereum network and deploy the contract.\n\nThe script first imports the required dependencies, including the Token contract from the compiled Token.sol contract file and the ethers object from the Hardhat library.\n\nNext, the script defines a main function, which is the entry point for the script. This function first uses the ethers.getContractFactory function to create a contract factory for the Token contract,  and then uses the deploy method on the contract factory to deploy the contract to the network. The deployed method is called on the contract instance to wait for the deployment to be confirmed on the network.\n\nThe script then logs the contract's address to the console using the console.log function, and then saves the contract's address and ABI to the frontend directory using the saveFrontendFiles function.  This function writes the contract's address and ABI to a contract-address.json file and saves the contract's artifacts to a Token.json file in the frontend directory.\n\nOverall, this deploy script provides a simple and straightforward way to deploy the Token contract to an Ethereum network using Ethers.js. It also saves the deployed contract's address and ABI to the frontend directory,  making it easy to access these values in the front-end code.\n"
         },
         {
           "key": "frontend",
+          "title": "Frontend Explanation",
           "shortTitle": "Frontend",
-          "details": "### Frontend \n\nThe frontend of the template is a simple web application built with React that allows users to interact with the Token smart contract that is included in the template. The frontend code is located in the frontend directory of the repository, and is structured as follows:\n\n* `src/contracts: This directory contains the contract artifacts and address information that is needed to interact with the contract.  The contract artifacts are automatically generated by the hardhat tool when the contract is compiled, and the contract address is saved in a contract-address.json file by the deploy script.\n\n* `src/components`: This directory contains the React components that make up the user interface of the frontend. The main components are the App component, which is the root component of the application,  and the Token component, which is used to display and interact with the contract.\n\n* `src/index.tsx`: This is the entry point of the frontend application. It is responsible for rendering the App component to the page and initializing the ethers.js library, which is used to interact with the contract.\n\nTo use the frontend, you will need to have the Token contract deployed to the Ethereum network, and the contract address and artifacts will need to be saved in the src/contracts directory.  Once this is done, you can run the frontend by navigating to the frontend directory and running the following commands:\n\n```\ncd frontend \nnpm install \nnpm start \n```\n\nThe frontend should now be running on your local computer, and you can access it by visiting `http://localhost:3000` in your web browser. Once the frontend is running, you can start interacting with it.\n\n### Benefits of using Typescript\n\nAs you can see, we preferred using Typescript in our code instead of Javascript. There are several benefits to using generated typings (also known as type definitions or type declarations) in TypeScript.  These benefits include the following:\n\n* **Improved code correctness**: Generated typings provide type information for the objects and functions in your code, allowing the TypeScript compiler to catch type errors at compile time, rather than at runtime.  This can help you avoid runtime errors and improve the overall correctness of your code.\n\n* **Better code completion and documentation**: Generated typings can provide detailed type information for your code, allowing your code editor or IDE to provide accurate code completion suggestions and inline documentation.  This can help you write code more quickly and understand the APIs you are using more easily.\n\n* **Improved code maintainability**: Generated typings can help you refactor your code with confidence, by providing type information for the objects and functions in your code.  This can make it easier to update your code without breaking existing functionality.\n\n* **Easier integration with external libraries**: Many popular JavaScript libraries, such as React and lodash, provide generated typings that can be used with TypeScript.  This allows you to use these libraries in your TypeScript code with full type information, making it easier to integrate them into your project.\n\nOverall, using generated typings in TypeScript can help you write safer, more maintainable, and more robust code, and can make it easier to integrate your code with external libraries and frameworks.\n\n### How contract address is saved in contract-addresses.jon and how we access it in Frontend using ethers.js\n\nIn a typical Ethereum DApp, the contract address is saved in a file called `contract-addresses.json`, which is generated during the contract deployment process. This file is typically located in the root directory of the DApp's project, and it contains the contract's address, as well as any other relevant deployment information, such as the contract's ABI and the network it was deployed to.\nTo access the contract address in the DApp's front-end using Ethers.js, you will first need to import the contract-addresses.json file and use it to create a new instance of the Contract class from Ethers.js, passing in the contract's ABI and the contract address as parameters. For example, the code for creating a contract instance might look like this:\n\n```typescript\nimport contractAddress from \"@contracts/contract-address.json\"; import { ethers } from \"ethers\";\n// Create a new contract instance this._token = new ethers.Contract(\n      contractAddress.Token, // The contract address\n      TokenArtifact.abi,  // The contract ABI\n      this._provider.getSigner(0)\n    ) as Token;\n``` \n\nOnce you have created a contract instance, you can use it to call the contract's functions and access its state variables.  For example, you can use the contract instance to call the contract's balanceOf function to check the balance of a given account, or to call its transfer function to send tokens to another account. \n\nBy storing the contract address in contract-addresses.json and importing it in the front-end using Ethers.js, you can ensure that the DApp is always using the correct contract address,  regardless of which network it is deployed to or which version of the contract is currently active. This makes it easy to manage multiple contract deployments  and to switch between different networks without having to manually update the contract address in the front-end code.\n",
-          "title": "Frontend Explanation"
+          "details": "### Frontend \n\nThe frontend of the template is a simple web application built with React that allows users to interact with the Token smart contract that is included in the template. The frontend code is located in the frontend directory of the repository, and is structured as follows:\n\n* `src/contracts: This directory contains the contract artifacts and address information that is needed to interact with the contract.  The contract artifacts are automatically generated by the hardhat tool when the contract is compiled, and the contract address is saved in a contract-address.json file by the deploy script.\n\n* `src/components`: This directory contains the React components that make up the user interface of the frontend. The main components are the App component, which is the root component of the application,  and the Token component, which is used to display and interact with the contract.\n\n* `src/index.tsx`: This is the entry point of the frontend application. It is responsible for rendering the App component to the page and initializing the ethers.js library, which is used to interact with the contract.\n\nTo use the frontend, you will need to have the Token contract deployed to the Ethereum network, and the contract address and artifacts will need to be saved in the src/contracts directory.  Once this is done, you can run the frontend by navigating to the frontend directory and running the following commands:\n\n```\ncd frontend \nnpm install \nnpm start \n```\n\nThe frontend should now be running on your local computer, and you can access it by visiting `http://localhost:3000` in your web browser. Once the frontend is running, you can start interacting with it.\n\n### Benefits of using Typescript\n\nAs you can see, we preferred using Typescript in our code instead of Javascript. There are several benefits to using generated typings (also known as type definitions or type declarations) in TypeScript.  These benefits include the following:\n\n* **Improved code correctness**: Generated typings provide type information for the objects and functions in your code, allowing the TypeScript compiler to catch type errors at compile time, rather than at runtime.  This can help you avoid runtime errors and improve the overall correctness of your code.\n\n* **Better code completion and documentation**: Generated typings can provide detailed type information for your code, allowing your code editor or IDE to provide accurate code completion suggestions and inline documentation.  This can help you write code more quickly and understand the APIs you are using more easily.\n\n* **Improved code maintainability**: Generated typings can help you refactor your code with confidence, by providing type information for the objects and functions in your code.  This can make it easier to update your code without breaking existing functionality.\n\n* **Easier integration with external libraries**: Many popular JavaScript libraries, such as React and lodash, provide generated typings that can be used with TypeScript.  This allows you to use these libraries in your TypeScript code with full type information, making it easier to integrate them into your project.\n\nOverall, using generated typings in TypeScript can help you write safer, more maintainable, and more robust code, and can make it easier to integrate your code with external libraries and frameworks.\n\n### How contract address is saved in contract-addresses.jon and how we access it in Frontend using ethers.js\n\nIn a typical Ethereum DApp, the contract address is saved in a file called `contract-addresses.json`, which is generated during the contract deployment process. This file is typically located in the root directory of the DApp's project, and it contains the contract's address, as well as any other relevant deployment information, such as the contract's ABI and the network it was deployed to.\nTo access the contract address in the DApp's front-end using Ethers.js, you will first need to import the contract-addresses.json file and use it to create a new instance of the Contract class from Ethers.js, passing in the contract's ABI and the contract address as parameters. For example, the code for creating a contract instance might look like this:\n\n```typescript\nimport contractAddress from \"@contracts/contract-address.json\"; import { ethers } from \"ethers\";\n// Create a new contract instance this._token = new ethers.Contract(\n      contractAddress.Token, // The contract address\n      TokenArtifact.abi,  // The contract ABI\n      this._provider.getSigner(0)\n    ) as Token;\n``` \n\nOnce you have created a contract instance, you can use it to call the contract's functions and access its state variables.  For example, you can use the contract instance to call the contract's balanceOf function to check the balance of a given account, or to call its transfer function to send tokens to another account. \n\nBy storing the contract address in contract-addresses.json and importing it in the front-end using Ethers.js, you can ensure that the DApp is always using the correct contract address,  regardless of which network it is deployed to or which version of the contract is currently active. This makes it easy to manage multiple contract deployments  and to switch between different networks without having to manually update the contract address in the front-end code.\n"
         }
       ],
       "questions": [
@@ -1741,26 +1741,616 @@
           "details": "* This guide is a detailed walkthrough of how to setup, build, and run a minimal React Dapp using [this template](https://github.com/DoDAO-io/dodao-simple-contract-template) that deploys  and interacts with a simple Solidity smart contract using Hardhat and MetaMask as part of one's development workflow.\n* This dapp template is very simple and uses a trivial 'Token' smart contract that allows you to create your own token and also mint it to deployer's address. The deployer can then transfer the tokens to whichever address he likes.\n"
         },
         {
-          "title": "Stack Overview",
           "key": "stack-overview",
+          "title": "Stack Overview",
           "shortTitle": "Stack Overview",
           "details": "### The stack/tools used in the template\n* Solidity (To write the smart contract) \n* Hardat (Build, test and deployment framework) \n* React (Build the frontend) \n* Ethers (To interact with the blockchain and the smart contract) \n* MetaMask (Wallet browser extension) \n* Alchemy (Node provider)\n\n### Overview of the stack\n\n* [Solidity](https://docs.soliditylang.org/en/v0.8.17/) is a programming language for writing smart contracts that run on the Ethereum platform. It is a high-level language that is easy to read and write, and it is compiled, meaning that the code is converted into a format that is executable by the Ethereum Virtual Machine.  Solidity is a powerful and versatile language for creating smart contracts.\n\n* [Hardhat](https://hardhat.org/) is a set of tools that facilitates developers in running a local Ethereum development blockchain, writing Solidity smart contract code, running smart contract tests, and debugging Solidity code, all without dealing with live Ethereum blockchain networks. You'll use Hardhat to run your own local Ethereum test network.\n\n* [React](https://reactjs.org/) is a JavaScript library for building user interfaces. It is designed to make it easy for developers to create complex and dynamic user interfaces,  by breaking them down into small, reusable components. React allows developers to efficiently update the user interface in response to user input or changes in data.  It is widely used by web and mobile developers to create interactive and user-friendly applications.\n\n* [Ethers.js](https://docs.ethers.org/v5/) is a JavaScript library for working with the Ethereum blockchain.  It provides a simple and intuitive interface for developers to build applications that interact with Ethereum, including support for working with smart contracts, accounts, and transactions.  Ethers.js is widely used by developers building Ethereum applications.\n\n* [MetaMask](https://docs.metamask.io/guide/) is a browser extension that allows users to interact with the Ethereum blockchain.  It provides a secure and user-friendly way to manage Ethereum accounts, sign transactions, and interact with decentralized applications (DApps) in the browser.  MetaMask also allows users to access the Ethereum mainnet and test networks, such as Goerli, making it easy to switch between networks and test contracts without the need to run a full Ethereum node.\n\n* [Alchemy](https://www.alchemy.com/) is a blockchain infrastructure and development platform that provides developers with tools and services for building and deploying decentralized applications (dApps) on Ethereum and other networks.  Alchemy offers a suite of nodes, which are nodes on the Ethereum network that are managed and maintained by the Alchemy team.  These nodes provide developers with a reliable and secure connection to the Ethereum network, allowing them to easily interact with dApps and other contracts on the network.\n\n* [Goerli](https://goerli.net/) is a public, proof-of-authority Ethereum test network that is designed to be a stable and reliable environment for testing and deploying decentralized applications (dApps).  By using Goerli, developers can test their dApps and contracts in a real-world environment without risking any real Ether or other assets.  This allows developers to ensure that their dApps are functioning properly before deploying them to the main Ethereum network.\n\n* To complete the tutorial, you will need to use the [Git](https://git-scm.com/) command line interface (CLI) tool to download the example code from GitHub. You will also need to install and use Node.js and/or Yarn to build, compile, and run the smart contract and frontend Dapp. You will use a terminal window to run the CLI tools and manage the project.\n"
         },
         {
-          "title": "Template Setup",
           "key": "setup",
+          "title": "Template Setup",
           "shortTitle": "Setup",
           "details": "### Setup\nGeneral steps to build a web3 Dapp\n  - Set up a development environment for building Ethereum DApps, including installing Node.js, yarn or npm, and the required dependencies for Solidity, Hardhat, React, and Ethers.js.\n  - Write a smart contract for the DApp using Solidity. This will involve defining the contract's state variables and functions, and testing them using Hardhat.\n  - Compile the contract using Hardhat and solc, and deploy it to the Goerli test network using the Alchemy node.\n  - Create the front-end for the DApp using React, and use Ethers.js to interact with the deployed contract.\n  - Test the DApp using a testing framework like Mocha or Chai, to ensure that it is working as expected.\n  - Publish the DApp to a hosting platform like GitHub Pages or Netlify, and use MetaMask to access it on the web.\n\n* Once the DApp is published, users will be able to interact with the contract on the Goerli test network using their MetaMask-enabled browser.\n\n### MetaMask Installation & Configuration\n\n* To install MetaMask, first visit the MetaMask website (https://metamask.io/) and click the \"Get MetaMask\" button.  \n* This will take you to the page for the MetaMask extension on the Chrome web store (https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn ), where you can click \"Add to Chrome\" to install the extension.  \n* Once the extension is installed, you will see the MetaMask icon appear in your browser's toolbar. Clicking on the icon will open the MetaMask pop-up window, where you can create a new account or import an existing one. \n* After creating an account, you will need to configure MetaMask to connect to the Ethereum network. To do this, click on the network dropdown in the top-left corner of the MetaMask window and select the network you want to connect to (e.g. \"Main Ethereum Network\" for the mainnet, or \"Goerli Test Network\" for the Goerli test network).  \n* You can also add custom networks by clicking the \"Custom RPC\" option and entering the network's URL. \n* Once you have configured MetaMask to connect to the desired network, you can use it to manage your Ethereum accounts, sign transactions, and interact with decentralized applications.  \n* You can also use MetaMask to switch between networks and test contracts without the need to run a full Ethereum node.\n\n### Getting access to Goerli Test network using Alchemy\n\n* To get access to an Alchemy node on the Goerli test network, you will first need to create an account on the Alchemy website (https://alchemy.com/). Once your account is created, you will be able to log in to the Alchemy dashboard and access the network settings for the Goerli test network.  \n* From there, you can generate an API key that you can use to connect to the Alchemy node. \n* To connect to the Alchemy node using the generated API key, you will need to use a library or tool that supports the Alchemy API. For example, if you are using the Web3.js library, you can connect to the Alchemy node by using the Web3.eth.alchemy method, passing in the API key as a parameter. \n* Once you are connected to the Alchemy node, you can use it to interact with the Goerli test network, including sending transactions and deploying and calling smart contracts. You can also use the Alchemy dashboard to monitor your node's performance and track your usage of the Alchemy API.\n\n### Template Code Setup\n\nTo use the code in the DoDAO-io/dodao-simple-contract-template GitHub repository, you will need to have Node.js and npm installed on your computer. Once you have these tools installed, you can follow these steps to use the template code:\n\n* Download or clone the repository to your local computer using git:\n  ```\n  git clone https://github.com/DoDAO-io/dodao-simple-contract-template.git\n  ```\n* Navigate to the root directory of the repository and install the project dependencies using npm:\n  ```\n  npm install\n  ```\n\n* Compile the smart contract code by running the following command:\n  ```\n  npx hardhat compile\n  ```\n\n* Deploy the smart contract to the Goerli network by running the deploy script:\n  ```\n  npx hardhat run scripts/deploy.ts --network goerli\n  ```\n\n* Once the contract has been deployed, you can interact with it using the frontend directory. This directory contains a simple web application built with React that allows you to send and receive tokens using the deployed contract. To run the frontend, navigate to the frontend directory and run the following commands:\n\n  ```\n  cd frontend\n  npm install\n  npm start\n  ```\n\n* The frontend should now be running on your local computer. You can access it by visiting http://localhost:3000 in your web browser.\n\n* In addition to the steps above, the template also includes a Makefile that provides a number of useful commands for working with the project. For example, you can use the make compile command to compile the contract code. You can see the full list of commands by running make or make help.\n"
         },
         {
-          "title": "Smart Contract Explanation & Deployment",
           "key": "smart-contract",
+          "title": "Smart Contract Explanation & Deployment",
           "shortTitle": "Smart Contract",
           "details": "### Smart Contract\n\n* The smart contract is written in Solidity and defines a token contract called Token. The contract extends the ERC20 contract from the OpenZeppelin library, which provides a standard interface for ERC20 token contracts. \n* The contract's constructor function is called when the contract is deployed, and it initializes the contract with the name \"My Hardhat Token\" and the symbol \"MHT\".  \n* It also uses the _mint function from the ERC20 contract to mint 1,000,000 tokens and transfer them to the contract's deployer. \n* The contract also defines a decimals function, which returns the number of decimal places used by the token. In this case, the function returns 2, indicating that the token uses 2 decimal places. \n* The contract also defines a transfer function, which allows users to transfer tokens from one account to another. The function logs the transfer information using the console.log function from the hardhat/console.sol library, and then calls the transfer function from the ERC20 contract using the super keyword to actually perform the transfer. This function is marked with the external modifier, which makes it only callable from outside the contract.\n\n### Deploying the smart contract\n\n* The above deploy script is written in TypeScript and is used to deploy the Token smart contract defined in Token.sol to an Ethereum network.  \n* The script uses the Ethers.js library to interact with the Ethereum network and deploy the contract. \n* The script first imports the required dependencies, including the Token contract from the compiled Token.sol contract file and the ethers object from the Hardhat library. \n* Next, the script defines a main function, which is the entry point for the script. This function first uses the ethers.getContractFactory function to create a contract factory for the Token contract, \n and then uses the deploy method on the contract factory to deploy the contract to the network. The deployed method is called on the contract instance to wait for the deployment to be confirmed on the network.\n* The script then logs the contract's address to the console using the console.log function, and then saves the contract's address and ABI to the frontend directory using the saveFrontendFiles function.  \n* This function writes the contract's address and ABI to a contract-address.json file and saves the contract's artifacts to a Token.json file in the frontend directory. \n* Overall, this deploy script provides a simple and straightforward way to deploy the Token contract to an Ethereum network using Ethers.js. It also saves the deployed contract's address and ABI to the frontend directory,  making it easy to access these values in the front-end code.\n"
         },
         {
-          "title": "Frontend Explanation",
           "key": "frontend",
+          "title": "Frontend Explanation",
+          "shortTitle": "Frontend",
+          "details": "### Frontend \n\n* The frontend of the template is a simple web application built with React that allows users to interact with the Token smart contract that is included in the template.  The frontend code is located in the frontend directory of the repository, and is structured as follows:\n\n  - `src/contracts: This directory contains the contract artifacts and address information that is needed to interact with the contract. The contract artifacts are automatically generated by the hardhat tool when the contract is compiled, and the contract address is saved in a contract-address.json file by the deploy script.\n\n  - `src/components`: This directory contains the React components that make up the user interface of the frontend. The main components are the App component, which is the root component of the application, and the Token component, which is used to display and interact with the contract.\n\n  - `src/index.tsx`: This is the entry point of the frontend application. It is responsible for rendering the App component to the page and initializing the ethers.js library, which is used to interact with the contract.\n\n* To use the frontend, you will need to have the Token contract deployed to the Ethereum network, and the contract address and artifacts will need to be saved in the src/contracts directory. \n\n### Benefits of using Typescript\n\n* There are several benefits to using generated typings (also known as type definitions or type declarations) in TypeScript.  These benefits include the following:\n\n  - **Improved code correctness**: Generated typings provide type information for the objects and functions in your code, allowing the TypeScript compiler to catch type errors at compile time, rather than at runtime. This can help you avoid runtime errors and improve the overall correctness of your code.\n\n  - **Better code completion and documentation**: Generated typings can provide detailed type information for your code, allowing your code editor or IDE to provide accurate code completion suggestions and inline documentation. This can help you write code more quickly and understand the APIs you are using more easily.\n\n  - **Improved code maintainability**: Generated typings can help you refactor your code with confidence, by providing type information for the objects and functions in your code. This can make it easier to update your code without breaking existing functionality.\n\n  - **Easier integration with external libraries**: Many popular JavaScript libraries, such as React and lodash, provide generated typings that can be used with TypeScript. This allows you to use these libraries in your TypeScript code with full type information, making it easier to integrate them into your project.\n\n  - Overall, using generated typings in TypeScript can help you write safer, more maintainable, and more robust code, and can make it easier to integrate your code with external libraries and frameworks.\n\n### How contract address is saved in contract-addresses.jon and how we access it in Frontend using ethers.js\n\n* In a typical Ethereum DApp, the contract address is saved in a file called `contract-addresses.json`, which is generated during the contract deployment process.  \n\n* This file is typically located in the root directory of the DApp's project, and it contains the contract's address, as well as any other relevant deployment information, such as the contract's ABI and the network it was deployed to. \n\n* To access the contract address in the DApp's front-end using Ethers.js, you will first need to import the contract-addresses.json file and use it to create a new instance of the Contract class from Ethers.js, passing in the contract's ABI and the contract address as parameters.\n\n* Once you have created a contract instance, you can use it to call the contract's functions and access its state variables.  \n\n* For example, you can use the contract instance to call the contract's balanceOf function to check the balance of a given account, or to call its transfer function to send tokens to another account.  \n\n* By storing the contract address in contract-addresses.json and importing it in the front-end using Ethers.js, you can ensure that the DApp is always using the correct contract address, regardless of which network it is deployed to or which version of the contract is currently active. This makes it easy to manage multiple contract deployments and to switch between different networks without having to manually update the contract address in the front-end code.\n"
+        }
+      ]
+    },
+    {
+      "title": "Simple Dapp for Aave Protocol",
+      "key": "simple-dapp-for-aave-protocol",
+      "details": "This chapter discusses about the starter dapp [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in detail. \n",
+      "order": 3,
+      "explanations": [
+        {
+          "key": "intro",
+          "title": "Introduction",
+          "shortTitle": "Introduction",
+          "details": "### Problem Statement Aave is a decentralized finance (DeFi) platform that offers users the ability to lend and borrow cryptocurrency. The platform specializes in overcollateralized loans, where borrowers must deposit a higher value of cryptocurrency than the amount they wish to borrow. This protects lenders from potential losses due to loan defaults, and allows the Aave protocol to liquidate the collateral if it decreases significantly in value.\nOur goal is to build a simple example of how to build a Dapp that allows users to interact with the Aave protocol on the Ethereum blockchain and demonstrate how you can further interact with Aave and build applications on top of it. \nSo, the idea for this DApp is to allow users to receive undercollateralized loan from Aave. For this, we will create a DApp that works on top of Aave smart contracts and adds part of the collateral from our side so that the user receives more loan from Aave than the amount of collateral he has deposited and Aave is still providing overcollateralized loan, so a win-win for both sides. The amount of collateral we top up is 50% of the amount eligible for the user.  So the user supplies USDC tokens and receives LINK tokens in return based on the USDC threshold in Aave i.e. 85%. Our contract then tops up the user's LINK amount by 50% of the eligibility.\nHere is a screenshot of the application:\n\nTo create the DApp we used the [starter dapp template](https://github.com/DoDAO-io/dodao-simple-contract-template) that we built in the previous chapter. \n### Template Overview\n* Solidity (To write our smart contract) * Hardat (build, test and deployment framework) * React (Create our frontend) * Ethers (web3 library for interacting with the blockchain and our smart contract) * MetaMask (Wallet browser extension) * Alchemy (node provider)\nThe starter template uses the above stack/tools. So, before moving forward make sure to have the initial setup ready following the previous chapter.\nNow, let's move on to the code setup for the DApp which we will discuss in this chapter. You can find the complete code [here](https://github.com/DoDAO-io/aave-call-smart-contracts).\n"
+        },
+        {
+          "key": "setup",
+          "title": "Code Setup",
+          "shortTitle": "Setup",
+          "details": "To use the code in the DoDAO-io/aave-call-smart-contracts GitHub repository, you will need to have Node.js and npm installed on your computer. Once you have these tools installed, you can follow these steps to setup the code:\n* Download or clone the repository to your local computer using git:\n  ```\n  git clone https://github.com/DoDAO-io/aave-call-smart-contracts.git \n  ```\n\n* Navigate to the root directory of the repository and install the project dependencies using npm:\n  ```\n  npm install\n  ```\n\n* Compile the smart contract code by running the following command:\n  ```\n  npx hardhat compile\n  ```\n\n* Deploy the smart contract to the Goerli network by running the deploy script:\n  ```\n  npx hardhat run scripts/compile.ts\n  npx hardhat run scripts/old-deploy.ts --network goerli\n  ```\n\n* We use an upgradable smart contract, so to deploy it after making changes you can use:\n  ```\n  npx hardhat run scripts/update.ts --network goerli\n  ```\n\n* Once the contract has been deployed, you can interact with it using the frontend directory. This directory contains a simple web application built with React that allows you to send and receive tokens using the deployed contract. To run the frontend, navigate to the frontend directory and run the following commands:\n  ```\n  cd frontend\n  npm install\n  npm start\n  ```\n  \n* The frontend should now be running on your local computer. You can access it by visiting `http://localhost:3000` in your web browser.\n* In addition to the steps above, the template also includes a Makefile that provides a number of useful commands for working with the project. For example, you can use the make compile command to compile the contract code. You can see the full list of commands by running make or make help.\n"
+        },
+        {
+          "key": "smart-contract",
+          "title": "Code Explanation",
+          "shortTitle": "Explanation",
+          "details": "### Smart Contract\n```solidity\n// SPDX-License-Identifier: MIT pragma solidity ^0.8.10; pragma abicoder v2;\nimport \"@aave/core-v3/contracts/interfaces/IPool.sol\"; import \"@aave/core-v3/contracts/interfaces/IAaveOracle.sol\"; import \"@aave/core-v3/contracts/interfaces/IPriceOracleGetter.sol\"; import \"@aave/core-v3/contracts/misc/AaveOracle.sol\"; import \"@aave/core-v3/contracts/protocol/libraries/configuration/ReserveConfiguration.sol\"; import \"@aave/core-v3/contracts/protocol/libraries/types/DataTypes.sol\"; import \"@openzeppelin/contracts/token/ERC20/IERC20.sol\"; import \"hardhat/console.sol\";\ncontract Aave {\n\n    // Storage Variables\n    address public borrowTokenAddress = 0x07C725d58437504CA5f814AE406e70E21C5e8e9e;\n    address public supplyTokenAddress = 0xA2025B15a1757311bfD68cb14eaeFCc237AF5b43;\n    address public aavePoolAddress = 0x368EedF3f56ad10b9bC57eed4Dac65B26Bb667f6;\n    address public dataProviderAddress = 0x9BE876c6DC42215B00d7efe892E2691C3bc35d10;\n    address public aaveOracleAddress = 0x5bed0810073cc9f0DacF73C648202249E87eF6cB;\n    using ReserveConfiguration for DataTypes.ReserveConfigurationMap;\n\n\n    function supply(uint _userAmount) public returns (bool) {\n\n        // Top up the collateral to double\n        uint _total = _userAmount * 2;\n\n\n        // Transfer _useramount from user to contract\n        IERC20(supplyTokenAddress).transferFrom(msg.sender, address(this), _userAmount * 1000000);\n\n        // Get the reserveData as that contains the threshold i.e. the max amount of assert that can be bought against USDC\n        DataTypes.ReserveData memory reserveData = IPool(aavePoolAddress).getReserveData(supplyTokenAddress);\n\n        // prices are returned in USD with 6 decimal places\n        uint256 linkPrice = IPriceOracleGetter(aaveOracleAddress).getAssetPrice(borrowTokenAddress);\n\n        // normalize the amount and reduce the six decimal digits\n        uint256 linkPriceInUSDC = linkPrice / 100000000;\n\n        // threshold is returned as 8500, so we need to normalize it\n        uint256 threshold = reserveData.configuration.getLiquidationThreshold();\n\n        // Supply _total i.e. double the users amount to Aave pool\n        IERC20(supplyTokenAddress).approve(aavePoolAddress, _total * 1000000);\n        IPool(aavePoolAddress).supply(supplyTokenAddress, _total * 1000000, address(this), 0);\n\n        // divide by 10000 as the threshold is 8500 i.e. 85%\n        uint256 userUSDCBorrowAmount = (_userAmount * threshold) / 10000 ;\n\n        // USDC amount to be used for borrow - we borrow 1.5 times the max user limit\n        uint256 usdcBorrowAmount = (userUSDCBorrowAmount * 3) / 2 ;\n\n        // USDC amount to be used for borrow - we borrow 1.5 times the max user limit\n        uint256 numberOfLinkTokens = usdcBorrowAmount / linkPriceInUSDC ;\n\n        console.log(\"Trying to borrow %s link after adding %s USDC. Users eligible borrow amount is\", numberOfLinkTokens, _total, userUSDCBorrowAmount);\n\n        // Borrow the LINK tokens from Aave\n        IPool(aavePoolAddress).borrow(borrowTokenAddress, numberOfLinkTokens * 1 ether, 2, 0, address(this));\n\n\n        // Transfer LINK to user\n        IERC20(borrowTokenAddress).transfer(msg.sender, numberOfLinkTokens * 1 ether);\n\n        return true;\n    }\n\n}\n```\nThe Aave.sol contract has one main function, supply(), which allows users to supply collateral to the Aave protocol and use it to borrow other assets. The supply() function takes in an input, _userAmount, which specifies the amount of collateral that the user wants to supply. The function then uses this input to do the following: Transfer the user-specified amount of collateral from the user's account to the contract's account.\nUse the supplied collateral to borrow a specified amount of another asset. Transfer the borrowed asset to the user's account. The supply() function uses various interfaces and libraries to interact with other contracts on the Aave protocol. For example, the IPool interface is used to interact with the Aave pool, which is where users can supply their collateral and borrow assets. The IERC20 interface is used to interact with the ERC-20 tokens used on the protocol. The AaveOracle contract is used to get the current price of the asset being borrowed.\nAt the top of the contract, several other contracts are imported. These include contracts for interfacing with the Aave protocol, a contract for handling ERC20 tokens, and a contract for logging messages to the console. The contract has one public function called supply. This function takes a single argument, an unsigned integer called _userAmount. The function returns a single boolean value indicating whether the function executed successfully. The function first calculates the total amount to be supplied to the Aave pool by multiplying the user's supplied amount by 2. It then transfers the user's supplied amount from the user's address to the contract's address using the transferFrom method on the IERC20 contract. Then it retrieves the reserve data for the supply token using the getReserveData method on the IPool contract. This data contains the maximum amount of assets that can be bought against the USDC token. Then uses the getAssetPrice method on the IPriceOracleGetter contract to get the price of the borrow token in USD. This price is then divided by 100000000 to normalize it and remove the extra decimal places. Then the function calculates the user's eligible borrow amount by multiplying the user's supplied amount by the liquidation threshold from the reserve data, and dividing that result by 10000. This borrow amount is then multiplied by 1.5 to get the total amount of USDC to be used for borrowing. Then it calculates the number of LINK tokens to be borrowed by dividing the USDC borrow amount by the normalized price of the borrow token in USDC. This value is then logged to the console. The function then uses the approve and borrow methods on the IPool contract to borrow the calculated number of LINK tokens. The borrowed tokens are then transferred to the user's address using the transfer method on the IERC20 contract.\n### Update.ts\nThe most important behavior of this file is that it upgrades an instance of the deployed contract on the Ethereum blockchain. The code uses the hardhat and ethers libraries to connect to the network and interact with the contract, and it uses the upgradeProxy method from the upgrades module to upgrade the contract. This allows the contract's bytecode to be updated without affecting its state or its address on the blockchain.\nContract upgrades are a common practice in Ethereum development. As smart contracts are immutable and cannot be modified once deployed, developers must create new versions of their contracts when they want to make changes to the contract's behavior. However, simply deploying a new contract would require users to update their contract references and migrate their data to the new contract.\nTo avoid this problem, Ethereum provides a mechanism for upgrading contracts called proxy contracts. A proxy contract is a special type of contract that acts as a middleman between the user and the actual contract. The proxy contract has a reference to the actual contract, and it forwards calls and transactions to the actual contract. When the actual contract needs to be updated, the developer can simply deploy a new version of the contract and update the proxy contract to point to the new contract. This allows the contract to be updated without affecting its address or its state, and without requiring users to update their contract references or migrate their data.\nIn the code above, the upgradeProxy method is used to upgrade the contract by deploying a new version of the contract and updating the proxy contract to point to the new contract. This allows the contract to be updated without affecting its address or its state, and without requiring users to update their contract references or migrate their data.\n"
+        },
+        {
+          "key": "helper-components",
+          "title": "Helper Components",
+          "shortTitle": "Helpers",
+          "details": "### PoolSlice.ts\nThe code imports several modules from the @aave/contract-helpers package, which provides a set of functions that make it easier to work with the Aave protocol, a decentralized lending and borrowing platform built on the Ethereum blockchain. The code defines an enum called ChainId, which lists several different Ethereum networks, including mainnet, ropsten, rinkeby, and goerli.\nThe code then defines an object called marketInfo that contains information about the Ethereum Görli network. This object includes the chainId of the Görli network, as well as the addresses of various contracts that are used by the Aave protocol on that network.\nThe code also defines an interface called SupplyActionProps that describes the shape of an object that is passed to a function called createPoolSlice. This function takes an account and a provider as arguments and returns an object with several methods for interacting with the Aave protocol. One of these methods, getPool, returns an instance of the Pool class from the @aave/contract-helpers package, which provides functions for working with Aave pools. Another method, getPoolData, uses the UiPoolDataProvider class from the @aave/contract-helpers package to retrieve data about an Aave pool.\nOverall, this code provides a set of tools for working with the Aave protocol on the Ethereum Görli network.\n### ContractsHelper.ts\nThis code provides a set of utility functions for working with the USDC and Link ERC-20 tokens on the Ethereum network. The getTokenContract function allows you to obtain an instance of the IERC20__factory interface connected to the USDC or Link contract, depending on the tokenType parameter passed to the function. This instance can be used to interact with the contract and perform various operations, such as checking a user's balance or transferring tokens.\nThe getNormalizedBalance function provides a convenient way to retrieve a user's token balance and convert it to a human-readable format. It does this by dividing the user's balance by the appropriate constant value (either 1,000,000 for USDC or 1,000,000,000,000,000,000 for Link), and returning the result as a BigNumber object. This allows you to easily display the user's balance in your application without worrying about the underlying details of how the balance is represented on the blockchain.\n"
+        },
+        {
+          "key": "main-components",
+          "title": "Main Components",
+          "shortTitle": "Main Components",
+          "details": "### DApp.tsx\nThis is the main React component of our app that provides a user interface for interacting with the Aave protocol. The component connects to the user's Ethereum wallet, initializes the Aave contract, and polls the user's balance to keep it updated. It also provides a way for users to supply assets to Aave pools and to mint USDC tokens.\nThe component uses the @components/aave/MintUSDC and @components/aave/Supply components to render the user interface. It also imports the ConnectWallet component, which displays a message asking the user to connect their wallet if one is not detected. The component also imports the TransactionErrorMessage and WaitingForTransactionMessage components, which are used to display messages to the user if there is an error sending a transaction or if the component is waiting for a transaction to be processed.\nThe Dapp component uses the ethers library to connect to the Ethereum network and interact with the Aave contract. It also uses the typechain-types package to access the types and artifacts for the Aave contract. The component maintains its state using the React.Component class's state property, and it updates the user's balance by polling the Aave contract. The component also provides several methods for working with the Aave contract, including mintUSDC, aaveSupply, and getBalance.\nOverall, this code provides a user interface for interacting with the Aave protocol on the Ethereum blockchain. It allows users to supply assets to Aave pools and to mint USDC tokens, and it provides a way to view the user's balance and transaction history.\n### MintUSDC.tsx\nIt is a React component called \"MintUSDC\" that allows a user to mint USDC tokens and transfer them to a contract. The component has two buttons, one to mint 10K USDC tokens to the user's account and the other to transfer 2K USDC tokens to the contract. The component also displays the user's and contract's current USDC balances.\nThe component uses the getTokenContract function from the contractsHelper module to get the USDC token contract and the createPoolSlice function from the aave/poolSlice module to create a pool slice instance. The mintOneUSDC function is called when the user clicks the \"Mint 10K USDC\" button and it uses the pool slice instance to mint 10K USDC tokens to the user's account. The transferUSDCToContract function is called when the user clicks the \"Transfer 2K USDC\" button and it uses the USDC token contract to transfer 2K USDC tokens to the contract's address. Both functions also update the user's and contract's USDC balances by calling the updateUserUSDCBalance and updateContractBalance functions respectively. These functions use the getNormalizedBalance function from the contractsHelper module to get the user's and contract's normalized USDC balances.\n### Supply.tsx\nThe code is a React component called \"Supply\" that allows users to supply USDC to the Aave lending protocol and receive LINK in return. It uses several helper functions from the \"@components/helpers/contractsHelper\" module to get information about the user's account and the state of the Aave protocol. It also imports the createPoolSlice function from the \"@components/aave/poolSlice\" module to get information about the Aave reserve pools.\nIt takes in two props: an account string representing the user's Ethereum address, and a provider object that allows the component to interact with the Ethereum network.\nThis component has several state variables to track the user's account, the contract's USDC balance, the amount of USDC being supplied, the current USDC threshold, the current LINK price, and the amount of mintable and top-up LINK. The component also has several functions to update these state variables, such as updateUserLINKBalance, getBalance, and updateReserveInfo.\nThe component has an input field where the user can enter the amount of USDC they want to supply, and a button to trigger the aaveSupply function. This function connects to the Aave contract, approves the transfer of USDC from the user's account to the contract, and calls the contract's supply function with the specified amount of USDC. After the transaction is complete, the component updates the contract's USDC balance and the user's LINK balance.\nThe component also has a refreshPage function that reloads the page, and a calculateLinks function that calculates the amount of mintable and top-up LINK based on the current state of the Aave protocol. This information is displayed to the user in the component's UI.\n"
+        }
+      ],
+      "questions": [
+        {
+          "uuid": "c3d3f64f-607f-4b29-be5f-addf914a39b7",
+          "type": "SingleChoice",
+          "content": "What is the purpose of the IPriceOracleGetter contract imported in the Aave contract?",
+          "hint": "NoHint",
+          "explanation": "The purpose of the IPriceOracleGetter contract imported in the Aave contract is to get the price of a token in USD.",
+          "answerKeys": [
+            "A"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Medium",
+          "choices": [
+            {
+              "content": "To get the price of a token in USD",
+              "key": "A"
+            },
+            {
+              "content": "To get the data of the Aave pool",
+              "key": "B"
+            },
+            {
+              "content": "To get the data of the user's reserve",
+              "key": "C"
+            },
+            {
+              "content": "To get the configuration of the reserve",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "b50233ce-b65e-4776-99e7-c73348055e36",
+          "type": "SingleChoice",
+          "content": "What is the purpose of the supplyTokenAddress variable in the contract?",
+          "hint": "ERC20 token",
+          "explanation": "It is used to store the address of the ERC20 token that is being supplied to the Aave pool.",
+          "answerKeys": [
+            "C"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "It is used to store the address of the Aave pool contract",
+              "key": "A"
+            },
+            {
+              "content": "It is used to store the address of the ERC20 token that is being borrowed from the Aave pool",
+              "key": "B"
+            },
+            {
+              "content": "It is used to store the address of the ERC20 token that is being supplied to the Aave pool",
+              "key": "C"
+            },
+            {
+              "content": "It is used to store the address of the Aave Oracle contract",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "13586d9e-88f1-438f-b139-7ffa435ea9ef",
+          "type": "SingleChoice",
+          "content": "What is the name of the function that is used to borrow tokens in the contract?",
+          "hint": "Supply? Nah, definitely Borrow",
+          "explanation": "Borrow function is used to borrow tokens in the contract.",
+          "answerKeys": [
+            "C"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "getReserveData",
+              "key": "A"
+            },
+            {
+              "content": "supply",
+              "key": "B"
+            },
+            {
+              "content": "borrow",
+              "key": "C"
+            },
+            {
+              "content": "getAssetPrice",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "96cc791c-a34c-404a-a936-99a0eb4974fe",
+          "type": "SingleChoice",
+          "content": "What is a proxy contract in Ethereum development?",
+          "hint": "middleman",
+          "explanation": "A proxy contract in Ethereum development is a special type of contract that acts as a middleman between the user and the actual contract.",
+          "answerKeys": [
+            "D"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Medium",
+          "choices": [
+            {
+              "content": "A contract that is deployed when a new version of the contract needs to be created",
+              "key": "A"
+            },
+            {
+              "content": "A contract that is deployed when the contract's bytecode needs to be updated",
+              "key": "B"
+            },
+            {
+              "content": "A contract that is deployed when the contract's state needs to be updated",
+              "key": "C"
+            },
+            {
+              "content": "A special type of contract that acts as a middleman between the user and the actual contract",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "babbd1d5-245b-469f-8a44-d341a0e1b46c",
+          "type": "SingleChoice",
+          "content": "What is the advantage of using a proxy contract for contract upgrades?",
+          "hint": "NoHint",
+          "explanation": "Ethereum provides a mechanism for upgrading contracts called proxy contracts. A proxy contract is a special type of contract that acts as a middleman between the user and the actual contract. The proxy contract has a reference to the actual contract, and it forwards calls and transactions to the actual contract. When the actual contract needs to be updated, the developer can simply deploy a new version of the contract and update the proxy contract to point to the new contract. This allows the contract to be updated without affecting its address or its state, and without requiring users to update their contract references or migrate their data.",
+          "answerKeys": [
+            "C"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "It allows the contract to be updated without affecting its address or its state",
+              "key": "A"
+            },
+            {
+              "content": "It allows the contract to be updated without requiring users to migrate their data",
+              "key": "B"
+            },
+            {
+              "content": "Both of the above",
+              "key": "C"
+            },
+            {
+              "content": "None of the above",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "6f9f7840-a89b-43de-b8bf-d8d6bdfd2b19",
+          "type": "SingleChoice",
+          "content": "What does the getNormalizedBalance function do?",
+          "hint": "NoHint",
+          "explanation": "It returns the normalized balance of a token for the specified provider and account.",
+          "answerKeys": [
+            "B"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Medium",
+          "choices": [
+            {
+              "content": "Returns the USDC balance of the contract",
+              "key": "A"
+            },
+            {
+              "content": "Returns the normalized balance of a token for the specified provider and account",
+              "key": "B"
+            },
+            {
+              "content": "Returns the USDC balance of the user",
+              "key": "C"
+            },
+            {
+              "content": "Returns the address of the USDC contract",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "ea59d9af-ccb4-4253-b86f-84aa69f60b60",
+          "type": "SingleChoice",
+          "content": "What is the purpose of the MintUSDC component?",
+          "hint": "mint and transfer",
+          "explanation": "The purpose of the MintUSDC component is to mint USDC tokens and transfer them to the user's account.",
+          "answerKeys": [
+            "A"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "To mint USDC tokens and transfer them to the user's account",
+              "key": "A"
+            },
+            {
+              "content": "To transfer USDC tokens from a contract address to the user's account",
+              "key": "B"
+            },
+            {
+              "content": "To transfer USDC tokens from the user's account to a contract address",
+              "key": "C"
+            },
+            {
+              "content": "To mint USDC tokens and transfer them to the contract address",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "2ea0b8fb-f77d-4ee1-85a3-d5e97e0b261e",
+          "type": "SingleChoice",
+          "content": "What is the purpose of the IERC20__factory.connect method?",
+          "hint": "connect",
+          "explanation": "It connects the IERC20 contract to the Ethereum network.",
+          "answerKeys": [
+            "C"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "It creates a new instance of the IERC20 contract",
+              "key": "A"
+            },
+            {
+              "content": "It creates a new provider using window.ethereum",
+              "key": "B"
+            },
+            {
+              "content": "It connects the IERC20 contract to the Ethereum network",
+              "key": "C"
+            },
+            {
+              "content": "It connects the Dapp component to the Ethereum network",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "a69bd10a-9ef1-4319-baa8-ad24dff23589",
+          "type": "SingleChoice",
+          "content": "How does the Supply component calculate the amount of LINK that can be minted from a USDC supply?",
+          "hint": "multiply",
+          "explanation": "It multiplies the supply amount by the USDC threshold.",
+          "answerKeys": [
+            "D"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Medium",
+          "choices": [
+            {
+              "content": "It divides the supply amount by the link price",
+              "key": "A"
+            },
+            {
+              "content": "It multiplies the supply amount by the link price",
+              "key": "B"
+            },
+            {
+              "content": "It divides the supply amount by the USDC threshold",
+              "key": "C"
+            },
+            {
+              "content": "It multiplies the supply amount by the USDC threshold",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "7b035f74-b4c3-487e-887b-9fa3ae4fa042",
+          "type": "SingleChoice",
+          "content": "What is the purpose of the updateContractBalance function?",
+          "hint": "USDC token",
+          "explanation": "The function updates the USDC balance of the contract.",
+          "answerKeys": [
+            "B"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "To update the USDC balance of the user",
+              "key": "A"
+            },
+            {
+              "content": "To update the USDC balance of the contract",
+              "key": "B"
+            },
+            {
+              "content": "To update the balance of the user for all supported tokens",
+              "key": "C"
+            },
+            {
+              "content": "To update the balance of the contract for all supported tokens",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "ff9ae8a3-36f0-45b1-a0a1-b8bfc76b361f",
+          "type": "SingleChoice",
+          "content": "What is the purpose of the getTokenContract function?",
+          "hint": "NoHint",
+          "explanation": "It's purpose is to get the contract instance of the specified token.",
+          "answerKeys": [
+            "B"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "To get the contract address of the specified token",
+              "key": "A"
+            },
+            {
+              "content": "To get the contract instance of the specified token",
+              "key": "B"
+            },
+            {
+              "content": "To get the contract balance of the specified token",
+              "key": "C"
+            },
+            {
+              "content": "To get the contract owner of the specified token",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "1ccfce22-265a-45a0-9890-51768866db62",
+          "type": "SingleChoice",
+          "content": "What is the value of normalizedBalance after the following code executes? ```const userTokenBalance = BigNumber.from(\"5000000000\"); const normalizedBalance = userTokenBalance.div( BigNumber.from(\"1000000\").toString() ); ```",
+          "hint": "divide",
+          "explanation": "5000000000/1000000 = 5000",
+          "answerKeys": [
+            "C"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Medium",
+          "choices": [
+            {
+              "content": "5",
+              "key": "A"
+            },
+            {
+              "content": "500",
+              "key": "B"
+            },
+            {
+              "content": "5000",
+              "key": "C"
+            },
+            {
+              "content": "5000000",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "d822db56-f5c8-467f-b73f-44804654ef2e",
+          "type": "SingleChoice",
+          "content": "What is the purpose of the FaucetService class?",
+          "hint": "NoHint",
+          "explanation": "The purpose of the FaucetService class is to provide users with access to Aave faucet contract instances.",
+          "answerKeys": [
+            "C"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "To provide users with access to testnet Aave faucets",
+              "key": "A"
+            },
+            {
+              "content": "To provide users with access to mainnet Aave faucets",
+              "key": "B"
+            },
+            {
+              "content": "To provide users with access to Aave faucet contract instances",
+              "key": "C"
+            },
+            {
+              "content": "To provide users with access to Aave faucet contract addresses",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "2362691f-e0f1-4bdb-8f62-e719f46c4c37",
+          "type": "SingleChoice",
+          "content": "What is the purpose of the createPoolSlice function?",
+          "hint": "NoHint",
+          "explanation": "To create a new Map containing pool data.",
+          "answerKeys": [
+            "D"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "To create a new instance of the Pool class",
+              "key": "A"
+            },
+            {
+              "content": "To create a new instance of the LendingPool class",
+              "key": "B"
+            },
+            {
+              "content": "To create a new instance of the UiPoolDataProvider class",
+              "key": "C"
+            },
+            {
+              "content": "To create a new Map containing pool data",
+              "key": "D"
+            }
+          ]
+        },
+        {
+          "uuid": "ebad7060-442a-4f39-977c-c189a98f5c22",
+          "type": "SingleChoice",
+          "content": "What is the value of the marketInfo.marketTitle constant?",
+          "hint": "The test network we used.",
+          "explanation": "Ethereum Görli is the value of the marketInfo.marketTitle constant.",
+          "answerKeys": [
+            "A"
+          ],
+          "subTopics": [
+            "smart-contract"
+          ],
+          "difficultyLevel": "Low",
+          "choices": [
+            {
+              "content": "Ethereum Görli",
+              "key": "A"
+            },
+            {
+              "content": "Ethereum Rinkeby",
+              "key": "B"
+            },
+            {
+              "content": "Ethereum Mainnet",
+              "key": "C"
+            },
+            {
+              "content": "Ethereum Kovan",
+              "key": "D"
+            }
+          ]
+        }
+      ],
+      "readings": [
+        {
+          "uuid": "f55641b5-9c37-4421-a082-01de070976cc",
+          "shortTitle": "Solidity",
+          "details": "This video enables learners to know about Solidity\n",
+          "title": "Solidity Tutorial",
+          "type": "YoutubeVideo",
+          "url": "https://www.youtube.com/watch?v=ipwxYa-F1uY",
+          "subTopics": []
+        },
+        {
+          "uuid": "58729a9c-3253-4e7c-ba0b-3bfc3d4c51cb",
+          "shortTitle": "Hardhat",
+          "details": "This video enables learners to know about Hardat\n",
+          "title": "Hardhat Tutorial",
+          "type": "YoutubeVideo",
+          "url": "https://www.youtube.com/watch?v=9Qpi80dQsGU",
+          "subTopics": []
+        },
+        {
+          "uuid": "855fd460-a945-4154-a6c1-74ee1f654781",
+          "shortTitle": "Ethers.js",
+          "details": "This video enables learners to know about Ethers.js\n",
+          "title": "Ethers.js Tutorial",
+          "type": "YoutubeVideo",
+          "url": "https://www.youtube.com/watch?v=yk7nVp5HTCk&t=1927s",
+          "subTopics": []
+        },
+        {
+          "uuid": "5e99324c-c132-4baa-84db-10a92019e92e",
+          "shortTitle": "React",
+          "details": "This video enables learners to know about React\n",
+          "title": "React Crash Course",
+          "type": "YoutubeVideo",
+          "url": "https://www.youtube.com/watch?v=w7ejDZ8SWv8",
+          "subTopics": []
+        }
+      ],
+      "summaries": [
+        {
+          "key": "starter-dapp-template-intro",
+          "title": "Introduction",
+          "shortTitle": "Introduction",
+          "details": "* This guide is a detailed walkthrough of how to setup, build, and run a minimal React Dapp using [this template](https://github.com/DoDAO-io/dodao-simple-contract-template) that deploys  and interacts with a simple Solidity smart contract using Hardhat and MetaMask as part of one's development workflow.\n* This dapp template is very simple and uses a trivial 'Token' smart contract that allows you to create your own token and also mint it to deployer's address. The deployer can then transfer the tokens to whichever address he likes.\n"
+        },
+        {
+          "key": "stack-overview",
+          "title": "Stack Overview",
+          "shortTitle": "Stack Overview",
+          "details": "### The stack/tools used in the template\n* Solidity (To write the smart contract) \n* Hardat (Build, test and deployment framework) \n* React (Build the frontend) \n* Ethers (To interact with the blockchain and the smart contract) \n* MetaMask (Wallet browser extension) \n* Alchemy (Node provider)\n\n### Overview of the stack\n\n* [Solidity](https://docs.soliditylang.org/en/v0.8.17/) is a programming language for writing smart contracts that run on the Ethereum platform. It is a high-level language that is easy to read and write, and it is compiled, meaning that the code is converted into a format that is executable by the Ethereum Virtual Machine.  Solidity is a powerful and versatile language for creating smart contracts.\n\n* [Hardhat](https://hardhat.org/) is a set of tools that facilitates developers in running a local Ethereum development blockchain, writing Solidity smart contract code, running smart contract tests, and debugging Solidity code, all without dealing with live Ethereum blockchain networks. You'll use Hardhat to run your own local Ethereum test network.\n\n* [React](https://reactjs.org/) is a JavaScript library for building user interfaces. It is designed to make it easy for developers to create complex and dynamic user interfaces,  by breaking them down into small, reusable components. React allows developers to efficiently update the user interface in response to user input or changes in data.  It is widely used by web and mobile developers to create interactive and user-friendly applications.\n\n* [Ethers.js](https://docs.ethers.org/v5/) is a JavaScript library for working with the Ethereum blockchain.  It provides a simple and intuitive interface for developers to build applications that interact with Ethereum, including support for working with smart contracts, accounts, and transactions.  Ethers.js is widely used by developers building Ethereum applications.\n\n* [MetaMask](https://docs.metamask.io/guide/) is a browser extension that allows users to interact with the Ethereum blockchain.  It provides a secure and user-friendly way to manage Ethereum accounts, sign transactions, and interact with decentralized applications (DApps) in the browser.  MetaMask also allows users to access the Ethereum mainnet and test networks, such as Goerli, making it easy to switch between networks and test contracts without the need to run a full Ethereum node.\n\n* [Alchemy](https://www.alchemy.com/) is a blockchain infrastructure and development platform that provides developers with tools and services for building and deploying decentralized applications (dApps) on Ethereum and other networks.  Alchemy offers a suite of nodes, which are nodes on the Ethereum network that are managed and maintained by the Alchemy team.  These nodes provide developers with a reliable and secure connection to the Ethereum network, allowing them to easily interact with dApps and other contracts on the network.\n\n* [Goerli](https://goerli.net/) is a public, proof-of-authority Ethereum test network that is designed to be a stable and reliable environment for testing and deploying decentralized applications (dApps).  By using Goerli, developers can test their dApps and contracts in a real-world environment without risking any real Ether or other assets.  This allows developers to ensure that their dApps are functioning properly before deploying them to the main Ethereum network.\n\n* To complete the tutorial, you will need to use the [Git](https://git-scm.com/) command line interface (CLI) tool to download the example code from GitHub. You will also need to install and use Node.js and/or Yarn to build, compile, and run the smart contract and frontend Dapp. You will use a terminal window to run the CLI tools and manage the project.\n"
+        },
+        {
+          "key": "setup",
+          "title": "Template Setup",
+          "shortTitle": "Setup",
+          "details": "### Setup\nGeneral steps to build a web3 Dapp\n  - Set up a development environment for building Ethereum DApps, including installing Node.js, yarn or npm, and the required dependencies for Solidity, Hardhat, React, and Ethers.js.\n  - Write a smart contract for the DApp using Solidity. This will involve defining the contract's state variables and functions, and testing them using Hardhat.\n  - Compile the contract using Hardhat and solc, and deploy it to the Goerli test network using the Alchemy node.\n  - Create the front-end for the DApp using React, and use Ethers.js to interact with the deployed contract.\n  - Test the DApp using a testing framework like Mocha or Chai, to ensure that it is working as expected.\n  - Publish the DApp to a hosting platform like GitHub Pages or Netlify, and use MetaMask to access it on the web.\n\n* Once the DApp is published, users will be able to interact with the contract on the Goerli test network using their MetaMask-enabled browser.\n\n### MetaMask Installation & Configuration\n\n* To install MetaMask, first visit the MetaMask website (https://metamask.io/) and click the \"Get MetaMask\" button.  \n* This will take you to the page for the MetaMask extension on the Chrome web store (https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn ), where you can click \"Add to Chrome\" to install the extension.  \n* Once the extension is installed, you will see the MetaMask icon appear in your browser's toolbar. Clicking on the icon will open the MetaMask pop-up window, where you can create a new account or import an existing one. \n* After creating an account, you will need to configure MetaMask to connect to the Ethereum network. To do this, click on the network dropdown in the top-left corner of the MetaMask window and select the network you want to connect to (e.g. \"Main Ethereum Network\" for the mainnet, or \"Goerli Test Network\" for the Goerli test network).  \n* You can also add custom networks by clicking the \"Custom RPC\" option and entering the network's URL. \n* Once you have configured MetaMask to connect to the desired network, you can use it to manage your Ethereum accounts, sign transactions, and interact with decentralized applications.  \n* You can also use MetaMask to switch between networks and test contracts without the need to run a full Ethereum node.\n\n### Getting access to Goerli Test network using Alchemy\n\n* To get access to an Alchemy node on the Goerli test network, you will first need to create an account on the Alchemy website (https://alchemy.com/). Once your account is created, you will be able to log in to the Alchemy dashboard and access the network settings for the Goerli test network.  \n* From there, you can generate an API key that you can use to connect to the Alchemy node. \n* To connect to the Alchemy node using the generated API key, you will need to use a library or tool that supports the Alchemy API. For example, if you are using the Web3.js library, you can connect to the Alchemy node by using the Web3.eth.alchemy method, passing in the API key as a parameter. \n* Once you are connected to the Alchemy node, you can use it to interact with the Goerli test network, including sending transactions and deploying and calling smart contracts. You can also use the Alchemy dashboard to monitor your node's performance and track your usage of the Alchemy API.\n\n### Template Code Setup\n\nTo use the code in the DoDAO-io/dodao-simple-contract-template GitHub repository, you will need to have Node.js and npm installed on your computer. Once you have these tools installed, you can follow these steps to use the template code:\n\n* Download or clone the repository to your local computer using git:\n  ```\n  git clone https://github.com/DoDAO-io/dodao-simple-contract-template.git\n  ```\n* Navigate to the root directory of the repository and install the project dependencies using npm:\n  ```\n  npm install\n  ```\n\n* Compile the smart contract code by running the following command:\n  ```\n  npx hardhat compile\n  ```\n\n* Deploy the smart contract to the Goerli network by running the deploy script:\n  ```\n  npx hardhat run scripts/deploy.ts --network goerli\n  ```\n\n* Once the contract has been deployed, you can interact with it using the frontend directory. This directory contains a simple web application built with React that allows you to send and receive tokens using the deployed contract. To run the frontend, navigate to the frontend directory and run the following commands:\n\n  ```\n  cd frontend\n  npm install\n  npm start\n  ```\n\n* The frontend should now be running on your local computer. You can access it by visiting http://localhost:3000 in your web browser.\n\n* In addition to the steps above, the template also includes a Makefile that provides a number of useful commands for working with the project. For example, you can use the make compile command to compile the contract code. You can see the full list of commands by running make or make help.\n"
+        },
+        {
+          "key": "smart-contract",
+          "title": "Smart Contract Explanation & Deployment",
+          "shortTitle": "Smart Contract",
+          "details": "### Smart Contract\n\n* The smart contract is written in Solidity and defines a token contract called Token. The contract extends the ERC20 contract from the OpenZeppelin library, which provides a standard interface for ERC20 token contracts. \n* The contract's constructor function is called when the contract is deployed, and it initializes the contract with the name \"My Hardhat Token\" and the symbol \"MHT\".  \n* It also uses the _mint function from the ERC20 contract to mint 1,000,000 tokens and transfer them to the contract's deployer. \n* The contract also defines a decimals function, which returns the number of decimal places used by the token. In this case, the function returns 2, indicating that the token uses 2 decimal places. \n* The contract also defines a transfer function, which allows users to transfer tokens from one account to another. The function logs the transfer information using the console.log function from the hardhat/console.sol library, and then calls the transfer function from the ERC20 contract using the super keyword to actually perform the transfer. This function is marked with the external modifier, which makes it only callable from outside the contract.\n\n### Deploying the smart contract\n\n* The above deploy script is written in TypeScript and is used to deploy the Token smart contract defined in Token.sol to an Ethereum network.  \n* The script uses the Ethers.js library to interact with the Ethereum network and deploy the contract. \n* The script first imports the required dependencies, including the Token contract from the compiled Token.sol contract file and the ethers object from the Hardhat library. \n* Next, the script defines a main function, which is the entry point for the script. This function first uses the ethers.getContractFactory function to create a contract factory for the Token contract, \n and then uses the deploy method on the contract factory to deploy the contract to the network. The deployed method is called on the contract instance to wait for the deployment to be confirmed on the network.\n* The script then logs the contract's address to the console using the console.log function, and then saves the contract's address and ABI to the frontend directory using the saveFrontendFiles function.  \n* This function writes the contract's address and ABI to a contract-address.json file and saves the contract's artifacts to a Token.json file in the frontend directory. \n* Overall, this deploy script provides a simple and straightforward way to deploy the Token contract to an Ethereum network using Ethers.js. It also saves the deployed contract's address and ABI to the frontend directory,  making it easy to access these values in the front-end code.\n"
+        },
+        {
+          "key": "frontend",
+          "title": "Frontend Explanation",
           "shortTitle": "Frontend",
           "details": "### Frontend \n\n* The frontend of the template is a simple web application built with React that allows users to interact with the Token smart contract that is included in the template.  The frontend code is located in the frontend directory of the repository, and is structured as follows:\n\n  - `src/contracts: This directory contains the contract artifacts and address information that is needed to interact with the contract. The contract artifacts are automatically generated by the hardhat tool when the contract is compiled, and the contract address is saved in a contract-address.json file by the deploy script.\n\n  - `src/components`: This directory contains the React components that make up the user interface of the frontend. The main components are the App component, which is the root component of the application, and the Token component, which is used to display and interact with the contract.\n\n  - `src/index.tsx`: This is the entry point of the frontend application. It is responsible for rendering the App component to the page and initializing the ethers.js library, which is used to interact with the contract.\n\n* To use the frontend, you will need to have the Token contract deployed to the Ethereum network, and the contract address and artifacts will need to be saved in the src/contracts directory. \n\n### Benefits of using Typescript\n\n* There are several benefits to using generated typings (also known as type definitions or type declarations) in TypeScript.  These benefits include the following:\n\n  - **Improved code correctness**: Generated typings provide type information for the objects and functions in your code, allowing the TypeScript compiler to catch type errors at compile time, rather than at runtime. This can help you avoid runtime errors and improve the overall correctness of your code.\n\n  - **Better code completion and documentation**: Generated typings can provide detailed type information for your code, allowing your code editor or IDE to provide accurate code completion suggestions and inline documentation. This can help you write code more quickly and understand the APIs you are using more easily.\n\n  - **Improved code maintainability**: Generated typings can help you refactor your code with confidence, by providing type information for the objects and functions in your code. This can make it easier to update your code without breaking existing functionality.\n\n  - **Easier integration with external libraries**: Many popular JavaScript libraries, such as React and lodash, provide generated typings that can be used with TypeScript. This allows you to use these libraries in your TypeScript code with full type information, making it easier to integrate them into your project.\n\n  - Overall, using generated typings in TypeScript can help you write safer, more maintainable, and more robust code, and can make it easier to integrate your code with external libraries and frameworks.\n\n### How contract address is saved in contract-addresses.jon and how we access it in Frontend using ethers.js\n\n* In a typical Ethereum DApp, the contract address is saved in a file called `contract-addresses.json`, which is generated during the contract deployment process.  \n\n* This file is typically located in the root directory of the DApp's project, and it contains the contract's address, as well as any other relevant deployment information, such as the contract's ABI and the network it was deployed to. \n\n* To access the contract address in the DApp's front-end using Ethers.js, you will first need to import the contract-addresses.json file and use it to create a new instance of the Contract class from Ethers.js, passing in the contract's ABI and the contract address as parameters.\n\n* Once you have created a contract instance, you can use it to call the contract's functions and access its state variables.  \n\n* For example, you can use the contract instance to call the contract's balanceOf function to check the balance of a given account, or to call its transfer function to send tokens to another account.  \n\n* By storing the contract address in contract-addresses.json and importing it in the front-end using Ethers.js, you can ensure that the DApp is always using the correct contract address, regardless of which network it is deployed to or which version of the contract is currently active. This makes it easy to manage multiple contract deployments and to switch between different networks without having to manually update the contract address in the front-end code.\n"
         }

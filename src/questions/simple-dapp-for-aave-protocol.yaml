@@ -1,0 +1,290 @@
+- uuid: c3d3f64f-607f-4b29-be5f-addf914a39b7
+  type: SingleChoice
+  content: What is the purpose of the IPriceOracleGetter contract imported in the Aave contract?
+  hint: NoHint
+  explanation: The purpose of the IPriceOracleGetter contract imported in the Aave contract is to get the price of a token in USD.
+  answerKeys:
+    - A
+  subTopics:
+    - smart-contract
+  difficultyLevel: Medium
+  choices:
+    - content: To get the price of a token in USD
+      key: A
+    - content: To get the data of the Aave pool
+      key: B
+    - content: To get the data of the user's reserve
+      key: C
+    - content: To get the configuration of the reserve
+      key: D
+- uuid: b50233ce-b65e-4776-99e7-c73348055e36
+  type: SingleChoice
+  content: What is the purpose of the supplyTokenAddress variable in the contract?
+  hint: ERC20 token
+  explanation: It is used to store the address of the ERC20 token that is being supplied to the Aave pool.
+  answerKeys:
+    - C
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: It is used to store the address of the Aave pool contract
+      key: A
+    - content: It is used to store the address of the ERC20 token that is being borrowed from the Aave pool
+      key: B
+    - content: It is used to store the address of the ERC20 token that is being supplied to the Aave pool
+      key: C
+    - content: It is used to store the address of the Aave Oracle contract
+      key: D
+- uuid: 13586d9e-88f1-438f-b139-7ffa435ea9ef
+  type: SingleChoice
+  content: What is the name of the function that is used to borrow tokens in the contract?
+  hint: Supply? Nah, definitely Borrow
+  explanation: Borrow function is used to borrow tokens in the contract.
+  answerKeys:
+    - C
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: getReserveData
+      key: A
+    - content: supply
+      key: B
+    - content: borrow
+      key: C
+    - content: getAssetPrice
+      key: D
+- uuid: 96cc791c-a34c-404a-a936-99a0eb4974fe
+  type: SingleChoice
+  content: What is a proxy contract in Ethereum development?
+  hint: middleman
+  explanation: A proxy contract in Ethereum development is a special type of contract that acts as a middleman between the user and the actual contract.
+  answerKeys:
+    - D
+  subTopics:
+    - smart-contract
+  difficultyLevel: Medium
+  choices:
+    - content: A contract that is deployed when a new version of the contract needs to be created
+      key: A
+    - content: A contract that is deployed when the contract's bytecode needs to be updated
+      key: B
+    - content: A contract that is deployed when the contract's state needs to be updated
+      key: C
+    - content: A special type of contract that acts as a middleman between the user and the actual contract
+      key: D
+- uuid: babbd1d5-245b-469f-8a44-d341a0e1b46c
+  type: SingleChoice
+  content: What is the advantage of using a proxy contract for contract upgrades?
+  hint: NoHint
+  explanation: Ethereum provides a mechanism for upgrading contracts called proxy contracts. A proxy contract is a special type of contract that acts as a middleman between the user and the actual contract. The proxy contract has a reference to the actual contract, and it forwards calls and transactions to the actual contract. When the actual contract needs to be updated, the developer can simply deploy a new version of the contract and update the proxy contract to point to the new contract. This allows the contract to be updated without affecting its address or its state, and without requiring users to update their contract references or migrate their data.
+  answerKeys:
+    - C
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: It allows the contract to be updated without affecting its address or its state
+      key: A
+    - content: It allows the contract to be updated without requiring users to migrate their data
+      key: B
+    - content: Both of the above
+      key: C
+    - content: None of the above
+      key: D
+- uuid: 6f9f7840-a89b-43de-b8bf-d8d6bdfd2b19
+  type: SingleChoice
+  content: What does the getNormalizedBalance function do?
+  hint: NoHint
+  explanation: It returns the normalized balance of a token for the specified provider and account.
+  answerKeys:
+    - B
+  subTopics:
+    - smart-contract
+  difficultyLevel: Medium
+  choices:
+    - content: Returns the USDC balance of the contract
+      key: A
+    - content: Returns the normalized balance of a token for the specified provider and account
+      key: B
+    - content: Returns the USDC balance of the user
+      key: C
+    - content: Returns the address of the USDC contract
+      key: D
+- uuid: ea59d9af-ccb4-4253-b86f-84aa69f60b60
+  type: SingleChoice
+  content: What is the purpose of the MintUSDC component?
+  hint: mint and transfer
+  explanation: The purpose of the MintUSDC component is to mint USDC tokens and transfer them to the user's account.
+  answerKeys:
+    - A
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: To mint USDC tokens and transfer them to the user's account
+      key: A
+    - content: To transfer USDC tokens from a contract address to the user's account
+      key: B
+    - content: To transfer USDC tokens from the user's account to a contract address
+      key: C
+    - content: To mint USDC tokens and transfer them to the contract address
+      key: D
+- uuid: 2ea0b8fb-f77d-4ee1-85a3-d5e97e0b261e
+  type: SingleChoice
+  content: What is the purpose of the IERC20__factory.connect method?
+  hint: connect
+  explanation: It connects the IERC20 contract to the Ethereum network.
+  answerKeys:
+    - C
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: It creates a new instance of the IERC20 contract
+      key: A
+    - content: It creates a new provider using window.ethereum
+      key: B
+    - content: It connects the IERC20 contract to the Ethereum network
+      key: C
+    - content: It connects the Dapp component to the Ethereum network
+      key: D
+- uuid: a69bd10a-9ef1-4319-baa8-ad24dff23589
+  type: SingleChoice
+  content: How does the Supply component calculate the amount of LINK that can be minted from a USDC supply?
+  hint: multiply
+  explanation: It multiplies the supply amount by the USDC threshold.
+  answerKeys:
+    - D
+  subTopics:
+    - smart-contract
+  difficultyLevel: Medium
+  choices:
+    - content: It divides the supply amount by the link price
+      key: A
+    - content: It multiplies the supply amount by the link price
+      key: B
+    - content: It divides the supply amount by the USDC threshold
+      key: C
+    - content: It multiplies the supply amount by the USDC threshold
+      key: D
+- uuid: 7b035f74-b4c3-487e-887b-9fa3ae4fa042
+  type: SingleChoice
+  content: What is the purpose of the updateContractBalance function?
+  hint: USDC token
+  explanation: The function updates the USDC balance of the contract.
+  answerKeys:
+    - B
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: To update the USDC balance of the user
+      key: A
+    - content: To update the USDC balance of the contract
+      key: B
+    - content: To update the balance of the user for all supported tokens
+      key: C
+    - content: To update the balance of the contract for all supported tokens
+      key: D
+- uuid: ff9ae8a3-36f0-45b1-a0a1-b8bfc76b361f
+  type: SingleChoice
+  content: What is the purpose of the getTokenContract function?
+  hint: NoHint
+  explanation: It's purpose is to get the contract instance of the specified token.
+  answerKeys:
+    - B
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: To get the contract address of the specified token
+      key: A
+    - content: To get the contract instance of the specified token
+      key: B
+    - content: To get the contract balance of the specified token
+      key: C
+    - content: To get the contract owner of the specified token
+      key: D
+- uuid: 1ccfce22-265a-45a0-9890-51768866db62
+  type: SingleChoice
+  content: What is the value of normalizedBalance after the following code executes? 
+    ```const userTokenBalance = BigNumber.from("5000000000");
+      const normalizedBalance = userTokenBalance.div(
+        BigNumber.from("1000000").toString()
+      );
+    ```
+  hint: divide
+  explanation: 5000000000/1000000 = 5000
+  answerKeys:
+    - C
+  subTopics:
+    - smart-contract
+  difficultyLevel: Medium
+  choices:
+    - content: "5"
+      key: A
+    - content: "500"
+      key: B
+    - content: "5000"
+      key: C
+    - content: "5000000"
+      key: D
+- uuid: d822db56-f5c8-467f-b73f-44804654ef2e
+  type: SingleChoice
+  content: What is the purpose of the FaucetService class?
+  hint: NoHint
+  explanation: The purpose of the FaucetService class is to provide users with access to Aave faucet contract instances.
+  answerKeys:
+    - C
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: To provide users with access to testnet Aave faucets
+      key: A
+    - content: To provide users with access to mainnet Aave faucets
+      key: B
+    - content: To provide users with access to Aave faucet contract instances
+      key: C
+    - content: To provide users with access to Aave faucet contract addresses
+      key: D
+- uuid: 2362691f-e0f1-4bdb-8f62-e719f46c4c37
+  type: SingleChoice
+  content: What is the purpose of the createPoolSlice function?
+  hint: NoHint
+  explanation: To create a new Map containing pool data.
+  answerKeys:
+    - D
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: To create a new instance of the Pool class
+      key: A
+    - content: To create a new instance of the LendingPool class
+      key: B
+    - content: To create a new instance of the UiPoolDataProvider class
+      key: C
+    - content: To create a new Map containing pool data
+      key: D
+- uuid: ebad7060-442a-4f39-977c-c189a98f5c22
+  type: SingleChoice
+  content: What is the value of the marketInfo.marketTitle constant?
+  hint: The test network we used.
+  explanation: Ethereum Görli is the value of the marketInfo.marketTitle constant.
+  answerKeys:
+    - A
+  subTopics:
+    - smart-contract
+  difficultyLevel: Low
+  choices:
+    - content: "Ethereum Görli"
+      key: A
+    - content: "Ethereum Rinkeby"
+      key: B
+    - content: "Ethereum Mainnet"
+      key: C
+    - content: "Ethereum Kovan"
+      key: D

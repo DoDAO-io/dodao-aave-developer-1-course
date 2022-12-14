@@ -61,3 +61,13 @@ topics:
     questions: starter-dapp-template.yaml
     status: In Progress
     completionWeek: In Progress
+  - title: Simple Dapp for Aave Protocol
+    key: simple-dapp-for-aave-protocol
+    details: >
+      This chapter discusses about the starter dapp [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in detail. 
+    explanations: simple-dapp-for-aave-protocol.yaml
+    readings: starter-dapp-template.yaml
+    summaries: starter-dapp-template.yaml
+    questions: simple-dapp-for-aave-protocol.yaml
+    status: In Progress
+    completionWeek: In Progress
