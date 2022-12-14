@@ -1,4 +1,4 @@
-title: AAVE Developer 1 (In Progress)
+title: AAVE Developer 1
 key: aave-developer-1
 summary: >
   This is a technical course for developers willing to write applications on
@@ -54,7 +54,9 @@ topics:
   - title: Starter-DApp-Template
     key: starter-dapp-template
     details: >
-      This chapter discusses about the starter dapp [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in detail. 
+      This chapter discusses about the starter dapp
+      [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in
+      detail. 
     explanations: starter-dapp-template.yaml
     readings: starter-dapp-template.yaml
     summaries: starter-dapp-template.yaml
@@ -64,7 +66,9 @@ topics:
   - title: Simple Dapp for Aave Protocol
     key: simple-dapp-for-aave-protocol
     details: >
-      This chapter discusses about the starter dapp [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in detail. 
+      This chapter discusses about the starter dapp
+      [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in
+      detail. 
     explanations: simple-dapp-for-aave-protocol.yaml
     readings: starter-dapp-template.yaml
     summaries: starter-dapp-template.yaml
