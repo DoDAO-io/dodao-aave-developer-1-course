@@ -11,6 +11,6 @@ This chapter discusses about the starter dapp [template](https://github.com/DoDA
 ## Links
 [Reading List](./../../generated/readings/starter-dapp-template.md)
 
-[Summary](./../../generated/summaries/starter-dapp-template.md)
+
 
 [Questions](./../../generated/questions/starter-dapp-template.md)

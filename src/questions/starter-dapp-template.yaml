@@ -5,8 +5,6 @@
   explanation: Solidity is a programming language for writing smart contracts that run on the Ethereum platform.
   answerKeys:
     - A
-  subTopics:
-    - stack-overview
   difficultyLevel: Low
   choices:
     - content: Solidity
@@ -24,8 +22,6 @@
   explanation: MetaMask is a browser extension that allows users to interact with the Ethereum blockchain. 
   answerKeys:
     - B
-  subTopics:
-    - stack-overview
   difficultyLevel: Low
   choices:
     - content: Solidity
@@ -43,8 +39,6 @@
   explanation: Goerli is a public, proof-of-authority Ethereum test network that is designed to be a stable and reliable environment for testing and deploying decentralized applications (dApps).
   answerKeys:
     - B
-  subTopics:
-    - stack-overview
   difficultyLevel: Low
   choices:
     - content: A browser extension for interacting with Ethereum
@@ -62,8 +56,6 @@
   explanation: Ethers.js is a JavaScript library for working with the Ethereum blockchain.
   answerKeys:
     - D
-  subTopics:
-    - stack-overview
   difficultyLevel: Low
   choices:
     - content: A blockchain infrastructure and development platform
@@ -81,8 +73,6 @@
   explanation: It sets the Solidity compiler version to 0.8.9. Solidity files have to start with this pragma. It will be used by the Solidity compiler to validate its version.
   answerKeys:
     - B
-  subTopics:
-    - smart-contract
   difficultyLevel: Low
   choices:
     - content: It imports the hardhat/console.sol library
@@ -100,8 +90,6 @@
   explanation: The `external` modifier makes a function only callable from outside the contract.
   answerKeys:
     - A
-  subTopics:
-    - smart-contract
   difficultyLevel: Low
   choices:
     - content: It makes the function callable only from outside the contract
@@ -119,8 +107,6 @@
   explanation: npx hardhat compile is used to compile the smart contract code.
   answerKeys:
     - C
-  subTopics:
-    - smart-contract
   difficultyLevel: Low
   choices:
     - content: npm compile
@@ -138,8 +124,6 @@
   explanation: A Makefile provides a number of useful commands for working with the project. For example, you can use the make compile command to compile the contract code. You can see the full list of commands by running make or make help.
   answerKeys:
     - A
-  subTopics:
-    - setup
   difficultyLevel: Low
   choices:
     - content: It provides a list of commands for working with the project
@@ -158,8 +142,6 @@
   answerKeys:
     - A
     - B
-  subTopics:
-    - smart-contract
   difficultyLevel: Low
   choices:
     - content: It is used to wait for a promise to be resolved
@@ -177,8 +159,6 @@
   explanation: The script saves the contract's address and ABI to the frontend directory using the saveFrontendFiles function. This function writes the contract's address and ABI to a contract-address.json file and saves the contract's artifacts to a Token.json file in the frontend directory.
   answerKeys:
     - D
-  subTopics:
-    - frontend
   difficultyLevel: Low
   choices:
     - content: It writes the values to a contract-address.json file
@@ -196,8 +176,6 @@
   explanation: Ethers.js is used to interact with the Ethereum network and deploy the contract in the deploy script
   answerKeys:
     - B
-  subTopics:
-    - smart-contract
   difficultyLevel: Low
   choices:
     - content: TypeScript
@@ -215,8 +193,6 @@
   explanation: We can access it by importing the contract-addresses.json file and use the ethers.getContractAt method
   answerKeys:
     - A
-  subTopics:
-    - frontend
   difficultyLevel: Low
   choices:
     - content: Import the contract-addresses.json file and use the ethers.getContractAt method
@@ -234,8 +210,6 @@
   explanation: It waits for the contract deployment to be confirmed on the network
   answerKeys:
     - C
-  subTopics:
-    - smart-contract
   difficultyLevel: Low
   choices:
     - content: It deploys the contract to the network
@@ -253,8 +227,6 @@
   explanation: This function writes the contract's address and ABI to a contract-address.json file and saves the contract's artifacts to a Token.json file in the frontend directory.
   answerKeys:
     - A
-  subTopics:
-    - smart-contract
   difficultyLevel: Low
   choices:
     - content: It saves the contract's address and ABI to the frontend directory
@@ -272,8 +244,6 @@
   explanation: It is used to check if a directory exists
   answerKeys:
     - C
-  subTopics:
-    - smart-contract
   difficultyLevel: Low
   choices:
     - content: It is used to create a directory

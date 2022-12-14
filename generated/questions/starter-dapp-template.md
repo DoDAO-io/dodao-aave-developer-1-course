@@ -19,7 +19,7 @@ Hint: NoHint
          
 Explanation: Solidity is a programming language for writing smart contracts that run on the Ethereum platform.
 
-Sub Topics: stack-overview
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -35,7 +35,7 @@ Hint: Others are not extensions
          
 Explanation: MetaMask is a browser extension that allows users to interact with the Ethereum blockchain.
 
-Sub Topics: stack-overview
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -51,7 +51,7 @@ Hint: test network
          
 Explanation: Goerli is a public, proof-of-authority Ethereum test network that is designed to be a stable and reliable environment for testing and deploying decentralized applications (dApps).
 
-Sub Topics: stack-overview
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -67,7 +67,7 @@ Hint: library
          
 Explanation: Ethers.js is a JavaScript library for working with the Ethereum blockchain.
 
-Sub Topics: stack-overview
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -83,7 +83,7 @@ Hint: NoHint
          
 Explanation: It sets the Solidity compiler version to 0.8.9. Solidity files have to start with this pragma. It will be used by the Solidity compiler to validate its version.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -99,7 +99,7 @@ Hint: external is synonymous to?
          
 Explanation: The `external` modifier makes a function only callable from outside the contract.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -115,7 +115,7 @@ Hint: NoHint
          
 Explanation: npx hardhat compile is used to compile the smart contract code.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -131,7 +131,7 @@ Hint: NoHint
          
 Explanation: A Makefile provides a number of useful commands for working with the project. For example, you can use the make compile command to compile the contract code. You can see the full list of commands by running make or make help.
 
-Sub Topics: setup
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -147,7 +147,7 @@ Hint: NoHint
          
 Explanation: It is used to wait for a promise to be resolved and to handle asynchronous operations.It is used to pause the execution of the function until the asynchronous operation is completed
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -163,7 +163,7 @@ Hint: saveFrontendFiles function
          
 Explanation: The script saves the contract's address and ABI to the frontend directory using the saveFrontendFiles function. This function writes the contract's address and ABI to a contract-address.json file and saves the contract's artifacts to a Token.json file in the frontend directory.
 
-Sub Topics: frontend
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -179,7 +179,7 @@ Hint: Others are not libraries.
          
 Explanation: Ethers.js is used to interact with the Ethereum network and deploy the contract in the deploy script
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -195,7 +195,7 @@ Hint: contract-address.json
          
 Explanation: We can access it by importing the contract-addresses.json file and use the ethers.getContractAt method
 
-Sub Topics: frontend
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -211,7 +211,7 @@ Hint: NoHint
          
 Explanation: It waits for the contract deployment to be confirmed on the network
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -227,7 +227,7 @@ Hint: NoHint
          
 Explanation: This function writes the contract's address and ABI to a contract-address.json file and saves the contract's artifacts to a Token.json file in the frontend directory.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -243,5 +243,5 @@ Hint: Does it exist?
          
 Explanation: It is used to check if a directory exists
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  

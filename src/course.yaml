@@ -59,7 +59,6 @@ topics:
       detail. 
     explanations: starter-dapp-template.yaml
     readings: starter-dapp-template.yaml
-    summaries: starter-dapp-template.yaml
     questions: starter-dapp-template.yaml
     status: In Progress
     completionWeek: In Progress
@@ -70,8 +69,6 @@ topics:
       [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in
       detail. 
     explanations: simple-dapp-for-aave-protocol.yaml
-    readings: starter-dapp-template.yaml
-    summaries: starter-dapp-template.yaml
     questions: simple-dapp-for-aave-protocol.yaml
     status: In Progress
     completionWeek: In Progress

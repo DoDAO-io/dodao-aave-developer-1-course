@@ -16,7 +16,7 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
   * Resources
     
  
- Sub Topics:     
+ Sub Topics: No Sub-Topics    
   **Introduction to AAVE V3 Smart Contracts**
  
  [![Introduction to AAVE V3 Smart Contracts](https://img.youtube.com/vi/LzaS8IiqnPY/0.jpg)](https://www.youtube.com/watch?v=LzaS8IiqnPY)     
@@ -26,5 +26,5 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
   * Build on top of AAVE
     
  
- Sub Topics:     
+ Sub Topics: No Sub-Topics    
  

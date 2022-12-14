@@ -19,7 +19,7 @@ Hint: NoHint
          
 Explanation: The purpose of the IPriceOracleGetter contract imported in the Aave contract is to get the price of a token in USD.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -35,7 +35,7 @@ Hint: ERC20 token
          
 Explanation: It is used to store the address of the ERC20 token that is being supplied to the Aave pool.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -51,7 +51,7 @@ Hint: Supply? Nah, definitely Borrow
          
 Explanation: Borrow function is used to borrow tokens in the contract.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -67,7 +67,7 @@ Hint: middleman
          
 Explanation: A proxy contract in Ethereum development is a special type of contract that acts as a middleman between the user and the actual contract.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -83,7 +83,7 @@ Hint: NoHint
          
 Explanation: Ethereum provides a mechanism for upgrading contracts called proxy contracts. A proxy contract is a special type of contract that acts as a middleman between the user and the actual contract. The proxy contract has a reference to the actual contract, and it forwards calls and transactions to the actual contract. When the actual contract needs to be updated, the developer can simply deploy a new version of the contract and update the proxy contract to point to the new contract. This allows the contract to be updated without affecting its address or its state, and without requiring users to update their contract references or migrate their data.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -99,7 +99,7 @@ Hint: NoHint
          
 Explanation: It returns the normalized balance of a token for the specified provider and account.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -115,7 +115,7 @@ Hint: mint and transfer
          
 Explanation: The purpose of the MintUSDC component is to mint USDC tokens and transfer them to the user's account.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -131,7 +131,7 @@ Hint: connect
          
 Explanation: It connects the IERC20 contract to the Ethereum network.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -147,7 +147,7 @@ Hint: multiply
          
 Explanation: It multiplies the supply amount by the USDC threshold.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -163,7 +163,7 @@ Hint: USDC token
          
 Explanation: The function updates the USDC balance of the contract.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -179,7 +179,7 @@ Hint: NoHint
          
 Explanation: It's purpose is to get the contract instance of the specified token.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -195,7 +195,7 @@ Hint: divide
          
 Explanation: 5000000000/1000000 = 5000
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -211,7 +211,7 @@ Hint: NoHint
          
 Explanation: The purpose of the FaucetService class is to provide users with access to Aave faucet contract instances.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -227,7 +227,7 @@ Hint: NoHint
          
 Explanation: To create a new Map containing pool data.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
 
 ---
@@ -243,5 +243,5 @@ Hint: The test network we used.
          
 Explanation: Ethereum Görli is the value of the marketInfo.marketTitle constant.
 
-Sub Topics: smart-contract
+Sub Topics: No Sub-Topics
  
