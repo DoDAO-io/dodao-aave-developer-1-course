@@ -3,7 +3,7 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
 
 ---
 
-## Starter-DApp-Template
+## Simple Dapp for Aave Protocol
  
 This chapter discusses about the starter dapp [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in detail. 
 
@@ -13,4 +13,4 @@ This chapter discusses about the starter dapp [template](https://github.com/DoDA
 
 [Summary](./../../generated/summaries/starter-dapp-template.md)
 
-[Questions](./../../generated/questions/starter-dapp-template.md)
+[Questions](./../../generated/questions/simple-dapp-for-aave-protocol.md)
