@@ -133,21 +133,22 @@
       key: D
 - uuid: 2ea0b8fb-f77d-4ee1-85a3-d5e97e0b261e
   type: SingleChoice
-  content: What is the purpose of the IERC20__factory.connect method?
+  content: What is the purpose of the IERC20__factory.connect method? -----
   hint: connect
   explanation: It connects the IERC20 contract to the Ethereum network.
   answerKeys:
     - C
-  difficultyLevel: Low
+  subTopics: []
+  difficultyLevel: Medium
   choices:
-    - content: It creates a new instance of the IERC20 contract
-      key: A
-    - content: It creates a new provider using window.ethereum
-      key: B
-    - content: It connects the IERC20 contract to the Ethereum network
-      key: C
-    - content: It connects the Dapp component to the Ethereum network
-      key: D
+    - key: A
+      content: It creates a new instance of the IERC20 contract
+    - key: B
+      content: It creates a new provider using window.ethereum
+    - key: C
+      content: It connects the IERC20 contract to the Ethereum network
+    - key: D
+      content: It connects the Dapp component to the Ethereum network
 - uuid: a69bd10a-9ef1-4319-baa8-ad24dff23589
   type: SingleChoice
   content: >-

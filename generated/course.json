@@ -1915,13 +1915,14 @@
         {
           "uuid": "2ea0b8fb-f77d-4ee1-85a3-d5e97e0b261e",
           "type": "SingleChoice",
-          "content": "What is the purpose of the IERC20__factory.connect method?",
+          "content": "What is the purpose of the IERC20__factory.connect method? -----",
           "hint": "connect",
           "explanation": "It connects the IERC20 contract to the Ethereum network.",
           "answerKeys": [
             "C"
           ],
-          "difficultyLevel": "Low",
+          "subTopics": [],
+          "difficultyLevel": "Medium",
           "choices": [
             {
               "content": "It creates a new instance of the IERC20 contract",
