@@ -6,59 +6,81 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
  ## Fetch and Show AAVE Data
  
  **Introduction**        
-AAVE is a DeFi protocol that facilitates the lending and borrowing of cryptocurrency tokens using diverse algorithms and smart contracts without centralized intermediaries. 
-It is a non-custodial liquidity protocol that allows users to participate as lenders or borrowers. Depositors provide liquidity to the market to earn a passive income, while borrowers are able to borrow in an overcollateralized manner.
-Aave's GraphQL data layer is a great resource for developers, allowing developers to access data that may not have been available otherwise. This way developers can work with more data and create more advanced applications. 
-Just like any decentralized blockchain application, Aave's data can be classified into three types: 
-- **Real-time data or current information** - This includes the current state and the new events. With real-time data, you can use data visualisations that reflect changes as they occur in real-time. This means that dashboards are interactive and accurate at any given moment.
-- **Historical** - This includes past state and events. With historical data, you can get a snapshot of information displayed in a chart.
+## Application Data
+The strongest strength of decentralized applications is that most of the data related to transactions, updates etc, lives on chain and can be queried by anyone. 
 
-As discussed above, there are multiple use cases of this data provided by Aave and varied applications (including read-only as well as read/write applications) can be built on top of it and we can examine this data to gain insights on how to update and continue to improve the application.
+Just like any decentralized blockchain application, Aave's data can be classified into two types: 
+#### **Real-time data or current information** 
+This includes the current state and the new events. With real-time data, you can use data visualizations that reflect changes as they occur in real-time. This means that dashboards are interactive and accurate at any given moment.
 
-The focus of this chapter will be to use Aave's data and show it on the UI in a couple of use cases. 
-- Creating a pie graph to review the aave treasury in USDT 
-- Implementing a time series graph of how the holdings of different pools have changed over time.
-
-Before moving on to the code, let's have a look at the importance of analytics.
-
-**Importance of Analytics**
-- Make informed decisions
-- Improve efficiency
-- Identify frauds
-- Improve protocol governance
-- Accelerate through uncertainty
-- Tackle bugs and problems
-- Transform raw data into more valuable information
+#### **Historical** 
+This includes past state and events. With historical data, you can get a snapshot of information displayed in a chart.
 
 Aave's data can be queried in the form of REST or GraphQL. Aave uses “The Graph” to index its data and anyone can query the subgraphs to get access to this information.
+
+There are multiple use cases of this data and varied applications (including read-only as well as read/write applications) can be built on top of it. We can examine this data to gain insights on how to update and continue to improve the application.
+
+## Analytics
+Availability of all this data empowers us to build intelligent on/off chain analytics applications which can help us understand some of the crucial insights.
+
+Analytics in financial applications can provide a number of benefits, including:
+
+1. **Improved decision-making**: Financial analytics can help organizations make more informed decisions by providing insights into past performance, trends, and forecasts. This can help organizations identify opportunities and risks, and make more informed investment and strategic decisions.
+2. **Enhanced risk management**: Financial analytics can help organizations identify and mitigate potential risks by providing insights into historical data and trends. This can help organizations better manage and control their exposure to risk.
+3. **Improved efficiency**: Financial analytics can help organizations streamline processes, identify inefficiencies, and optimize resources. This can lead to cost savings and improved operational efficiency.
+4. **Increased transparency**: Financial analytics can help organizations provide more transparent and accurate reporting, which can increase trust and credibility with stakeholders.
+
+## About this chapter
+The focus of this chapter will be to use Aave's data and show it on the UI in a couple of use cases. 
+- Creating a pie graph to review the Aave treasury in USDT 
+- Implementing a time series graph of how the holdings of different pools have changed over time.
+
+
  
  **Realtime GraphQL Data**        
-#### The Graph and GraphQL
-The Graph is a decentralized protocol for indexing and querying data from Ethereum-based blockchains. That is, obtaining specific data from the blockchain is a more convenient approach while adhering to the web3 ethos and benefiting from decentralization and stability.
+### Real Time Data
+In the Ethereum blockchain, events are a way for smart contracts to record and communicate changes in their internal state to the outside world. Events are emitted by smart contracts when certain conditions are met, and they can be listened to and logged by external clients, such as dApps or other smart contracts.
 
-The underlying query language used in The Graph is GraphQL. What is the distinction between RESTFUL API calls and GraphQL calls? Traditional APIs, on the other hand, require developers to define unique endpoints for users that return specified data. If the user requires further information, they may need to make repeated API calls, potentially hundreds of API calls, to obtain it. As long as the developer has established a flexible schema, The Graph (which uses GraphQL) just requires one call to a subgraph.
+All of the Aave's SmartContract events are indexed in The Graph and can be queried by anyone.
+
+### The Graph
+The Graph is a decentralized protocol that enables users to query and index data from blockchains and other data sources. It is designed to help developers build and deploy decentralized applications (dApps) more efficiently by providing a fast and reliable way to access data stored on a variety of different networks.
+
+The Graph is built on top of a decentralized network of nodes, called "indexers," that are responsible for indexing and serving data to users. These indexers use a custom query language called GraphQL to retrieve and filter data from various sources, including blockchains like Ethereum and IPFS.
+
+The Graph is intended to provide a more efficient and scalable alternative to traditional centralized databases, and to enable developers to build dApps that can access and analyze data from a wide range of sources in a decentralized manner.
+
+### GraphQL
+GraphQL allows clients to request exactly the data they need, and nothing more, which can make it more efficient and flexible than REST APIs. It allows clients to specify the fields they want to retrieve in a request, and the server will only return the requested data. This means that a client can make a single request to the server and receive all the data it needs in a single response, rather than making multiple requests to different endpoints as is often the case with REST APIs.
+
+GraphQL also has a strong type system, which allows developers to define the types of data that can be queried and returned in a request. This can help ensure that clients are only able to request data that is available on the server, and can help prevent errors and improve the overall reliability of the API.
+
 See this [GraphQL primer](https://medium.com/graphprotocol/graphql-will-power-the-decentralized-web-d7443a69c69a) for additional information on The Graph and the underlying GraphQL.
 
-#### Source of Aave Subgraphs
+### Aave's Subgraphs
 To view the source of the subgraphs, see our [Github repo](https://github.com/aave/protocol-v2-subgraph).
 
 Production Network: [Polygon](https://thegraph.com/hosted-service/subgraph/aave/protocol-v3-polygon)
 
-#### How to Make Use of the Playground
+### GraphQL Playground 
+GraphQL Playground is a graphical, interactive, in-browser GraphQL IDE (Integrated Development Environment). It is a tool that allows developers to test and explore GraphQL APIs in a user-friendly interface. GraphQL Playground provides a number of features that make it easy to work with GraphQL APIs, including syntax highlighting, auto complete, history, document explorer etc.
 
+How to Make Use of the Playground
 - If you use your browser to navigate to the above playground links, you will be directed to The Graph's playground, where you can simply write and test GraphQL queries.
 - Select the purple play button to run your query.
 - In the middle column, the query results will be returned.
 - Use the 'Schema' column on the right to see what data is available, which may be investigated to discover the underlying data.
 - You can also type in the left column and use the auto-complete feature to identify the appropriate query/types.
 
-#### Points to keep in mind
+Points to keep in mind
 - All address values (for example, when used for id) must be in lowercase.
 - In lowercase, the ID of reserves is the asset's address and the address of the market's LendingPoolAddressProvider.
 - When utilizing the raw endpoints, the numeric number queried will be returned in either wei units (i.e. 10^18), the decimals of the asset itself (i.e. 10^6 for USDC), or ray units (i.e. 10^27).
 - By default, each 'page' of results returns 100 entries. This is expandable to a maximum of 1000 entries per page.
 - To list the following 1000 entries, for example, put something like: (skip:1000, first: 1000) to your query's arguments.
 - This is also true for nested entries, such as arrays.
+
+### Data Endpoints
 
 This Graph endpoint contains only static data. To obtain a user's most recent balance (including interest earned up to that moment), you must either compute it yourself or make a balanceOf() call to the aToken contract.
 
@@ -67,12 +89,11 @@ This Graph endpoint contains only static data. To obtain a user's most recent ba
 | Mainnet                    | https://thegraph.com/explorer/subgraph/aave/aave-v2-matic              |
 | Görli (Goerli) Testnet     | https://thegraph.com/hosted-service/subgraph/aave/protocol-v3-goerli   |
 
-Goerli is an Ethereum test network that allows blockchain development testing prior to deployment on the main Ethereum network, Mainnet. Görli (Goerli) Testnet is the first proof-of-authority cross-client testnet, synching Parity Ethereum, Geth, Nethermind, Hyperledger Besu (formerly Pantheon), and EthereumJS. This testnet is a community-based project, completely open-source, naturally. It was born in September 2018 during ETHBerlin and has been growing in contributors ever since.
-
-#### Using your app to access GraphQL data
+#### Making Http request to get GraphQL data
 
 The preferred method is to utilize a client library that can handle the 'plumbing' to ensure you have up-to-date data (with caching sometimes included). Apollo is used internally, but there are several choices depending on your programming language; read the official GraphQL page for more information.
 If you are unable to utilize a client library (for example, while querying using Postman), you can send a POST request to our subgraph's HTTP endpoint with the header: "Content-Type: application/json" and the body comprising of your query on one line in quotations. As an example:
+
 ```
 {"query": "{ reserves (where: {usageAsCollateralEnabled: true})  { id name price {id} liquidityRate variableBorrowRate stableBorrowRate}}" }
 ```
