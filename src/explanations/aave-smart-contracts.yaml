@@ -859,3 +859,17 @@
     * Getting into debt (i.e. not immediately paying back)
       - If you used mode=1 or mode=2 for any of the assets in the modes parameter, the address put in for onBehalfOf will incur the obligation if the onBehalfOf address previously authorised the msg.sender to incur debts on their behalf.
       - This means that you can have some assets that are promptly paid back while others incur debt.
+- key: starter-app
+  shortTitle: Starter App
+  details: >
+    #### What you will be building/running
+
+    The template finally looks like this:
+
+    ![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)
+
+    This dapp template is very simple and uses a trivial 'Token' smart contract
+    that allows you to create your own token and also mint it to deployer's
+    address. The deployer can then transfer the tokens to whichever address he
+    likes.
+  title: Starter App
