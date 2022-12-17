@@ -1,7 +1,7 @@
 - key: starter-dapp-template-intro
   title: Introduction
   shortTitle: Introduction
-  details: >
+  details: >-
     ## Dapps
 
     The main components of a blockchain Dapp (decentralized application) are:
@@ -34,30 +34,18 @@
 
     ## DoDAO Dapp template
 
-    We understand that creating and deploying smart contracts can be a bit
-    daunting for those who are new to the space. As such, we've created a
-    starter template using HardHat that makes it easy to deploy smart contracts.
-    Plus, our deploy scripts automatically save the deployed smart contract's
-    address in the front end code so that the front end can reference it later
-    on.
+    As, creating and deploying smart contracts can be a bit daunting, we've
+    created a starter template using HardHat that makes it easy to deploy smart
+    contracts. Plus, our deploy scripts automatically save the deployed smart
+    contract's address in the front end code so that the front end can reference
+    it later on.
 
 
-    This guide is a detailed walkthrough of how to setup, build, and run a
-    minimal React Dapp using [this
-    template](https://github.com/DoDAO-io/dodao-simple-contract-template) that
-    deploys  and interacts with a simple Solidity smart contract using Hardhat
-    and MetaMask as part of one's development workflow.
-
-    #### What you will be building/running
-
-    The template finally looks like this:
-
-    ![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)
-
-    This dapp template is very simple and uses a trivial 'Token' smart contract
-    that allows you to create your own token and also mint it to deployer's
-    address. The deployer can then transfer the tokens to whichever address he
-    likes.
+    We also use generated typescript files, using which interacting with Smart
+    Contracts is as simple as calling a JavaScript function.
+      
+    [Here](https://github.com/DoDAO-io/dodao-simple-contract-template) is the
+    link to the template.
 - key: stack-overview
   title: Stack Overview
   shortTitle: Stack Overview
