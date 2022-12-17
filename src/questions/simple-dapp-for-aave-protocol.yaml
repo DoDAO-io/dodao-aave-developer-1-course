@@ -1,8 +1,12 @@
 - uuid: c3d3f64f-607f-4b29-be5f-addf914a39b7
   type: SingleChoice
-  content: What is the purpose of the IPriceOracleGetter contract imported in the Aave contract?
+  content: >-
+    What is the purpose of the IPriceOracleGetter contract imported in the Aave
+    contract?
   hint: NoHint
-  explanation: The purpose of the IPriceOracleGetter contract imported in the Aave contract is to get the price of a token in USD.
+  explanation: >-
+    The purpose of the IPriceOracleGetter contract imported in the Aave contract
+    is to get the price of a token in USD.
   answerKeys:
     - A
   difficultyLevel: Medium
@@ -19,22 +23,30 @@
   type: SingleChoice
   content: What is the purpose of the supplyTokenAddress variable in the contract?
   hint: ERC20 token
-  explanation: It is used to store the address of the ERC20 token that is being supplied to the Aave pool.
+  explanation: >-
+    It is used to store the address of the ERC20 token that is being supplied to
+    the Aave pool.
   answerKeys:
     - C
   difficultyLevel: Low
   choices:
     - content: It is used to store the address of the Aave pool contract
       key: A
-    - content: It is used to store the address of the ERC20 token that is being borrowed from the Aave pool
+    - content: >-
+        It is used to store the address of the ERC20 token that is being
+        borrowed from the Aave pool
       key: B
-    - content: It is used to store the address of the ERC20 token that is being supplied to the Aave pool
+    - content: >-
+        It is used to store the address of the ERC20 token that is being
+        supplied to the Aave pool
       key: C
     - content: It is used to store the address of the Aave Oracle contract
       key: D
 - uuid: 13586d9e-88f1-438f-b139-7ffa435ea9ef
   type: SingleChoice
-  content: What is the name of the function that is used to borrow tokens in the contract?
+  content: >-
+    What is the name of the function that is used to borrow tokens in the
+    contract?
   hint: Supply? Nah, definitely Borrow
   explanation: Borrow function is used to borrow tokens in the contract.
   answerKeys:
@@ -49,35 +61,31 @@
       key: C
     - content: getAssetPrice
       key: D
-- uuid: 96cc791c-a34c-404a-a936-99a0eb4974fe
-  type: SingleChoice
-  content: What is a proxy contract in Ethereum development?
-  hint: middleman
-  explanation: A proxy contract in Ethereum development is a special type of contract that acts as a middleman between the user and the actual contract.
-  answerKeys:
-    - D
-  difficultyLevel: Medium
-  choices:
-    - content: A contract that is deployed when a new version of the contract needs to be created
-      key: A
-    - content: A contract that is deployed when the contract's bytecode needs to be updated
-      key: B
-    - content: A contract that is deployed when the contract's state needs to be updated
-      key: C
-    - content: A special type of contract that acts as a middleman between the user and the actual contract
-      key: D
 - uuid: babbd1d5-245b-469f-8a44-d341a0e1b46c
   type: SingleChoice
   content: What is the advantage of using a proxy contract for contract upgrades?
   hint: NoHint
-  explanation: Ethereum provides a mechanism for upgrading contracts called proxy contracts. A proxy contract is a special type of contract that acts as a middleman between the user and the actual contract. The proxy contract has a reference to the actual contract, and it forwards calls and transactions to the actual contract. When the actual contract needs to be updated, the developer can simply deploy a new version of the contract and update the proxy contract to point to the new contract. This allows the contract to be updated without affecting its address or its state, and without requiring users to update their contract references or migrate their data.
+  explanation: >-
+    Ethereum provides a mechanism for upgrading contracts called proxy
+    contracts. A proxy contract is a special type of contract that acts as a
+    middleman between the user and the actual contract. The proxy contract has a
+    reference to the actual contract, and it forwards calls and transactions to
+    the actual contract. When the actual contract needs to be updated, the
+    developer can simply deploy a new version of the contract and update the
+    proxy contract to point to the new contract. This allows the contract to be
+    updated without affecting its address or its state, and without requiring
+    users to update their contract references or migrate their data.
   answerKeys:
     - C
   difficultyLevel: Low
   choices:
-    - content: It allows the contract to be updated without affecting its address or its state
+    - content: >-
+        It allows the contract to be updated without affecting its address or
+        its state
       key: A
-    - content: It allows the contract to be updated without requiring users to migrate their data
+    - content: >-
+        It allows the contract to be updated without requiring users to migrate
+        their data
       key: B
     - content: Both of the above
       key: C
@@ -87,14 +95,18 @@
   type: SingleChoice
   content: What does the getNormalizedBalance function do?
   hint: NoHint
-  explanation: It returns the normalized balance of a token for the specified provider and account.
+  explanation: >-
+    It returns the normalized balance of a token for the specified provider and
+    account.
   answerKeys:
     - B
   difficultyLevel: Medium
   choices:
     - content: Returns the USDC balance of the contract
       key: A
-    - content: Returns the normalized balance of a token for the specified provider and account
+    - content: >-
+        Returns the normalized balance of a token for the specified provider and
+        account
       key: B
     - content: Returns the USDC balance of the user
       key: C
@@ -104,7 +116,9 @@
   type: SingleChoice
   content: What is the purpose of the MintUSDC component?
   hint: mint and transfer
-  explanation: The purpose of the MintUSDC component is to mint USDC tokens and transfer them to the user's account.
+  explanation: >-
+    The purpose of the MintUSDC component is to mint USDC tokens and transfer
+    them to the user's account.
   answerKeys:
     - A
   difficultyLevel: Low
@@ -136,7 +150,9 @@
       key: D
 - uuid: a69bd10a-9ef1-4319-baa8-ad24dff23589
   type: SingleChoice
-  content: How does the Supply component calculate the amount of LINK that can be minted from a USDC supply?
+  content: >-
+    How does the Supply component calculate the amount of LINK that can be
+    minted from a USDC supply?
   hint: multiply
   explanation: It multiplies the supply amount by the USDC threshold.
   answerKeys:
@@ -187,31 +203,32 @@
       key: D
 - uuid: 1ccfce22-265a-45a0-9890-51768866db62
   type: SingleChoice
-  content: What is the value of normalizedBalance after the following code executes? 
-    ```const userTokenBalance = BigNumber.from("5000000000");
-      const normalizedBalance = userTokenBalance.div(
-        BigNumber.from("1000000").toString()
-      );
-    ```
+  content: >-
+    What is the value of normalizedBalance after the following code executes?
+    ```const userTokenBalance = BigNumber.from("5000000000"); const
+    normalizedBalance = userTokenBalance.div(
+    BigNumber.from("1000000").toString() ); ```
   hint: divide
   explanation: 5000000000/1000000 = 5000
   answerKeys:
     - C
   difficultyLevel: Medium
   choices:
-    - content: "5"
+    - content: '5'
       key: A
-    - content: "500"
+    - content: '500'
       key: B
-    - content: "5000"
+    - content: '5000'
       key: C
-    - content: "5000000"
+    - content: '5000000'
       key: D
 - uuid: d822db56-f5c8-467f-b73f-44804654ef2e
   type: SingleChoice
   content: What is the purpose of the FaucetService class?
   hint: NoHint
-  explanation: The purpose of the FaucetService class is to provide users with access to Aave faucet contract instances.
+  explanation: >-
+    The purpose of the FaucetService class is to provide users with access to
+    Aave faucet contract instances.
   answerKeys:
     - C
   difficultyLevel: Low
@@ -250,11 +267,11 @@
     - A
   difficultyLevel: Low
   choices:
-    - content: "Ethereum Görli"
+    - content: Ethereum Görli
       key: A
-    - content: "Ethereum Rinkeby"
+    - content: Ethereum Rinkeby
       key: B
-    - content: "Ethereum Mainnet"
+    - content: Ethereum Mainnet
       key: C
-    - content: "Ethereum Kovan"
+    - content: Ethereum Kovan
       key: D

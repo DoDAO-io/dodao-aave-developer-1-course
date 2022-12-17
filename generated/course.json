@@ -1826,35 +1826,6 @@
           ]
         },
         {
-          "uuid": "96cc791c-a34c-404a-a936-99a0eb4974fe",
-          "type": "SingleChoice",
-          "content": "What is a proxy contract in Ethereum development?",
-          "hint": "middleman",
-          "explanation": "A proxy contract in Ethereum development is a special type of contract that acts as a middleman between the user and the actual contract.",
-          "answerKeys": [
-            "D"
-          ],
-          "difficultyLevel": "Medium",
-          "choices": [
-            {
-              "content": "A contract that is deployed when a new version of the contract needs to be created",
-              "key": "A"
-            },
-            {
-              "content": "A contract that is deployed when the contract's bytecode needs to be updated",
-              "key": "B"
-            },
-            {
-              "content": "A contract that is deployed when the contract's state needs to be updated",
-              "key": "C"
-            },
-            {
-              "content": "A special type of contract that acts as a middleman between the user and the actual contract",
-              "key": "D"
-            }
-          ]
-        },
-        {
           "uuid": "babbd1d5-245b-469f-8a44-d341a0e1b46c",
           "type": "SingleChoice",
           "content": "What is the advantage of using a proxy contract for contract upgrades?",
