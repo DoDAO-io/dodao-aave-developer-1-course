@@ -1190,7 +1190,7 @@
         {
           "key": "starter-app",
           "shortTitle": "Starter App",
-          "details": "#### What you will be building/running\nThe template finally looks like this:\n![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)\nThis dapp template is very simple and uses a trivial 'Token' smart contract that allows you to create your own token and also mint it to deployer's address. The deployer can then transfer the tokens to whichever address he likes.\n",
+          "details": "## Simple ERC20 Starter App\nOur template includes a simple application that we can use to create and deploy an ERC20 contract. We can then use the UI to interact with the Smart Contract. The frontend application of the template looks like this:\n\n![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)\n\nThe deployer can then transfer the tokens to whichever address he likes.\n",
           "title": "Starter App"
         },
         {
