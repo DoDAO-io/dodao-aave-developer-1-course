@@ -81,10 +81,20 @@
   title: Realtime GraphQL Data
   shortTitle: Realtime Data
   details: >+
-    ---- Some Introduction --- 
+    ### Real Time Data
+
+    In the Ethereum blockchain, events are a way for smart contracts to record
+    and communicate changes in their internal state to the outside world. Events
+    are emitted by smart contracts when certain conditions are met, and they can
+    be listened to and logged by external clients, such as dApps or other smart
+    contracts.
 
 
-    #### The Graph
+    All of the Aave's SmartContract events are indexed in The Graph and can be
+    queried by anyone.
+
+
+    ### The Graph
 
     The Graph is a decentralized protocol that enables users to query and index
     data from blockchains and other data sources. It is designed to help
@@ -129,7 +139,7 @@
     for additional information on The Graph and the underlying GraphQL.
 
 
-    #### Source of Aave Subgraphs
+    ### Aave's Subgraphs
 
     To view the source of the subgraphs, see our [Github
     repo](https://github.com/aave/protocol-v2-subgraph).
@@ -139,8 +149,17 @@
     [Polygon](https://thegraph.com/hosted-service/subgraph/aave/protocol-v3-polygon)
 
 
-    #### How to Make Use of the Playground
+    ### GraphQL Playground 
 
+    GraphQL Playground is a graphical, interactive, in-browser GraphQL IDE
+    (Integrated Development Environment). It is a tool that allows developers to
+    test and explore GraphQL APIs in a user-friendly interface. GraphQL
+    Playground provides a number of features that make it easy to work with
+    GraphQL APIs, including syntax highlighting, auto complete, history,
+    document explorer etc.
+
+
+    How to Make Use of the Playground
 
     - If you use your browser to navigate to the above playground links, you
     will be directed to The Graph's playground, where you can simply write and
