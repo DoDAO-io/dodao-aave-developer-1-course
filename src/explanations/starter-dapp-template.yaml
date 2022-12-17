@@ -25,8 +25,21 @@
 
     ## Creating an Dapp
 
+    Creating and deploying Smart Contracts, as well as interacting with them,
+    has not been standardized across the ecosystem. This means that every
+    project has to spend extra time developing their own setup, rather than
+    being able to use ones that have already been created. Standardization would
+    save a lot of time and allow new projects to get started much faster.
+
 
     ## DoDAO Dapp template
+
+    We understand that creating and deploying smart contracts can be a bit
+    daunting for those who are new to the space. As such, we've created a
+    starter template using HardHat that makes it easy to deploy smart contracts.
+    Plus, our deploy scripts automatically save the deployed smart contract's
+    address in the front end code so that the front end can reference it later
+    on.
 
 
     This guide is a detailed walkthrough of how to setup, build, and run a
