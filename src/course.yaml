@@ -37,7 +37,7 @@ topics:
     completionWeek: In Progress
   - title: Fetch and Show AAVE Data
     key: fetching-aave-data
-    details: >
+    details: >-
       Like any on-chain application, Aave's data can be classified into two
       types
 
@@ -61,13 +61,12 @@ topics:
       5. Displaying Historical Data
 
 
-
-      It begins with an introduction to Aave, then contiues with the Graph &
+      It begins with an introduction to Aave, then continues with the Graph &
       GraphQL and we further discuss about the Aave subgraphs. Then we learn how
-      to query Aave's GraphQL database using React and implement a Pie chart
-      too. Then we look on to few example graphql queries. Later on we discuss
-      about the historical rest data and how we can use it to implement a time
-      series graph in react.
+            to query Aave's GraphQL database using React and implement a Pie chart
+            too. Then we look on to few example graphql queries. Later on we discuss
+            about the historical rest data and how we can use it to implement a time
+            series graph in react.
     explanations: fetching-aave-data.yaml
     readings: aave-smart-contracts.yaml
     summaries: fetching-aave-data.yaml
