@@ -1,8 +1,12 @@
 - uuid: bb83adb7-229c-4193-bb48-dfbd4518b94a
   type: SingleChoice
-  content: What programming language is used to write the smart contract in this template?
+  content: >-
+    What programming language is used to write the smart contract in this
+    template?
   hint: NoHint
-  explanation: Solidity is a programming language for writing smart contracts that run on the Ethereum platform.
+  explanation: >-
+    Solidity is a programming language for writing smart contracts that run on
+    the Ethereum platform.
   answerKeys:
     - A
   difficultyLevel: Low
@@ -17,26 +21,34 @@
       key: D
 - uuid: 8d68c818-725c-4f4b-8451-3dff8b7c9dd2
   type: SingleChoice
-  content: What browser extension is used in this guide to interact with the Ethereum blockchain?
+  content: >-
+    What browser extension is used in this course that helps us approve
+    transaction by the user on the Ethereum blockchain?
   hint: Others are not extensions
-  explanation: MetaMask is a browser extension that allows users to interact with the Ethereum blockchain. 
+  explanation: >-
+    MetaMask is a browser extension that allows users to interact with the
+    Ethereum blockchain.
   answerKeys:
     - B
-  difficultyLevel: Low
+  subTopics: []
+  difficultyLevel: Medium
   choices:
-    - content: Solidity
-      key: A
-    - content: MetaMask
-      key: B
-    - content: Ethers.js
-      key: C
-    - content: React
-      key: D
+    - key: A
+      content: Solidity
+    - key: B
+      content: MetaMask
+    - key: C
+      content: Ethers.js
+    - key: D
+      content: React
 - uuid: bbbd7f46-dcd0-48a4-8d03-5238ab832898
   type: SingleChoice
   content: What is Goerli?
   hint: test network
-  explanation: Goerli is a public, proof-of-authority Ethereum test network that is designed to be a stable and reliable environment for testing and deploying decentralized applications (dApps).
+  explanation: >-
+    Goerli is a public, proof-of-authority Ethereum test network that is
+    designed to be a stable and reliable environment for testing and deploying
+    decentralized applications (dApps).
   answerKeys:
     - B
   difficultyLevel: Low
@@ -68,9 +80,14 @@
       key: D
 - uuid: b873213e-cfb5-4dbd-8eac-9c2b819212c6
   type: SingleChoice
-  content: What does the pragma solidity ^0.8.9; statement do in the smart contract code?
+  content: >-
+    What does the pragma solidity ^0.8.9; statement do in the smart contract
+    code?
   hint: NoHint
-  explanation: It sets the Solidity compiler version to 0.8.9. Solidity files have to start with this pragma. It will be used by the Solidity compiler to validate its version.
+  explanation: >-
+    It sets the Solidity compiler version to 0.8.9. Solidity files have to start
+    with this pragma. It will be used by the Solidity compiler to validate its
+    version.
   answerKeys:
     - B
   difficultyLevel: Low
@@ -87,7 +104,9 @@
   type: SingleChoice
   content: What does the `external` modifier do in the transfer function?
   hint: external is synonymous to?
-  explanation: The `external` modifier makes a function only callable from outside the contract.
+  explanation: >-
+    The `external` modifier makes a function only callable from outside the
+    contract.
   answerKeys:
     - A
   difficultyLevel: Low
@@ -121,7 +140,11 @@
   type: SingleChoice
   content: What is the use of Makefile?
   hint: NoHint
-  explanation: A Makefile provides a number of useful commands for working with the project. For example, you can use the make compile command to compile the contract code. You can see the full list of commands by running make or make help.
+  explanation: >-
+    A Makefile provides a number of useful commands for working with the
+    project. For example, you can use the make compile command to compile the
+    contract code. You can see the full list of commands by running make or make
+    help.
   answerKeys:
     - A
   difficultyLevel: Low
@@ -138,7 +161,10 @@
   type: MultipleChoice
   content: What is the `await` keyword used for in the deploy script?
   hint: NoHint
-  explanation: It is used to wait for a promise to be resolved and to handle asynchronous operations.It is used to pause the execution of the function until the asynchronous operation is completed
+  explanation: >-
+    It is used to wait for a promise to be resolved and to handle asynchronous
+    operations.It is used to pause the execution of the function until the
+    asynchronous operation is completed
   answerKeys:
     - A
     - B
@@ -146,7 +172,9 @@
   choices:
     - content: It is used to wait for a promise to be resolved
       key: A
-    - content: It is used to pause the execution of the function until the asynchronous operation is completed
+    - content: >-
+        It is used to pause the execution of the function until the asynchronous
+        operation is completed
       key: B
     - content: It is used to skip a promise before it gets resolved
       key: C
@@ -154,9 +182,15 @@
       key: D
 - uuid: 58f2d52e-8bc0-4314-bb91-dbebbbc68ea5
   type: SingleChoice
-  content: How does the deploy script save the contract's address and ABI to the frontend directory?
+  content: >-
+    How does the deploy script save the contract's address and ABI to the
+    frontend directory?
   hint: saveFrontendFiles function
-  explanation: The script saves the contract's address and ABI to the frontend directory using the saveFrontendFiles function. This function writes the contract's address and ABI to a contract-address.json file and saves the contract's artifacts to a Token.json file in the frontend directory.
+  explanation: >-
+    The script saves the contract's address and ABI to the frontend directory
+    using the saveFrontendFiles function. This function writes the contract's
+    address and ABI to a contract-address.json file and saves the contract's
+    artifacts to a Token.json file in the frontend directory.
   answerKeys:
     - D
   difficultyLevel: Low
@@ -171,9 +205,13 @@
       key: D
 - uuid: 3a8028cd-c463-4f95-bb99-bdddff70ddd3
   type: SingleChoice
-  content: What library is used to interact with the Ethereum network and deploy the contract in the deploy script?
+  content: >-
+    What library is used to interact with the Ethereum network and deploy the
+    contract in the deploy script?
   hint: Others are not libraries.
-  explanation: Ethers.js is used to interact with the Ethereum network and deploy the contract in the deploy script
+  explanation: >-
+    Ethers.js is used to interact with the Ethereum network and deploy the
+    contract in the deploy script
   answerKeys:
     - B
   difficultyLevel: Low
@@ -188,18 +226,26 @@
       key: D
 - uuid: f4cba509-9e5c-49b3-ae41-82fbcf3d63fc
   type: SingleChoice
-  content: How do you access the contract address in the front-end of the DApp using Ethers.js?
+  content: >-
+    How do you access the contract address in the front-end of the DApp using
+    Ethers.js?
   hint: contract-address.json
-  explanation: We can access it by importing the contract-addresses.json file and use the ethers.getContractAt method
+  explanation: >-
+    We can access it by importing the contract-addresses.json file and use the
+    ethers.getContractAt method
   answerKeys:
     - A
   difficultyLevel: Low
   choices:
-    - content: Import the contract-addresses.json file and use the ethers.getContractAt method
+    - content: >-
+        Import the contract-addresses.json file and use the ethers.getContractAt
+        method
       key: A
     - content: Import the Token.json file and use the ethers.getContractAt method
       key: B
-    - content: Import the contract-addresses.json file and use the ethers.getContractFactory method
+    - content: >-
+        Import the contract-addresses.json file and use the
+        ethers.getContractFactory method
       key: C
     - content: Import the Token.json file and use the ethers.getContractFactory method
       key: D
@@ -224,7 +270,10 @@
   type: SingleChoice
   content: What does the saveFrontendFiles function do in the deploy script?
   hint: NoHint
-  explanation: This function writes the contract's address and ABI to a contract-address.json file and saves the contract's artifacts to a Token.json file in the frontend directory.
+  explanation: >-
+    This function writes the contract's address and ABI to a
+    contract-address.json file and saves the contract's artifacts to a
+    Token.json file in the frontend directory.
   answerKeys:
     - A
   difficultyLevel: Low

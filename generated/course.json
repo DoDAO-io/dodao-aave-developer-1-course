@@ -1254,13 +1254,14 @@
         {
           "uuid": "8d68c818-725c-4f4b-8451-3dff8b7c9dd2",
           "type": "SingleChoice",
-          "content": "What browser extension is used in this guide to interact with the Ethereum blockchain?",
+          "content": "What browser extension is used in this course that helps us approve transaction by the user on the Ethereum blockchain?",
           "hint": "Others are not extensions",
           "explanation": "MetaMask is a browser extension that allows users to interact with the Ethereum blockchain.",
           "answerKeys": [
             "B"
           ],
-          "difficultyLevel": "Low",
+          "subTopics": [],
+          "difficultyLevel": "Medium",
           "choices": [
             {
               "content": "Solidity",
