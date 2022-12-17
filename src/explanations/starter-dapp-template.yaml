@@ -123,6 +123,20 @@
     the example code from GitHub. You will also need to install and use Node.js
     and/or Yarn to build, compile, and run the smart contract and frontend Dapp.
     You will use a terminal window to run the CLI tools and manage the project.
+- key: starter-app
+  shortTitle: Starter App
+  details: >
+    #### What you will be building/running
+
+    The template finally looks like this:
+
+    ![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)
+
+    This dapp template is very simple and uses a trivial 'Token' smart contract
+    that allows you to create your own token and also mint it to deployer's
+    address. The deployer can then transfer the tokens to whichever address he
+    likes.
+  title: Starter App
 - key: setup
   title: Template Setup
   shortTitle: Setup
@@ -261,20 +275,6 @@
     provides a number of useful commands for working with the project. For
     example, you can use the make compile command to compile the contract code.
     You can see the full list of commands by running make or make help.
-- key: starter-app
-  shortTitle: Starter App
-  details: >
-    #### What you will be building/running
-
-    The template finally looks like this:
-
-    ![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)
-
-    This dapp template is very simple and uses a trivial 'Token' smart contract
-    that allows you to create your own token and also mint it to deployer's
-    address. The deployer can then transfer the tokens to whichever address he
-    likes.
-  title: Starter App
 - key: smart-contract
   title: Smart Contract Explanation & Deployment
   shortTitle: Smart Contract
