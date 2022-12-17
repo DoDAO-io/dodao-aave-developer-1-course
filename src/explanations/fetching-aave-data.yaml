@@ -38,6 +38,11 @@
 
     ## Analytics
 
+    Availability of all this data empowers us to build intelligent on/off chain
+    analytics applications which can help us understand some of the crucial
+    insights.
+
+
     Analytics in financial applications can provide a number of benefits,
     including:
 
@@ -66,7 +71,7 @@
     The focus of this chapter will be to use Aave's data and show it on the UI
     in a couple of use cases. 
 
-    - Creating a pie graph to review the aave treasury in USDT 
+    - Creating a pie graph to review the Aave treasury in USDT 
 
     - Implementing a time series graph of how the holdings of different pools
     have changed over time.
