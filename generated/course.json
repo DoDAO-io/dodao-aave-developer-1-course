@@ -2035,12 +2035,13 @@
         {
           "uuid": "1ccfce22-265a-45a0-9890-51768866db62",
           "type": "SingleChoice",
-          "content": "What is the value of normalizedBalance after the following code executes? ```const userTokenBalance = BigNumber.from(\"5000000000\"); const normalizedBalance = userTokenBalance.div( BigNumber.from(\"1000000\").toString() ); ```",
+          "content": "What is the value of normalizedBalance after the following code executes? \n```javascript\nconst userTokenBalance = BigNumber.from(\"5000000000\"); \nconst normalizedBalance = userTokenBalance.div( BigNumber.from(\"1000000\").toString()); \n```",
           "hint": "divide",
           "explanation": "5000000000/1000000 = 5000",
           "answerKeys": [
             "C"
           ],
+          "subTopics": [],
           "difficultyLevel": "Medium",
           "choices": [
             {

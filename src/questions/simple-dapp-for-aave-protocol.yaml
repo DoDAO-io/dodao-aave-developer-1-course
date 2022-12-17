@@ -208,24 +208,31 @@
 - uuid: 1ccfce22-265a-45a0-9890-51768866db62
   type: SingleChoice
   content: >-
-    What is the value of normalizedBalance after the following code executes?
-    ```const userTokenBalance = BigNumber.from("5000000000"); const
-    normalizedBalance = userTokenBalance.div(
-    BigNumber.from("1000000").toString() ); ```
+    What is the value of normalizedBalance after the following code executes? 
+
+    ```javascript
+
+    const userTokenBalance = BigNumber.from("5000000000"); 
+
+    const normalizedBalance = userTokenBalance.div(
+    BigNumber.from("1000000").toString()); 
+
+    ```
   hint: divide
   explanation: 5000000000/1000000 = 5000
   answerKeys:
     - C
+  subTopics: []
   difficultyLevel: Medium
   choices:
-    - content: '5'
-      key: A
-    - content: '500'
-      key: B
-    - content: '5000'
-      key: C
-    - content: '5000000'
-      key: D
+    - key: A
+      content: '5'
+    - key: B
+      content: '500'
+    - key: C
+      content: '5000'
+    - key: D
+      content: '5000000'
 - uuid: d822db56-f5c8-467f-b73f-44804654ef2e
   type: SingleChoice
   content: What is the purpose of the FaucetService class?
