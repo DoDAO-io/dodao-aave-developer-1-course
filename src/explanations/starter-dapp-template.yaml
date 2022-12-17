@@ -261,6 +261,20 @@
     provides a number of useful commands for working with the project. For
     example, you can use the make compile command to compile the contract code.
     You can see the full list of commands by running make or make help.
+- key: starter-app
+  shortTitle: Starter App
+  details: >
+    #### What you will be building/running
+
+    The template finally looks like this:
+
+    ![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)
+
+    This dapp template is very simple and uses a trivial 'Token' smart contract
+    that allows you to create your own token and also mint it to deployer's
+    address. The deployer can then transfer the tokens to whichever address he
+    likes.
+  title: Starter App
 - key: smart-contract
   title: Smart Contract Explanation & Deployment
   shortTitle: Smart Contract
@@ -458,20 +472,6 @@
     deploy the Token contract to an Ethereum network using Ethers.js. It also
     saves the deployed contract's address and ABI to the frontend directory, 
     making it easy to access these values in the front-end code.
-- key: starter-app
-  shortTitle: Starter App
-  details: >
-    #### What you will be building/running
-
-    The template finally looks like this:
-
-    ![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)
-
-    This dapp template is very simple and uses a trivial 'Token' smart contract
-    that allows you to create your own token and also mint it to deployer's
-    address. The deployer can then transfer the tokens to whichever address he
-    likes.
-  title: Starter App
 - key: frontend
   title: Frontend Explanation
   shortTitle: Frontend
