@@ -6,11 +6,31 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
  ## Starter-DApp-Template
  
  **Introduction**        
-This guide is a detailed walkthrough of how to setup, build, and run a minimal React Dapp using [this template](https://github.com/DoDAO-io/dodao-simple-contract-template) that deploys  and interacts with a simple Solidity smart contract using Hardhat and MetaMask as part of one's development workflow.
-#### What you will be building/running
-The template finally looks like this:
+## Dapps
+The main components of a blockchain Dapp (decentralized application) are:
+
+1. **Smart contracts**: Many Dapps use smart contracts, which are self-executing contracts with the terms of the agreement between buyer and seller being directly written into lines of code. These contracts allow for transactions to be carried out automatically and transparently, without the need for intermediaries.
+
+2. **Front-end user interface**: A Dapp has a user interface that allows users to interact with the Dapp and carry out transactions. This interface can be a web-based application or a mobile app.
+
+3. **Blockchain network**: A blockchain network to which the smart contract is deployed e.g.  Ethereum Mainnet, Polygon, Arbitrum etc.
+
+## Creating an Dapp
+Creating and deploying Smart Contracts, as well as interacting with them, has not been standardized across the ecosystem. This means that every project has to spend extra time developing their own setup, rather than being able to use ones that have already been created. Standardization would save a lot of time and allow new projects to get started much faster.
+
+## DoDAO Dapp template
+As, creating and deploying smart contracts can be a bit daunting, we've created a starter template using HardHat that makes it easy to deploy smart contracts. Plus, our deploy scripts automatically save the deployed smart contract's address in the front end code so that the front end can reference it later on.
+
+We also use generated typescript files, using which interacting with Smart Contracts is as simple as calling a JavaScript function.
+  
+[Here](https://github.com/DoDAO-io/dodao-simple-contract-template) is the link to the template. 
+ **Starter App**        
+## Simple ERC20 Starter App
+Our template includes a simple application that we can use to create and deploy an ERC20 contract. We can then use the UI to interact with the Smart Contract. The frontend application of the template looks like this:
+
 ![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)
-This dapp template is very simple and uses a trivial 'Token' smart contract that allows you to create your own token and also mint it to deployer's address. The deployer can then transfer the tokens to whichever address he likes.
+
+The deployer can then transfer the tokens to whichever address they like.
  
  **Stack Overview**        
 #### The stack/tools used in the template

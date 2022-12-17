@@ -3,7 +3,7 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
 
  ---
  
- ## Simple Dapp for Aave Protocol
+ ## Starter-DApp-Template
  
   **Solidity Tutorial**
  
@@ -12,7 +12,7 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
  This video enables learners to know about Solidity
     
  
- Sub Topics:     
+ Sub Topics: No Sub-Topics    
   **Hardhat Tutorial**
  
  [![Hardhat Tutorial](https://img.youtube.com/vi/9Qpi80dQsGU/0.jpg)](https://www.youtube.com/watch?v=9Qpi80dQsGU)     
@@ -20,7 +20,7 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
  This video enables learners to know about Hardat
     
  
- Sub Topics:     
+ Sub Topics: No Sub-Topics    
   **Ethers.js Tutorial**
  
  [![Ethers.js Tutorial](https://img.youtube.com/vi/yk7nVp5HTCk/0.jpg)](https://www.youtube.com/watch?v=yk7nVp5HTCk)     
@@ -28,7 +28,7 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
  This video enables learners to know about Ethers.js
     
  
- Sub Topics:     
+ Sub Topics: No Sub-Topics    
   **React Crash Course**
  
  [![React Crash Course](https://img.youtube.com/vi/w7ejDZ8SWv8/0.jpg)](https://www.youtube.com/watch?v=w7ejDZ8SWv8)     
@@ -36,5 +36,5 @@ This is the course header. This will be added on top of every page. Go to [DoDAO
  This video enables learners to know about React
     
  
- Sub Topics:     
+ Sub Topics: No Sub-Topics    
  

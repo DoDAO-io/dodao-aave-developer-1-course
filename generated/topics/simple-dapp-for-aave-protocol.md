@@ -13,8 +13,8 @@ The DApp is built using the starter template we discussed in the previous chapte
 
 
 ## Links
-[Reading List](./../../generated/readings/starter-dapp-template.md)
 
-[Summary](./../../generated/summaries/starter-dapp-template.md)
+
+
 
 [Questions](./../../generated/questions/simple-dapp-for-aave-protocol.md)

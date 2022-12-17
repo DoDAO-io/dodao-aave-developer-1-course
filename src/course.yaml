@@ -1,4 +1,4 @@
-title: AAVE Developer 1 (In Progress)
+title: AAVE Developer 1
 key: aave-developer-1
 summary: >
   This is a technical course for developers willing to write applications on
@@ -37,14 +37,30 @@ topics:
     completionWeek: In Progress
   - title: Fetch and Show AAVE Data
     key: fetching-aave-data
-    details: >
-      This chapter talks about how you can fetch real time and time series data
-      from AAVE and show it on the UI. It begins with an introduction to Aave,
-      then contiues with the Graph & GraphQL and we further discuss about the
-      Aave subgraphs. Then we learn how to query Aave's GraphQL database using
-      React and implement a Pie chart too. Then we look on to few example
-      graphql queries. Later on we discuss about the historical rest data and
-      how we can use it to implement a time series graph in react.
+    details: >-
+      Aave's data, like any on-chain application, can be classified into two
+      types: 
+
+      1. Realtime data 
+
+      2. Historical data
+
+
+      This chapter will discuss how you can retrieve real-time and time-series
+      data from AAVE to display it on your UI. The following are the topics that
+      will be covered:
+
+      1. Importance of Analytics
+
+      2. Fetching Realtime Data
+
+      3. Query Aave's GraphQL data and implement a Pie chart to show liquidity
+      ratio.
+
+      4. Fetching Historical Data
+
+      5. Making rest calls to fetch Aave's historical Utilization ratio data and
+      show it on the UI
     explanations: fetching-aave-data.yaml
     readings: aave-smart-contracts.yaml
     summaries: fetching-aave-data.yaml
@@ -54,10 +70,11 @@ topics:
   - title: Starter-DApp-Template
     key: starter-dapp-template
     details: >
-      This chapter discusses about the starter dapp [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in detail. 
+      This chapter discusses about the starter dapp
+      [template](https://github.com/DoDAO-io/dodao-simple-contract-template) in
+      detail.
     explanations: starter-dapp-template.yaml
     readings: starter-dapp-template.yaml
-    summaries: starter-dapp-template.yaml
     questions: starter-dapp-template.yaml
     status: In Progress
     completionWeek: In Progress
@@ -71,10 +88,11 @@ topics:
       Our aim is to build a DApp on top of the Aave platform to decrease the user's collateral ratio by adding additional collateral from a separate contract. The DApp will allow users to exchange USDC tokens for LINK tokens based on the USDC threshold on Aave, and then our contract will top up the user's LINK amount by 50% of their eligibility. 
       
       
-      The DApp is built using the starter template we discussed in the previous chapter. So, please visit the previous chapter to have a look at the template code if you haven't already.
+      The DApp is built using the starter template we discussed in
+      the previous chapter. So, please visit the previous chapter to have a look at the template code if you haven't already.
     explanations: simple-dapp-for-aave-protocol.yaml
-    readings: starter-dapp-template.yaml
-    summaries: starter-dapp-template.yaml
     questions: simple-dapp-for-aave-protocol.yaml
     status: In Progress
     completionWeek: In Progress
+courseAdmins:
+  - '0x34d014758297c00fea49935fce172677904d51ef'
