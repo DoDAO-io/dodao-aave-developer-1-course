@@ -218,15 +218,6 @@
     https://thegraph.com/hosted-service/subgraph/aave/protocol-v3-goerli   |
 
 
-    Goerli is an Ethereum test network that allows blockchain development
-    testing prior to deployment on the main Ethereum network, Mainnet. Görli
-    (Goerli) Testnet is the first proof-of-authority cross-client testnet,
-    synching Parity Ethereum, Geth, Nethermind, Hyperledger Besu (formerly
-    Pantheon), and EthereumJS. This testnet is a community-based project,
-    completely open-source, naturally. It was born in September 2018 during
-    ETHBerlin and has been growing in contributors ever since.
-
-
     #### Making Http request to get GraphQL data
 
 
@@ -240,6 +231,7 @@
     using Postman), you can send a POST request to our subgraph's HTTP endpoint
     with the header: "Content-Type: application/json" and the body comprising of
     your query on one line in quotations. As an example:
+
 
     ```
 
