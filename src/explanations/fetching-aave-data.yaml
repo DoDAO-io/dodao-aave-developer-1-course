@@ -176,7 +176,7 @@
     identify the appropriate query/types.
 
 
-    #### Points to keep in mind
+    Points to keep in mind
 
     - All address values (for example, when used for id) must be in lowercase.
 
@@ -194,6 +194,9 @@
     (skip:1000, first: 1000) to your query's arguments.
 
     - This is also true for nested entries, such as arrays.
+
+
+    ### Data Endpoints
 
 
     This Graph endpoint contains only static data. To obtain a user's most
@@ -224,7 +227,7 @@
     ETHBerlin and has been growing in contributors ever since.
 
 
-    #### Using your app to access GraphQL data
+    #### Making Http request to get GraphQL data
 
 
     The preferred method is to utilize a client library that can handle the
