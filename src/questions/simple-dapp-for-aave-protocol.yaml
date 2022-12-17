@@ -93,25 +93,26 @@
       key: D
 - uuid: 6f9f7840-a89b-43de-b8bf-d8d6bdfd2b19
   type: SingleChoice
-  content: What does the getNormalizedBalance function do?
+  content: What does the getNormalizedBalance function do? -----
   hint: NoHint
   explanation: >-
     It returns the normalized balance of a token for the specified provider and
     account.
   answerKeys:
     - B
+  subTopics: []
   difficultyLevel: Medium
   choices:
-    - content: Returns the USDC balance of the contract
-      key: A
-    - content: >-
+    - key: A
+      content: Returns the USDC balance of the contract
+    - key: B
+      content: >-
         Returns the normalized balance of a token for the specified provider and
         account
-      key: B
-    - content: Returns the USDC balance of the user
-      key: C
-    - content: Returns the address of the USDC contract
-      key: D
+    - key: C
+      content: Returns the USDC balance of the user
+    - key: D
+      content: Returns the address of the USDC contract
 - uuid: ea59d9af-ccb4-4253-b86f-84aa69f60b60
   type: SingleChoice
   content: What is the purpose of the MintUSDC component?

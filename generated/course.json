@@ -1857,12 +1857,13 @@
         {
           "uuid": "6f9f7840-a89b-43de-b8bf-d8d6bdfd2b19",
           "type": "SingleChoice",
-          "content": "What does the getNormalizedBalance function do?",
+          "content": "What does the getNormalizedBalance function do? -----",
           "hint": "NoHint",
           "explanation": "It returns the normalized balance of a token for the specified provider and account.",
           "answerKeys": [
             "B"
           ],
+          "subTopics": [],
           "difficultyLevel": "Medium",
           "choices": [
             {
