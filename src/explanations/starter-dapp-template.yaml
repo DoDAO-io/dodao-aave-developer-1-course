@@ -46,6 +46,20 @@
       
     [Here](https://github.com/DoDAO-io/dodao-simple-contract-template) is the
     link to the template.
+- key: starter-app
+  shortTitle: Starter App
+  details: >
+    #### What you will be building/running
+
+    The template finally looks like this:
+
+    ![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)
+
+    This dapp template is very simple and uses a trivial 'Token' smart contract
+    that allows you to create your own token and also mint it to deployer's
+    address. The deployer can then transfer the tokens to whichever address he
+    likes.
+  title: Starter App
 - key: stack-overview
   title: Stack Overview
   shortTitle: Stack Overview
@@ -123,20 +137,6 @@
     the example code from GitHub. You will also need to install and use Node.js
     and/or Yarn to build, compile, and run the smart contract and frontend Dapp.
     You will use a terminal window to run the CLI tools and manage the project.
-- key: starter-app
-  shortTitle: Starter App
-  details: >
-    #### What you will be building/running
-
-    The template finally looks like this:
-
-    ![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)
-
-    This dapp template is very simple and uses a trivial 'Token' smart contract
-    that allows you to create your own token and also mint it to deployer's
-    address. The deployer can then transfer the tokens to whichever address he
-    likes.
-  title: Starter App
 - key: setup
   title: Template Setup
   shortTitle: Setup
