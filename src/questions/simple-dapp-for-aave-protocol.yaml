@@ -154,21 +154,22 @@
   type: SingleChoice
   content: >-
     How does the Supply component calculate the amount of LINK that can be
-    minted from a USDC supply?
+    minted from a USDC supply? -----
   hint: multiply
   explanation: It multiplies the supply amount by the USDC threshold.
   answerKeys:
     - D
+  subTopics: []
   difficultyLevel: Medium
   choices:
-    - content: It divides the supply amount by the link price
-      key: A
-    - content: It multiplies the supply amount by the link price
-      key: B
-    - content: It divides the supply amount by the USDC threshold
-      key: C
-    - content: It multiplies the supply amount by the USDC threshold
-      key: D
+    - key: A
+      content: It divides the supply amount by the link price
+    - key: B
+      content: It multiplies the supply amount by the link price
+    - key: C
+      content: It divides the supply amount by the USDC threshold
+    - key: D
+      content: It multiplies the supply amount by the USDC threshold
 - uuid: 7b035f74-b4c3-487e-887b-9fa3ae4fa042
   type: SingleChoice
   content: What is the purpose of the updateContractBalance function?

@@ -1946,12 +1946,13 @@
         {
           "uuid": "a69bd10a-9ef1-4319-baa8-ad24dff23589",
           "type": "SingleChoice",
-          "content": "How does the Supply component calculate the amount of LINK that can be minted from a USDC supply?",
+          "content": "How does the Supply component calculate the amount of LINK that can be minted from a USDC supply? -----",
           "hint": "multiply",
           "explanation": "It multiplies the supply amount by the USDC threshold.",
           "answerKeys": [
             "D"
           ],
+          "subTopics": [],
           "difficultyLevel": "Medium",
           "choices": [
             {
