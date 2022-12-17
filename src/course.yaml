@@ -58,15 +58,7 @@ topics:
 
       4. Fetching Historical Data
 
-      5. Displaying Historical Data
-
-
-      It begins with an introduction to Aave, then continues with the Graph &
-      GraphQL and we further discuss about the Aave subgraphs. Then we learn how
-            to query Aave's GraphQL database using React and implement a Pie chart
-            too. Then we look on to few example graphql queries. Later on we discuss
-            about the historical rest data and how we can use it to implement a time
-            series graph in react.
+      5. Make rest calls to fetch Aave's historical data and show it on the UI 
     explanations: fetching-aave-data.yaml
     readings: aave-smart-contracts.yaml
     summaries: fetching-aave-data.yaml
