@@ -172,21 +172,22 @@
       content: It multiplies the supply amount by the USDC threshold
 - uuid: 7b035f74-b4c3-487e-887b-9fa3ae4fa042
   type: SingleChoice
-  content: What is the purpose of the updateContractBalance function?
+  content: What is the purpose of the updateContractBalance function in `MintUSD.tsx`?
   hint: USDC token
   explanation: The function updates the USDC balance of the contract.
   answerKeys:
     - B
-  difficultyLevel: Low
+  subTopics: []
+  difficultyLevel: Medium
   choices:
-    - content: To update the USDC balance of the user
-      key: A
-    - content: To update the USDC balance of the contract
-      key: B
-    - content: To update the balance of the user for all supported tokens
-      key: C
-    - content: To update the balance of the contract for all supported tokens
-      key: D
+    - key: A
+      content: To update the USDC balance of the user
+    - key: B
+      content: To get the updated USDC balance for the contract
+    - key: C
+      content: To update the balance of the user for all supported tokens
+    - key: D
+      content: To update the balance of the contract for all supported tokens
 - uuid: ff9ae8a3-36f0-45b1-a0a1-b8bfc76b361f
   type: SingleChoice
   content: What is the purpose of the getTokenContract function?

@@ -1976,20 +1976,21 @@
         {
           "uuid": "7b035f74-b4c3-487e-887b-9fa3ae4fa042",
           "type": "SingleChoice",
-          "content": "What is the purpose of the updateContractBalance function?",
+          "content": "What is the purpose of the updateContractBalance function in `MintUSD.tsx`?",
           "hint": "USDC token",
           "explanation": "The function updates the USDC balance of the contract.",
           "answerKeys": [
             "B"
           ],
-          "difficultyLevel": "Low",
+          "subTopics": [],
+          "difficultyLevel": "Medium",
           "choices": [
             {
               "content": "To update the USDC balance of the user",
               "key": "A"
             },
             {
-              "content": "To update the USDC balance of the contract",
+              "content": "To get the updated USDC balance for the contract",
               "key": "B"
             },
             {
