@@ -458,6 +458,20 @@
     deploy the Token contract to an Ethereum network using Ethers.js. It also
     saves the deployed contract's address and ABI to the frontend directory, 
     making it easy to access these values in the front-end code.
+- key: starter-app
+  shortTitle: Starter App
+  details: >
+    #### What you will be building/running
+
+    The template finally looks like this:
+
+    ![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)
+
+    This dapp template is very simple and uses a trivial 'Token' smart contract
+    that allows you to create your own token and also mint it to deployer's
+    address. The deployer can then transfer the tokens to whichever address he
+    likes.
+  title: Starter App
 - key: frontend
   title: Frontend Explanation
   shortTitle: Frontend
@@ -597,17 +611,3 @@
     it easy to manage multiple contract deployments  and to switch between
     different networks without having to manually update the contract address in
     the front-end code.
-- key: starter-app
-  shortTitle: Starter App
-  details: >
-    #### What you will be building/running
-
-    The template finally looks like this:
-
-    ![starter-template-image](https://raw.githubusercontent.com/DoDAO-io/dodao-aave-developer-1-course/main/images/starter-template.png)
-
-    This dapp template is very simple and uses a trivial 'Token' smart contract
-    that allows you to create your own token and also mint it to deployer's
-    address. The deployer can then transfer the tokens to whichever address he
-    likes.
-  title: Starter App
