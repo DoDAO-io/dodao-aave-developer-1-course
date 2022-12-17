@@ -38,16 +38,17 @@ topics:
   - title: Fetch and Show AAVE Data
     key: fetching-aave-data
     details: >-
-      Like any on-chain application, Aave's data can be classified into two
-      types
+      Aave's data, like any on-chain application, can be classified into two
+      types: 
 
       1. Realtime data 
 
-      2. Historical Data
+      2. Historical data
 
 
-      This chapter talks about how you can fetch real time and time series data
-      from AAVE and show it on the UI. Following are the headings
+      This chapter will discuss how you can retrieve real-time and time-series
+      data from AAVE to display it on your UI. The following are the topics that
+      will be covered:
 
       1. Importance of Analytics
 
@@ -58,7 +59,8 @@ topics:
 
       4. Fetching Historical Data
 
-      5. Make rest calls to fetch Aave's historical data and show it on the UI 
+      5. Making rest calls to fetch Aave's historical Utilization ratio data and
+      show it on the UI
     explanations: fetching-aave-data.yaml
     readings: aave-smart-contracts.yaml
     summaries: fetching-aave-data.yaml
