@@ -2,6 +2,33 @@
   title: Introduction
   shortTitle: Introduction
   details: >
+    ## Dapps
+
+    The main components of a blockchain Dapp (decentralized application) are:
+
+
+    1. **Smart contracts**: Many Dapps use smart contracts, which are
+    self-executing contracts with the terms of the agreement between buyer and
+    seller being directly written into lines of code. These contracts allow for
+    transactions to be carried out automatically and transparently, without the
+    need for intermediaries.
+
+
+    2. **Front-end user interface**: A Dapp has a user interface that allows
+    users to interact with the Dapp and carry out transactions. This interface
+    can be a web-based application or a mobile app.
+
+
+    3. **Blockchain network**: A blockchain network to which the smart contract
+    is deployed e.g.  Ethereum Mainnet, Polygon, Arbitrum etc.
+
+
+    ## Creating an Dapp
+
+
+    ## DoDAO Dapp template
+
+
     This guide is a detailed walkthrough of how to setup, build, and run a
     minimal React Dapp using [this
     template](https://github.com/DoDAO-io/dodao-simple-contract-template) that
