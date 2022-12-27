@@ -154,7 +154,7 @@
   type: SingleChoice
   content: >-
     How does the Supply component calculate the amount of LINK that can be
-    minted from a USDC supply? -----
+    minted from a USDC supply? 
   hint: multiply
   explanation: It multiplies the supply amount by the USDC threshold.
   answerKeys:
