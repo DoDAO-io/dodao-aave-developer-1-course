@@ -107,4 +107,4 @@ courseAdmins:
   - '0x34d014758297c00fea49935fce172677904d51ef'
 topicConfig:
   showExplanations: true
-  showHints: true
+  showHints: false

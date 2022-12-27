@@ -2156,6 +2156,6 @@
   ],
   "topicConfig": {
     "showExplanations": true,
-    "showHints": true
+    "showHints": false
   }
 }
