@@ -2155,7 +2155,7 @@
     }
   ],
   "topicConfig": {
-    "showExplanations": false,
-    "showHints": false
+    "showExplanations": true,
+    "showHints": true
   }
 }
