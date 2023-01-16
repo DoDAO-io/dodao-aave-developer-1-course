@@ -24,7 +24,7 @@ Sub Topics: No Sub-Topics
 
 ---
 
-##### What browser extension is used in this guide to interact with the Ethereum blockchain?  
+##### What browser extension is used in this course that helps us approve transaction by the user on the Ethereum blockchain?  
 
 - [ ]  Solidity
 - [x]  MetaMask

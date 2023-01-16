@@ -56,22 +56,6 @@ Sub Topics: No Sub-Topics
 
 ---
 
-##### What is a proxy contract in Ethereum development?  
-
-- [ ]  A contract that is deployed when a new version of the contract needs to be created
-- [ ]  A contract that is deployed when the contract's bytecode needs to be updated
-- [ ]  A contract that is deployed when the contract's state needs to be updated
-- [x]  A special type of contract that acts as a middleman between the user and the actual contract
-  
-Hint: middleman
-         
-Explanation: A proxy contract in Ethereum development is a special type of contract that acts as a middleman between the user and the actual contract.
-
-Sub Topics: No Sub-Topics
- 
-
----
-
 ##### What is the advantage of using a proxy contract for contract upgrades?  
 
 - [ ]  It allows the contract to be updated without affecting its address or its state
@@ -88,7 +72,7 @@ Sub Topics: No Sub-Topics
 
 ---
 
-##### What does the getNormalizedBalance function do?  
+##### What does the getNormalizedBalance function do? -----  
 
 - [ ]  Returns the USDC balance of the contract
 - [x]  Returns the normalized balance of a token for the specified provider and account
@@ -120,7 +104,7 @@ Sub Topics: No Sub-Topics
 
 ---
 
-##### What is the purpose of the IERC20__factory.connect method?  
+##### What is the purpose of the IERC20__factory.connect method? -----  
 
 - [ ]  It creates a new instance of the IERC20 contract
 - [ ]  It creates a new provider using window.ethereum
@@ -136,7 +120,7 @@ Sub Topics: No Sub-Topics
 
 ---
 
-##### How does the Supply component calculate the amount of LINK that can be minted from a USDC supply?  
+##### How does the Supply component calculate the amount of LINK that can be minted from a USDC supply?   
 
 - [ ]  It divides the supply amount by the link price
 - [ ]  It multiplies the supply amount by the link price
@@ -152,10 +136,10 @@ Sub Topics: No Sub-Topics
 
 ---
 
-##### What is the purpose of the updateContractBalance function?  
+##### What is the purpose of the updateContractBalance function in `MintUSD.tsx`?  
 
 - [ ]  To update the USDC balance of the user
-- [x]  To update the USDC balance of the contract
+- [x]  To get the updated USDC balance for the contract
 - [ ]  To update the balance of the user for all supported tokens
 - [ ]  To update the balance of the contract for all supported tokens
   
@@ -184,7 +168,11 @@ Sub Topics: No Sub-Topics
 
 ---
 
-##### What is the value of normalizedBalance after the following code executes? ```const userTokenBalance = BigNumber.from("5000000000"); const normalizedBalance = userTokenBalance.div( BigNumber.from("1000000").toString() ); ```  
+##### What is the value of normalizedBalance after the following code executes? 
+```javascript
+const userTokenBalance = BigNumber.from("5000000000"); 
+const normalizedBalance = userTokenBalance.div( BigNumber.from("1000000").toString()); 
+```  
 
 - [ ]  5
 - [ ]  500

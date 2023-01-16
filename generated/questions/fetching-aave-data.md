@@ -19,7 +19,7 @@ Hint: NoHint
          
 Explanation: RESTFUL APIs require developers to define unique endpoints for users that return specified data. If the user requires further information, they may need to make repeated API calls, potentially hundreds of API calls, to obtain it. As long as the developer has established a flexible schema, The Graph (which uses GraphQL) just requires one call to a subgraph.
 
-Sub Topics: graphql
+Sub Topics: No Sub-Topics
  
 
 ---

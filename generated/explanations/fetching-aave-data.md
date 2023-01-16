@@ -58,6 +58,11 @@ GraphQL also has a strong type system, which allows developers to define the typ
 See this [GraphQL primer](https://medium.com/graphprotocol/graphql-will-power-the-decentralized-web-d7443a69c69a) for additional information on The Graph and the underlying GraphQL.
 
 ### Aave's Subgraphs
+A subgraph is a graph-based data structure that is used to represent and query data in a specific domain. In the context of the Aave Protocol, subgraphs are used to index and query data from the blockchain in a more efficient and user-friendly way. They allow developers to build applications that make use of the data stored on the blockchain in a more efficient and flexible manner.
+Subgraphs are created and maintained by a decentralized network of nodes called subgraph indexers. These nodes are responsible for listening to events on the Ethereum blockchain and updating the subgraph with new data as it becomes available. They also provide a GraphQL API that allows developers to query the subgraph and retrieve the data they need for their applications.
+
+The Aave Protocol subgraphs index data from the protocol smart contracts, and expose a GraphQL endpoint hosted by The Graph. Subgraphs can be queried directly from the graph explorer, or from another application.
+
 To view the source of the subgraphs, see our [Github repo](https://github.com/aave/protocol-v2-subgraph).
 
 Production Network: [Polygon](https://thegraph.com/hosted-service/subgraph/aave/protocol-v3-polygon)
